@@ -1,26 +1,180 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFFFFF;
+  --foreground: #000000;
+
+  /* Brand Colors */
+  --brand-black: #000000;
+  --brand-purple: #C07DFF;
+  --brand-purple-light: #F4E9FF;
+  --brand-purple-subtle: #F5EBFF;
+  --brand-cyan: #3BC8F6;
+  --brand-cyan-light: #E5F7FF;
+  --brand-cyan-subtle: #E8F9FF;
+  --brand-white: #FFFFFF;
+  --brand-border: #E8E2F2;
+  --brand-border-cyan: #D4F0FC;
+
+  /* Global Reusable Gradients */
+  --gradient-primary: linear-gradient(135deg, #FFFFFF 0%, #F4E9FF 45%, #E5F7FF 100%);
+  --gradient-purple-cyan: linear-gradient(120deg, #C07DFF 0%, #3BC8F6 100%);
+  --gradient-soft-purple: linear-gradient(135deg, #FFFFFF 0%, #F5EBFF 100%);
+  --gradient-soft-cyan: linear-gradient(135deg, #FFFFFF 0%, #E8F9FF 100%);
+  --gradient-card: linear-gradient(145deg, #FFFFFF 0%, #FAF5FF 60%, #F0F9FF 100%);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand-black: #000000;
+  --color-brand-purple: #C07DFF;
+  --color-brand-cyan: #3BC8F6;
+  --color-brand-white: #FFFFFF;
+  --color-brand-border: #E8E2F2;
+  --font-display: var(--font-oswald), sans-serif;
+  --font-sans: var(--font-plus-jakarta), sans-serif;
 }
 
 body {
-  background: var(--background);
+  background: var(--gradient-primary);
+  background-attachment: fixed;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  min-height: 100vh;
 }
+
+html[data-scroll-behavior="smooth"] {
+  scroll-behavior: smooth;
+}
+
+/* ======================================================== */
+/* Global Heading Typography: Standard 44px Font Size       */
+/* ======================================================== */
+h1, h2, .heading-44 {
+  font-size: 44px !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.02em;
+  overflow-wrap: break-word;
+}
+
+/* Custom modern scrollbar for desktop mouse scrolling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(192, 125, 255, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(192, 125, 255, 0.55);
+}
+
+/* Reusable Theme Gradient Utilities */
+.bg-brand-primary {
+  background: var(--gradient-primary);
+}
+
+.bg-brand-gradient {
+  background: var(--gradient-purple-cyan);
+}
+
+.bg-brand-soft-purple {
+  background: var(--gradient-soft-purple);
+}
+
+.bg-brand-soft-cyan {
+  background: var(--gradient-soft-cyan);
+}
+
+.bg-brand-card {
+  background: var(--gradient-card);
+}
+
+.text-brand-gradient {
+  background: var(--gradient-purple-cyan);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-brand-subtle {
+  border-color: var(--brand-border);
+}
+
+.border-brand-cyan {
+  border-color: var(--brand-border-cyan);
+}
+
+/* Accessible visible focus indicators for keyboard navigation */
+*:focus-visible {
+  outline: 2px solid var(--brand-purple);
+  outline-offset: 2px;
+}
+
+/* User reduced motion preference optimization */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Brand Selection Styling */
+::selection {
+  background-color: var(--brand-purple);
+  color: #ffffff;
+}
+
+/* ======================================================== */
+/* Global Star-Border Button Animation                      */
+/* ======================================================== */
+button:not(.no-star-border),
+.btn-star-border {
+  position: relative;
+}
+
+button:not(.no-star-border)::after {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: linear-gradient(90deg, transparent, rgba(192, 125, 255, 0.7), rgba(59, 200, 246, 0.9), transparent);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-size: 200% 100%;
+}
+
+button:not(.no-star-border):hover::after,
+button:not(.no-star-border):focus-visible::after {
+  opacity: 1;
+  animation: star-border-orbit 2.5s linear infinite;
+}
+
+@keyframes star-border-orbit {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+

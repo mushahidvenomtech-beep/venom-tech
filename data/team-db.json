@@ -1,0 +1,84 @@
+[
+  {
+    "id": "team-liam-oconnor",
+    "name": "Liam O'Connor",
+    "role": "Head of Creative Technology",
+    "badge": "PARTNER",
+    "brandLabel": "CREAT",
+    "studioRole": "STUDIO LEAD",
+    "specialty": "Full-Stack Web & Next.js",
+    "avatarBg": "from-stone-950 to-neutral-900",
+    "image": "/images/team/liam-oconnor.jpg",
+    "initials": "LO",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com"
+    },
+    "displayOrder": 3,
+    "isActive": true,
+    "createdAt": "2026-11-06T01:08:13.130Z",
+    "updatedAt": "2026-11-06T01:08:13.130Z"
+  },
+  {
+    "id": "team-sofia-rossi",
+    "name": "Sofia Rossi",
+    "role": "Lead 3D & Motion Artist",
+    "badge": "PARTNER",
+    "brandLabel": "CREAT",
+    "studioRole": "STUDIO LEAD",
+    "specialty": "Kinetic Visuals & Spatial Canvas",
+    "avatarBg": "from-black to-stone-900",
+    "image": "/images/team/sofia-rossi.jpg",
+    "initials": "SR",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com",
+      "portfolio": "https://sofia.art"
+    },
+    "displayOrder": 4,
+    "isActive": true,
+    "createdAt": "2026-11-06T01:08:13.130Z",
+    "updatedAt": "2026-11-06T01:08:13.130Z"
+  },
+  {
+    "id": "team-1793984783978-7e8h6",
+    "name": "mushahid",
+    "role": "employee",
+    "badge": "PARTNER",
+    "brandLabel": "CREAT",
+    "studioRole": "STUDIO LEAD",
+    "specialty": "developer",
+    "avatarBg": "from-purple-950 to-stone-950",
+    "image": "/images/team/1793984758968-business_transfers.webp",
+    "initials": "M",
+    "socialLinks": {
+      "linkedin": "",
+      "twitter": "",
+      "github": ""
+    },
+    "displayOrder": 1,
+    "isActive": true,
+    "createdAt": "2026-11-06T17:06:23.978Z",
+    "updatedAt": "2026-11-06T17:06:23.978Z"
+  },
+  {
+    "id": "team-1793984913214-anu2w",
+    "name": "test team user",
+    "role": "test role",
+    "badge": "PARTNER",
+    "brandLabel": "CREAT",
+    "studioRole": "STUDIO LEAD",
+    "specialty": "designer",
+    "avatarBg": "from-purple-950 to-stone-950",
+    "image": "/images/team/1793984907912-fluffy_ginger_cat_on_grooming_table.png",
+    "initials": "T",
+    "socialLinks": {
+      "linkedin": "",
+      "twitter": "",
+      "github": ""
+    },
+    "displayOrder": 1,
+    "isActive": true,
+    "createdAt": "2026-11-06T17:08:33.214Z",
+    "updatedAt": "2026-11-06T17:08:33.214Z"
+  }
+]

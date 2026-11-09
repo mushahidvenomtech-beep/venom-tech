@@ -1,0 +1,33 @@
+.decay-card {
+  position: relative;
+  flex: none;
+  will-change: transform;
+}
+
+.decay-card__canvas {
+  position: absolute;
+  top: -12%;
+  left: -12%;
+  display: block;
+  width: 124%;
+  height: 124%;
+  pointer-events: none;
+}
+
+.decay-card__fallback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.decay-card__content {
+  position: absolute;
+  inset: 0;
+  padding: 1.5rem;
+  color: #ffffff;
+  pointer-events: none;
+}
+
