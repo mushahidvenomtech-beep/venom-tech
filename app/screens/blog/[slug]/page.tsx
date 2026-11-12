@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Navbar from "@/app/component/global/navigation/Navbar";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
+import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import SingleBlogArticleClient from "@/app/component/blog/single/SingleBlogArticleClient";
 import { BlogStore } from "@/lib/blog/blogStore";
 import { BlogDbService } from "@/lib/blog/services/blogDbService";
@@ -83,7 +84,7 @@ async function BlogPostContent({ slug }: { slug: string }) {
           name: "Venom Tech IT Solution",
           logo: {
             "@type": "ImageObject",
-            url: "https://venomtech.pk/images/logo.png",
+            url: "https://venomtech.pk/images/logo.webp",
           },
         },
       }
@@ -122,6 +123,7 @@ export default async function BlogPostScreen({
         >
           <BlogPostContent slug={slug} />
         </Suspense>
+        <PortfolioSection />
       </main>
       <HomeFooter />
     </div>

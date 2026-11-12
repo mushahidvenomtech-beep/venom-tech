@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Navbar from "@/app/component/global/navigation/Navbar";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
+import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import BpoHero from "@/app/component/services/bpo-services/hero/BpoHero";
 import BpoSolutions from "@/app/component/services/bpo-services/solutions/BpoSolutions";
 import BpoFoundations from "@/app/component/services/bpo-services/foundations/BpoFoundations";
@@ -33,7 +34,7 @@ const jsonLdBpo = {
     "@type": "Organization",
     name: "Venom Tech IT Solution",
     url: "https://venomtech.pk",
-    logo: "https://venomtech.pk/images/venom tech logo.png",
+    logo: "https://venomtech.pk/images/venom tech logo.webp",
   },
   areaServed: ["Pakistan", "Global"],
   serviceType: [
@@ -72,6 +73,9 @@ export default function BpoServicesPage() {
 
         {/* 4. A Clear Path From Planning to Growth (4 Steps) */}
         <BpoProcess />
+
+        {/* 5. Portfolio Showcase */}
+        <PortfolioSection />
       </main>
 
       {/* Global Brand Footer */}

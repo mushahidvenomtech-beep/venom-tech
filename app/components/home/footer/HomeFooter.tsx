@@ -52,7 +52,7 @@ export default function HomeFooter() {
           <div className="md:col-span-5 space-y-5">
             <Link href="/screens/home" className="inline-flex items-center group">
               <Image
-                src="/images/venom tech logo.png"
+                src="/images/venom tech logo.webp"
                 alt="Venom Tech IT Solution"
                 width={220}
                 height={55}

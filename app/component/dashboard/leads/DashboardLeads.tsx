@@ -2,8 +2,23 @@
 
 import React, { useState, useEffect, useCallback } from "react";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
+import SwipeToast from "@/app/component/global/ui/SwipeToast";
 import { Lead, LeadStatus } from "@/lib/leads/types";
+import { formatIsoDateUTC } from "@/lib/jobs/types";
 import { useDashboardTheme } from "@/app/component/dashboard/context/DashboardThemeContext";
+
+const LEAD_SERVICE_OPTIONS = [
+  "AI Automation",
+  "App Development",
+  "Web Development",
+  "Graphic Design & UI/UX",
+  "SEO Services",
+  "Advertising Agency",
+  "BPO Services",
+  "E-Commerce",
+  "API Development",
+  "General Inquiry",
+];
 
 export default function DashboardLeads() {
   const { isDark } = useDashboardTheme();
@@ -15,8 +30,26 @@ export default function DashboardLeads() {
   const [statusFilter, setStatusFilter] = useState("All");
   const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
   const [feedback, setFeedback] = useState<{ message: string; type: "success" | "error" } | null>(null);
+  const [toast, setToast] = useState<{ open: boolean; title: string; desc: string; isError?: boolean }>({
+    open: false,
+    title: "",
+    desc: "",
+  });
   const [deleteTarget, setDeleteTarget] = useState<Lead | null>(null);
   const [isDeleting, setIsDeleting] = useState(false);
+
+  // Add / Edit Lead Modal state
+  const [formOpen, setFormOpen] = useState(false);
+  const [editingLead, setEditingLead] = useState<Lead | null>(null);
+  const [formName, setFormName] = useState("");
+  const [formEmail, setFormEmail] = useState("");
+  const [formPhone, setFormPhone] = useState("");
+  const [formCompany, setFormCompany] = useState("");
+  const [formStatus, setFormStatus] = useState<LeadStatus>("New");
+  const [formServices, setFormServices] = useState<string[]>(["Web Development"]);
+  const [formMessage, setFormMessage] = useState("");
+  const [isSavingForm, setIsSavingForm] = useState(false);
+  const [formError, setFormError] = useState("");
 
   // Fetch real leads from API
   const fetchLeads = useCallback(async () => {
@@ -42,7 +75,95 @@ export default function DashboardLeads() {
 
   const showNotification = (message: string, type: "success" | "error" = "success") => {
     setFeedback({ message, type });
+    setToast({
+      open: true,
+      title: type === "error" ? "Lead Action Failed" : "Lead Synchronized",
+      desc: message,
+      isError: type === "error",
+    });
     setTimeout(() => setFeedback(null), 3500);
+  };
+
+  const openAddLeadModal = () => {
+    setEditingLead(null);
+    setFormName("");
+    setFormEmail("");
+    setFormPhone("");
+    setFormCompany("");
+    setFormStatus("New");
+    setFormServices(["Web Development"]);
+    setFormMessage("");
+    setFormError("");
+    setFormOpen(true);
+  };
+
+  const openEditLeadModal = (lead: Lead) => {
+    setEditingLead(lead);
+    setFormName(lead.name);
+    setFormEmail(lead.email);
+    setFormPhone(lead.phone || "");
+    setFormCompany(lead.company || "");
+    setFormStatus(lead.status);
+    setFormServices(lead.services.length > 0 ? lead.services : ["General Inquiry"]);
+    setFormMessage(lead.message || "");
+    setFormError("");
+    setSelectedLead(null);
+    setFormOpen(true);
+  };
+
+  const toggleFormService = (svc: string) => {
+    setFormServices((prev) =>
+      prev.includes(svc) ? prev.filter((item) => item !== svc) : [...prev, svc]
+    );
+  };
+
+  const handleSaveLeadForm = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormError("");
+    if (!formName.trim() || !formEmail.trim()) {
+      setFormError("Client Name and Email are required.");
+      return;
+    }
+
+    setIsSavingForm(true);
+    try {
+      const payload = {
+        name: formName.trim(),
+        email: formEmail.trim(),
+        phone: formPhone.trim(),
+        company: formCompany.trim(),
+        status: formStatus,
+        services: formServices.length > 0 ? formServices : ["General Inquiry"],
+        message: formMessage.trim(),
+        source: editingLead?.source || "dashboard_manual",
+      };
+
+      const res = await fetch(
+        editingLead ? `/api/leads/${editingLead.id}` : "/api/leads",
+        {
+          method: editingLead ? "PUT" : "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        }
+      );
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || "Failed to save lead");
+      }
+
+      if (editingLead) {
+        setLeads((prev) => prev.map((l) => (l.id === editingLead.id ? data.lead : l)));
+        showNotification(`Lead "${data.lead.name}" updated.`);
+      } else {
+        setLeads((prev) => [data.lead, ...prev]);
+        showNotification(`New lead "${data.lead.name}" added to MySQL database.`);
+      }
+      setFormOpen(false);
+    } catch (err: any) {
+      setFormError(err.message || "Error saving lead");
+    } finally {
+      setIsSavingForm(false);
+    }
   };
 
   // Status Change via API
@@ -134,6 +255,17 @@ export default function DashboardLeads() {
 
   return (
     <div className="space-y-6">
+      {toast.open && (
+        <SwipeToast
+          open={toast.open}
+          onClose={() => setToast((t) => ({ ...t, open: false }))}
+          title={toast.title}
+          description={toast.desc}
+          background={toast.isError ? "#7f1d1d" : "#18181b"}
+          fuseColor={toast.isError ? "#f87171" : "#3BC8F6"}
+        />
+      )}
+
       {/* Toast Notification */}
       {feedback && (
         <div
@@ -182,7 +314,15 @@ export default function DashboardLeads() {
           </p>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
+          <button
+            type="button"
+            onClick={openAddLeadModal}
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#C07DFF] to-[#3BC8F6] text-white font-[family-name:var(--font-oswald)] uppercase text-xs font-bold tracking-wider shadow-md hover:opacity-95 transition-all cursor-pointer"
+          >
+            <span>+ Add Lead</span>
+          </button>
+
           <button
             onClick={fetchLeads}
             disabled={isLoading}
@@ -409,14 +549,21 @@ export default function DashboardLeads() {
                     </td>
 
                     <td className={`py-4 font-mono text-[11px] ${isDark ? "text-stone-400" : "text-stone-500"}`}>
-                      {new Date(lead.createdAt).toLocaleDateString("en-US", {
-                        month: "short",
-                        day: "numeric",
-                        year: "numeric",
-                      })}
+                      {formatIsoDateUTC(lead.createdAt)}
                     </td>
 
-                    <td className="py-4 pr-6 text-right space-x-2">
+                    <td className="py-4 pr-6 text-right space-x-2 whitespace-nowrap">
+                      <button
+                        onClick={() => openEditLeadModal(lead)}
+                        className={`px-2.5 py-1.5 rounded-lg border font-[family-name:var(--font-oswald)] uppercase text-[11px] font-bold tracking-wider transition-all cursor-pointer ${
+                          isDark
+                            ? "bg-white/5 hover:bg-white/15 border-white/15 text-stone-200"
+                            : "bg-stone-50 hover:bg-stone-200 text-stone-700 border-stone-200"
+                        }`}
+                      >
+                        Edit
+                      </button>
+
                       <button
                         onClick={() => setSelectedLead(lead)}
                         className={`px-3 py-1.5 rounded-lg border font-[family-name:var(--font-oswald)] uppercase text-[11px] font-bold tracking-wider transition-all cursor-pointer ${
@@ -547,11 +694,190 @@ export default function DashboardLeads() {
                   </select>
                 </div>
 
-                <span className="text-[10px] font-mono text-stone-400">
-                  Logged: {new Date(selectedLead.createdAt).toLocaleString()}
-                </span>
+                <div className="flex items-center gap-3">
+                  <button
+                    type="button"
+                    onClick={() => openEditLeadModal(selectedLead)}
+                    className="px-3 py-1 rounded-lg bg-[#C07DFF]/15 border border-[#C07DFF]/40 text-[#C07DFF] text-xs font-[family-name:var(--font-oswald)] uppercase font-bold cursor-pointer"
+                  >
+                    Edit Lead
+                  </button>
+                  <span className="text-[10px] font-mono text-stone-400">
+                    Logged: {formatIsoDateUTC(selectedLead.createdAt)}
+                  </span>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Add / Edit Lead Modal */}
+      {formOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md">
+          <div
+            className={`w-full max-w-xl max-h-[90vh] overflow-y-auto rounded-3xl border p-6 sm:p-8 space-y-5 shadow-2xl ${
+              isDark ? "bg-slate-900 border-white/20 text-white" : "bg-white border-[#E8E2F2] text-slate-900"
+            }`}
+          >
+            <div className="flex items-center justify-between border-b pb-4 border-stone-200 dark:border-white/10">
+              <h3 className="font-[family-name:var(--font-oswald)] uppercase font-bold text-2xl">
+                {editingLead ? `Edit Lead: ${editingLead.name}` : "Add New Inbound Lead"}
+              </h3>
+              <button
+                type="button"
+                onClick={() => setFormOpen(false)}
+                className="w-8 h-8 rounded-full border flex items-center justify-center cursor-pointer border-stone-300 dark:border-white/15"
+              >
+                ✕
+              </button>
+            </div>
+
+            {formError && (
+              <div className="p-3 rounded-xl bg-red-500/10 border border-red-500/30 text-red-500 text-xs">
+                {formError}
+              </div>
+            )}
+
+            <form onSubmit={handleSaveLeadForm} className="space-y-4 text-xs">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label className="block font-[family-name:var(--font-oswald)] uppercase font-bold mb-1">
+                    Full Name <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    value={formName}
+                    onChange={(e) => setFormName(e.target.value)}
+                    placeholder="Client Name"
+                    className={`w-full px-3.5 py-2.5 rounded-xl border ${
+                      isDark ? "bg-white/5 border-white/10 text-white" : "bg-white border-stone-300 text-slate-900"
+                    }`}
+                  />
+                </div>
+                <div>
+                  <label className="block font-[family-name:var(--font-oswald)] uppercase font-bold mb-1">
+                    Email <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    required
+                    value={formEmail}
+                    onChange={(e) => setFormEmail(e.target.value)}
+                    placeholder="client@company.com"
+                    className={`w-full px-3.5 py-2.5 rounded-xl border ${
+                      isDark ? "bg-white/5 border-white/10 text-white" : "bg-white border-stone-300 text-slate-900"
+                    }`}
+                  />
+                </div>
+                <div>
+                  <label className="block font-[family-name:var(--font-oswald)] uppercase font-bold mb-1">
+                    Phone / WhatsApp
+                  </label>
+                  <input
+                    type="tel"
+                    value={formPhone}
+                    onChange={(e) => setFormPhone(e.target.value)}
+                    placeholder="+92 300 0000000"
+                    className={`w-full px-3.5 py-2.5 rounded-xl border ${
+                      isDark ? "bg-white/5 border-white/10 text-white" : "bg-white border-stone-300 text-slate-900"
+                    }`}
+                  />
+                </div>
+                <div>
+                  <label className="block font-[family-name:var(--font-oswald)] uppercase font-bold mb-1">
+                    Company
+                  </label>
+                  <input
+                    type="text"
+                    value={formCompany}
+                    onChange={(e) => setFormCompany(e.target.value)}
+                    placeholder="Company / Organization"
+                    className={`w-full px-3.5 py-2.5 rounded-xl border ${
+                      isDark ? "bg-white/5 border-white/10 text-white" : "bg-white border-stone-300 text-slate-900"
+                    }`}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block font-[family-name:var(--font-oswald)] uppercase font-bold mb-1.5">
+                  Lead Status
+                </label>
+                <select
+                  value={formStatus}
+                  onChange={(e) => setFormStatus(e.target.value as LeadStatus)}
+                  className={`w-full px-3.5 py-2.5 rounded-xl border ${
+                    isDark ? "bg-slate-800 border-white/10 text-white" : "bg-white border-stone-300 text-slate-900"
+                  }`}
+                >
+                  <option value="New">New</option>
+                  <option value="Contacted">Contacted</option>
+                  <option value="In Review">In Review</option>
+                  <option value="Closed">Closed</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block font-[family-name:var(--font-oswald)] uppercase font-bold mb-1.5">
+                  Services Interested In
+                </label>
+                <div className="flex flex-wrap gap-1.5">
+                  {LEAD_SERVICE_OPTIONS.map((svc) => {
+                    const active = formServices.includes(svc);
+                    return (
+                      <button
+                        key={svc}
+                        type="button"
+                        onClick={() => toggleFormService(svc)}
+                        className={`px-2.5 py-1 rounded-lg border text-[11px] font-mono cursor-pointer transition-colors ${
+                          active
+                            ? "bg-gradient-to-r from-[#C07DFF] to-[#3BC8F6] text-white border-transparent font-bold"
+                            : isDark
+                            ? "bg-white/5 border-white/10 text-stone-400"
+                            : "bg-stone-100 border-stone-200 text-stone-600"
+                        }`}
+                      >
+                        {svc}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div>
+                <label className="block font-[family-name:var(--font-oswald)] uppercase font-bold mb-1">
+                  Project Brief / Notes
+                </label>
+                <textarea
+                  rows={3}
+                  value={formMessage}
+                  onChange={(e) => setFormMessage(e.target.value)}
+                  placeholder="Project scope, budget, or call notes..."
+                  className={`w-full px-3.5 py-2.5 rounded-xl border ${
+                    isDark ? "bg-white/5 border-white/10 text-white" : "bg-white border-stone-300 text-slate-900"
+                  }`}
+                />
+              </div>
+
+              <div className="flex items-center justify-end gap-3 pt-3 border-t border-stone-200 dark:border-white/10">
+                <button
+                  type="button"
+                  onClick={() => setFormOpen(false)}
+                  className="px-4 py-2 rounded-xl border text-xs font-mono uppercase cursor-pointer"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  disabled={isSavingForm}
+                  className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-[#C07DFF] to-[#3BC8F6] text-white font-[family-name:var(--font-oswald)] uppercase font-bold tracking-wider cursor-pointer disabled:opacity-50"
+                >
+                  {isSavingForm ? "Saving..." : editingLead ? "Save Changes" : "Create Lead"}
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       )}

@@ -1,0 +1,252 @@
+[
+  {
+    "id": "job-1794421133659-5o83",
+    "title": "AI Automation & LLM Systems Engineer",
+    "slug": "ai-automation-llm-systems-engineer-5o83",
+    "department": "AI & Automation",
+    "employmentType": "Full-Time",
+    "workMode": "Hybrid",
+    "location": "Lahore / Hybrid",
+    "experienceLevel": "Mid-Senior (2-4 yrs)",
+    "salaryRange": "$2,500 - $3,800 / mo",
+    "summary": "Design reliable AI agents, RAG pipelines, and automated business workflows integrated into real client backends.",
+    "description": "Join Venom Tech's AI Automation division to architect production LLM workflows, structured tool-calling integrations, and evaluation harnesses.",
+    "requirements": [
+      "Experience building LLM agent workflows with TypeScript or Python",
+      "REST/Webhook orchestration and structured JSON schema enforcement",
+      "Understanding of latency, cost controls, and guardrail testing"
+    ],
+    "benefits": [
+      "Access to frontier LLM tooling & compute",
+      "Hybrid studio workspace in Lahore",
+      "Rapid career progression to Lead Architect"
+    ],
+    "applyFormConfig": {
+      "headline": "Submit Your Application",
+      "submitButtonText": "Submit Application",
+      "askPhone": true,
+      "askLocation": true,
+      "askExperience": true,
+      "askExpectedSalary": true,
+      "askAvailability": true,
+      "askPortfolio": true,
+      "askLinkedIn": true,
+      "askCoverLetter": true,
+      "requireResume": true,
+      "customQuestions": [
+        {
+          "id": "q-ai-agent",
+          "label": "Which agentic workflow or automation system are you proudest of?",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "Describe stack, orchestration, and reliability safeguards..."
+        }
+      ],
+      "requirePortfolio": false,
+      "requireLinkedIn": false,
+      "requireCoverLetter": false,
+      "showPhone": true,
+      "showLocation": true,
+      "showExperienceYears": true,
+      "showExpectedSalary": true,
+      "showAvailability": true
+    },
+    "status": "Open",
+    "isFeatured": true,
+    "applicationDeadline": "",
+    "displayOrder": 0,
+    "createdAt": "2026-11-11T18:18:53.659Z",
+    "updatedAt": "2026-11-11T18:18:53.659Z"
+  },
+  {
+    "id": "job-1794421133626-salf",
+    "title": "Senior Full-Stack Next.js Engineer",
+    "slug": "senior-full-stack-nextjs-engineer-salf",
+    "department": "Engineering",
+    "employmentType": "Full-Time",
+    "workMode": "Remote",
+    "location": "Lahore / Remote",
+    "experienceLevel": "Senior (3-5 yrs)",
+    "salaryRange": "$3,000 - $4,500 / mo",
+    "summary": "Lead architecture and delivery of high-throughput Next.js, TypeScript, and MySQL web platforms for global Venom Tech clients.",
+    "description": "We are looking for a Senior Full-Stack Next.js Engineer to build modern App Router applications, scalable REST APIs, and polished interactive UI systems.",
+    "requirements": [
+      "3+ years with React, Next.js App Router, and TypeScript",
+      "Strong relational database modeling with MySQL and Drizzle ORM",
+      "Production debugging, performance profiling, and clean API design"
+    ],
+    "benefits": [
+      "Flexible remote-first schedule",
+      "Performance bonuses & learning budget",
+      "Direct ownership on flagship client builds"
+    ],
+    "applyFormConfig": {
+      "headline": "Submit Your Application",
+      "submitButtonText": "Submit Application",
+      "askPhone": true,
+      "askLocation": true,
+      "askExperience": true,
+      "askExpectedSalary": true,
+      "askAvailability": true,
+      "askPortfolio": true,
+      "askLinkedIn": true,
+      "askCoverLetter": true,
+      "requireResume": true,
+      "customQuestions": [
+        {
+          "id": "q-next-perf",
+          "label": "Describe a production Next.js or database bottleneck you solved.",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "Share the root cause, fix, and measurable outcome..."
+        },
+        {
+          "id": "q-relocate",
+          "label": "Preferred daily overlap window (PKT / EST / GMT)?",
+          "type": "text",
+          "required": false,
+          "placeholder": "e.g., 2 PM - 10 PM PKT"
+        }
+      ],
+      "requirePortfolio": false,
+      "requireLinkedIn": false,
+      "requireCoverLetter": true,
+      "showPhone": true,
+      "showLocation": true,
+      "showExperienceYears": true,
+      "showExpectedSalary": true,
+      "showAvailability": true
+    },
+    "status": "Open",
+    "isFeatured": true,
+    "applicationDeadline": "",
+    "displayOrder": 0,
+    "createdAt": "2026-11-11T18:18:53.626Z",
+    "updatedAt": "2026-11-11T18:18:53.626Z"
+  },
+  {
+    "id": "job-1794420989160-iwcn",
+    "title": "AI Automation & LLM Systems Engineer",
+    "slug": "ai-automation-llm-systems-engineer-iwcn",
+    "department": "AI & Automation",
+    "employmentType": "Full-Time",
+    "workMode": "Hybrid",
+    "location": "Lahore / Hybrid",
+    "experienceLevel": "Mid-Senior (2-4 yrs)",
+    "salaryRange": "$2,500 - $3,800 / mo",
+    "summary": "Design reliable AI agents, RAG pipelines, and automated business workflows integrated into real client backends.",
+    "description": "Join Venom Tech's AI Automation division to architect production LLM workflows, structured tool-calling integrations, and evaluation harnesses.",
+    "requirements": [
+      "Experience building LLM agent workflows with TypeScript or Python",
+      "REST/Webhook orchestration and structured JSON schema enforcement",
+      "Understanding of latency, cost controls, and guardrail testing"
+    ],
+    "benefits": [
+      "Access to frontier LLM tooling & compute",
+      "Hybrid studio workspace in Lahore",
+      "Rapid career progression to Lead Architect"
+    ],
+    "applyFormConfig": {
+      "headline": "Submit Your Application",
+      "submitButtonText": "Submit Application",
+      "askPhone": true,
+      "askLocation": true,
+      "askExperience": true,
+      "askExpectedSalary": true,
+      "askAvailability": true,
+      "askPortfolio": true,
+      "askLinkedIn": true,
+      "askCoverLetter": true,
+      "requireResume": true,
+      "customQuestions": [
+        {
+          "id": "q-ai-agent",
+          "label": "Which agentic workflow or automation system are you proudest of?",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "Describe stack, orchestration, and reliability safeguards..."
+        }
+      ],
+      "requirePortfolio": false,
+      "requireLinkedIn": false,
+      "requireCoverLetter": false,
+      "showPhone": true,
+      "showLocation": true,
+      "showExperienceYears": true,
+      "showExpectedSalary": true,
+      "showAvailability": true
+    },
+    "status": "Open",
+    "isFeatured": true,
+    "applicationDeadline": "",
+    "displayOrder": 0,
+    "createdAt": "2026-11-11T18:16:29.160Z",
+    "updatedAt": "2026-11-11T18:16:29.160Z"
+  },
+  {
+    "id": "job-1794420989122-m3zi",
+    "title": "Senior Full-Stack Next.js Engineer",
+    "slug": "senior-full-stack-nextjs-engineer-m3zi",
+    "department": "Engineering",
+    "employmentType": "Full-Time",
+    "workMode": "Remote",
+    "location": "Lahore / Remote",
+    "experienceLevel": "Senior (3-5 yrs)",
+    "salaryRange": "$3,000 - $4,500 / mo",
+    "summary": "Lead architecture and delivery of high-throughput Next.js, TypeScript, and MySQL web platforms for global Venom Tech clients.",
+    "description": "We are looking for a Senior Full-Stack Next.js Engineer to build modern App Router applications, scalable REST APIs, and polished interactive UI systems.",
+    "requirements": [
+      "3+ years with React, Next.js App Router, and TypeScript",
+      "Strong relational database modeling with MySQL and Drizzle ORM",
+      "Production debugging, performance profiling, and clean API design"
+    ],
+    "benefits": [
+      "Flexible remote-first schedule",
+      "Performance bonuses & learning budget",
+      "Direct ownership on flagship client builds"
+    ],
+    "applyFormConfig": {
+      "headline": "Submit Your Application",
+      "submitButtonText": "Submit Application",
+      "askPhone": true,
+      "askLocation": true,
+      "askExperience": true,
+      "askExpectedSalary": true,
+      "askAvailability": true,
+      "askPortfolio": true,
+      "askLinkedIn": true,
+      "askCoverLetter": true,
+      "requireResume": true,
+      "customQuestions": [
+        {
+          "id": "q-next-perf",
+          "label": "Describe a production Next.js or database bottleneck you solved.",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "Share the root cause, fix, and measurable outcome..."
+        },
+        {
+          "id": "q-relocate",
+          "label": "Preferred daily overlap window (PKT / EST / GMT)?",
+          "type": "text",
+          "required": false,
+          "placeholder": "e.g., 2 PM - 10 PM PKT"
+        }
+      ],
+      "requirePortfolio": false,
+      "requireLinkedIn": false,
+      "requireCoverLetter": true,
+      "showPhone": true,
+      "showLocation": true,
+      "showExperienceYears": true,
+      "showExpectedSalary": true,
+      "showAvailability": true
+    },
+    "status": "Open",
+    "isFeatured": true,
+    "applicationDeadline": "",
+    "displayOrder": 0,
+    "createdAt": "2026-11-11T18:16:29.122Z",
+    "updatedAt": "2026-11-11T18:16:29.122Z"
+  }
+]

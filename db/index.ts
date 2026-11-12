@@ -4,12 +4,14 @@ import * as blogSchema from "./schema/blog";
 import * as teamSchema from "./schema/team";
 import * as projectsSchema from "./schema/projects";
 import * as leadsSchema from "./schema/leads";
+import * as jobsSchema from "./schema/jobs";
 
 export const schema = {
   ...blogSchema,
   ...teamSchema,
   ...projectsSchema,
   ...leadsSchema,
+  ...jobsSchema,
 };
 
 let poolConnection: mysql.Pool | null = null;
@@ -55,4 +57,4 @@ export function getDatabaseConnection(): { db: any; pool: mysql.Pool | null } {
   return { db: null, pool: null };
 }
 
-export { blogSchema, teamSchema, projectsSchema, leadsSchema };
+export { blogSchema, teamSchema, projectsSchema, leadsSchema, jobsSchema };

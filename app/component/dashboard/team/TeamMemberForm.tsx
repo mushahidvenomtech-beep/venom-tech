@@ -364,7 +364,7 @@ export default function TeamMemberForm({
                 type="text"
                 value={image}
                 onChange={(e) => setImage(e.target.value)}
-                placeholder="/images/team/alex-rivera.jpg"
+                placeholder="/images/team/alex-rivera.webp"
                 className="flex-1 px-3.5 py-2 rounded-xl border border-stone-300 dark:border-white/10 bg-transparent text-xs focus:outline-none focus:ring-2 focus:ring-[#C07DFF]"
               />
 

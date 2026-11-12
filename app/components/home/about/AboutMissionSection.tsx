@@ -48,7 +48,7 @@ export default function AboutMissionSection() {
             {/* New Venom2 Brand Showcase Image */}
             <div className="relative w-full h-full flex items-center justify-center">
               <Image
-                src="/images/Venom2-DPoeIvKb.png"
+                src="/images/Venom2-DPoeIvKb.webp"
                 alt="Venom Tech - Your Vision, Our Expertise"
                 width={1000}
                 height={1000}

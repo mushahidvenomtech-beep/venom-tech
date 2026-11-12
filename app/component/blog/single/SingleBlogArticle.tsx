@@ -137,6 +137,7 @@ export default function SingleBlogArticle({ post }: SingleBlogArticleProps) {
             src={post.featuredImage}
             alt={post.featuredImageAlt || post.title}
             fill
+            sizes="(max-width: 1024px) 100vw, 896px"
             unoptimized={Boolean(
               post.featuredImage?.startsWith("data:") ||
                 post.featuredImage?.startsWith("blob:")

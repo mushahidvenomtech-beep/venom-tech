@@ -6,21 +6,21 @@ const REVIEWS = [
   {
     author: "Sarah Johnson",
     rating: 5,
-    avatar: "/images/testimonials/avatar-1.png",
+    avatar: "/images/testimonials/avatar-1.webp",
     quote:
       "Venom Tech did an outstanding job building our website. Their professional team delivered a stunning, functional site that has truly elevated our online presence",
   },
   {
     author: "David Lee",
     rating: 4,
-    avatar: "/images/testimonials/avatar-2.png",
+    avatar: "/images/testimonials/avatar-2.webp",
     quote:
       "Venom Tech has dramatically strengthened our online presence. Their revolutionary marketing strategies enhanced our client engagement, helping us reach and connect with the right targeted audience. With them redirecting our business in the right direction, our sales have skyrocketed.",
   },
   {
     author: "Emily Brown",
     rating: 5,
-    avatar: "/images/testimonials/avatar-3.png",
+    avatar: "/images/testimonials/avatar-3.webp",
     quote:
       "Venom Tech always delivers outstanding SEO services tailored to drive real results. Their expert team combines strategic keyword research, on-page optimization, and high-quality backlinking to boost online visibility and organic rankings.",
   },

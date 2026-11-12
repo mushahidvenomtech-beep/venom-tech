@@ -4,6 +4,7 @@ import Navbar from "@/app/component/global/navigation/Navbar";
 import SingleBlogHero from "@/app/components/singleblog/hero/SingleBlogHero";
 import SingleBlogContent from "@/app/components/singleblog/content/SingleBlogContent";
 import SingleBlogComments from "@/app/components/singleblog/comments/SingleBlogComments";
+import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
 
 export const metadata: Metadata = {
@@ -58,6 +59,9 @@ export default function SingleBlogScreen() {
 
         {/* Leave a Reply Form & Comments Thread */}
         <SingleBlogComments />
+
+        {/* Portfolio Showcase */}
+        <PortfolioSection />
       </main>
 
       {/* 3. Comprehensive Brand Footer */}

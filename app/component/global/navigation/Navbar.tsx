@@ -235,7 +235,7 @@ export default function Navbar() {
               aria-label="Venom Tech IT Solution Home"
             >
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt="Venom Tech IT Solution"
                 width={190}
                 height={46}
@@ -289,25 +289,8 @@ export default function Navbar() {
                 </svg>
               </button>
 
-              {/* Action Buttons: Get Bytely + Contact Us with StarBorder Animation */}
+              {/* Action Button: Contact Us with StarBorder Animation */}
               <div className="hidden sm:flex items-center gap-2 sm:gap-2.5">
-                <StarBorder
-                  as="link"
-                  href="https://bytely.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  color="#3BC8F6"
-                  trailColor="#C07DFF"
-                  stars={1}
-                  glow={0.7}
-                  sparkle
-                  radius={10}
-                  backgroundColor="#8B5CF6"
-                  textColor="#ffffff"
-                  className="px-4 py-2 font-[family-name:var(--font-oswald)] uppercase font-semibold text-xs tracking-wider transition-all shadow-sm hover:shadow"
-                >
-                  Get Bytely
-                </StarBorder>
                 <StarBorder
                   as="link"
                   href="/screens/contactus"

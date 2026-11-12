@@ -11,6 +11,7 @@ import "@/app/component/global/ui/Stepper.css";
 import "@/app/component/global/ui/SwipeToast.css";
 import SmoothScroll from "@/app/component/global/scroll/SmoothScroll";
 import ClickSpark from "@/app/component/global/ui/ClickSpark";
+import { getSiteUrl } from "@/lib/seo/siteUrl";
 
 const oswald = Oswald({
   variable: "--font-oswald",
@@ -26,7 +27,7 @@ const plusJakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://creat-agency.com";
+const siteUrl = getSiteUrl();
 
 export const viewport: Viewport = {
   themeColor: "#C07DFF",
@@ -102,7 +103,7 @@ const jsonLdOrg = {
       "@id": `${siteUrl}/#organization`,
       name: "Venom Tech IT Solution",
       url: siteUrl,
-      logo: `${siteUrl}/images/venom tech logo.png`,
+      logo: `${siteUrl}/images/venom tech logo.webp`,
       description: "Redefining digital marketing with visionary and innovative solutions. We are Venom Tech, where visions and strategies meet.",
       sameAs: [
         "https://www.facebook.com/people/Venom-Tech/61581955490808/",

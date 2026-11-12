@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Navbar from "@/app/component/global/navigation/Navbar";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
+import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import TestimonialsSection from "@/app/components/home/testimonials/TestimonialsSection";
 import FaqSection from "@/app/components/home/faq/FaqSection";
 import AiAutomationHero from "@/app/component/services/ai-automation/hero/AiAutomationHero";
@@ -38,7 +39,7 @@ const jsonLdAiAutomation = {
     "@type": "Organization",
     name: "Venom Tech IT Solution",
     url: "https://venomtech.pk",
-    logo: "https://venomtech.pk/images/venom tech logo.png",
+    logo: "https://venomtech.pk/images/venom tech logo.webp",
   },
   areaServed: "Global",
   serviceType: [
@@ -86,7 +87,10 @@ export default function AiAutomationPage() {
         {/* 7. Our AI Automation Process Flowchart */}
         <AiAutomationProcess />
 
-        {/* 8. What Our Clients Say (Real Reviews) */}
+        {/* 8. Portfolio Showcase */}
+        <PortfolioSection />
+
+        {/* 9. What Our Clients Say (Real Reviews) */}
         <TestimonialsSection />
 
         {/* 9. Frequently Asked Questions */}

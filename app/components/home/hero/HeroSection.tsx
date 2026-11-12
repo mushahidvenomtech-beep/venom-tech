@@ -59,7 +59,7 @@ export default function HeroSection() {
 
           {/* Portrait Composition Card with React Bits DecayCard WebGL Animation */}
           <DecayCard
-            image="/images/hero-decay-card.png"
+            image="/images/hero-decay-card.webp"
             width={400}
             height={500}
             radius={24}

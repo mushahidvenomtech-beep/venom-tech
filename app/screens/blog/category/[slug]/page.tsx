@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Navbar from "@/app/component/global/navigation/Navbar";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
+import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import BlogArchiveView from "@/app/component/blog/archive/BlogArchiveView";
 import { BlogStore } from "@/lib/blog/blogStore";
 
@@ -54,6 +55,7 @@ export default async function CategoryArchiveScreen({
           description={category?.description}
           posts={posts}
         />
+        <PortfolioSection />
       </main>
       <HomeFooter />
     </div>

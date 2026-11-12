@@ -5,7 +5,7 @@ import ServicesHeaderBanner from "@/app/components/services/header/ServicesHeade
 import ServicesGridSection from "@/app/components/services/grid/ServicesGridSection";
 import ServicesSmartEffort from "@/app/components/services/smart-effort/ServicesSmartEffort";
 import ServicesStatsSection from "@/app/components/services/stats/ServicesStatsSection";
-import ServicesPortfolioSection from "@/app/components/services/portfolio/ServicesPortfolioSection";
+import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import ServicesCtaBanner from "@/app/components/services/cta/ServicesCtaBanner";
 import ServicesFaqSection from "@/app/components/services/faq/ServicesFaqSection";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
@@ -63,7 +63,7 @@ export default function ServicesScreen() {
         <ServicesStatsSection />
 
         {/* Portfolio Showcase */}
-        <ServicesPortfolioSection />
+        <PortfolioSection />
 
         {/* Full-Width Black CTA Banner */}
         <ServicesCtaBanner />

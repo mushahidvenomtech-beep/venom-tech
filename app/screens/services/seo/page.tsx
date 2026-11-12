@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Navbar from "@/app/component/global/navigation/Navbar";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
+import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import TestimonialsSection from "@/app/components/home/testimonials/TestimonialsSection";
 import SeoHero from "@/app/component/services/seo/hero/SeoHero";
 import SeoStats from "@/app/component/services/seo/stats/SeoStats";
@@ -37,7 +38,7 @@ const jsonLdSeo = {
     "@type": "Organization",
     name: "Venom Tech IT Solution",
     url: "https://venomtech.pk",
-    logo: "https://venomtech.pk/images/venom tech logo.png",
+    logo: "https://venomtech.pk/images/venom tech logo.webp",
   },
   areaServed: ["Lahore", "Pakistan", "Global"],
   serviceType: [
@@ -81,7 +82,10 @@ export default function SeoPage() {
         {/* 6. One-Stop Solution Process Flowchart */}
         <SeoProcess />
 
-        {/* 7. What Our Clients Say (Verified Client Reviews) */}
+        {/* 7. Portfolio Showcase */}
+        <PortfolioSection />
+
+        {/* 8. What Our Clients Say (Verified Client Reviews) */}
         <TestimonialsSection />
 
         {/* 8. Frequently Asked Questions Accordion */}

@@ -31,7 +31,7 @@ async function testCrud() {
     'STUDIO LEAD',
     'Distributed Systems & Global AI Mesh',
     'from-indigo-950 to-slate-950',
-    '/images/team/liam-oconnor.jpg',
+    '/images/team/liam-oconnor.webp',
     'MT',
     JSON.stringify({ linkedin: 'https://linkedin.com' }),
     5,

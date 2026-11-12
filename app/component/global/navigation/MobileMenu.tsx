@@ -71,7 +71,7 @@ export default function MobileMenu({
         <div className="flex items-center justify-between px-6 py-5 border-b border-[#E8E2F2] bg-white/70">
           <div className="flex items-center">
             <Image
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt="Venom Tech IT Solution"
               width={160}
               height={38}

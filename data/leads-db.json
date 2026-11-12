@@ -1,5 +1,38 @@
 [
   {
+    "id": "lead-1794420992993-9y26",
+    "name": "Probe Lead Dashboard",
+    "email": "probe.dashboard@venomlead.test",
+    "phone": "+92 322 4445566",
+    "company": "Studio Alpha",
+    "services": [
+      "SEO",
+      "Graphic Designing"
+    ],
+    "message": "Added manually from CRM console.",
+    "status": "Contacted",
+    "source": "contact_page",
+    "createdAt": "2026-11-11T18:16:32.993Z",
+    "updatedAt": "2026-11-11T18:16:32.993Z"
+  },
+  {
+    "id": "lead-1794420992812-ejyw",
+    "name": "Probe Lead Contact Updated",
+    "email": "probe.contact@venomlead.test",
+    "phone": "+92 300 1112233",
+    "company": "Probe Corp Holdings",
+    "services": [
+      "AI Automation",
+      "Web Development",
+      "App Development"
+    ],
+    "message": "Need full-stack portal + AI workflow automation.",
+    "status": "Qualified",
+    "source": "contact_page_multistep",
+    "createdAt": "2026-11-11T18:16:32.000Z",
+    "updatedAt": "2026-11-11T18:16:34.353Z"
+  },
+  {
     "id": "lead-1794007655267-ogu9",
     "name": "furqan",
     "email": "furqan@gmail.com",

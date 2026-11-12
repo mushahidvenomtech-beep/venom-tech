@@ -7,6 +7,7 @@ import AboutStatsBar from "@/app/components/aboutus/stats/AboutStatsBar";
 import AboutAwardsSection from "@/app/components/aboutus/awards/AboutAwardsSection";
 import AboutMissionSection from "@/app/components/aboutus/mission/AboutMissionSection";
 import AboutTeamSection from "@/app/components/aboutus/team/AboutTeamSection";
+import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import AboutCtaBanner from "@/app/components/aboutus/cta/AboutCtaBanner";
 import AboutClientsStrip from "@/app/components/aboutus/clients/AboutClientsStrip";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
@@ -67,6 +68,9 @@ export default function AboutUsScreen() {
 
         {/* The Minds Behind The Magic (4 Team Members) */}
         <AboutTeamSection />
+
+        {/* Portfolio Showcase */}
+        <PortfolioSection />
 
         {/* Full-Width Black CTA Banner */}
         <AboutCtaBanner />

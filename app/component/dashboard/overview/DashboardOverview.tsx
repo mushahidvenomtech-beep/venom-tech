@@ -31,16 +31,20 @@ export default function DashboardOverview({ onNavigateTab }: DashboardOverviewPr
   const [projectsCount, setProjectsCount] = useState<number>(0);
   const [postsCount, setPostsCount] = useState<number>(0);
   const [teamCount, setTeamCount] = useState<number>(0);
+  const [jobsCount, setJobsCount] = useState<number>(0);
+  const [candidatesCount, setCandidatesCount] = useState<number>(0);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   const fetchDashboardData = useCallback(async () => {
     setIsLoading(true);
     try {
-      const [leadsRes, projectsRes, postsRes, teamRes] = await Promise.allSettled([
+      const [leadsRes, projectsRes, postsRes, teamRes, jobsRes, candsRes] = await Promise.allSettled([
         fetch("/api/leads", { cache: "no-store" }),
         fetch("/api/projects", { cache: "no-store" }),
         fetch("/api/blog/posts", { cache: "no-store" }),
         fetch("/api/team/members", { cache: "no-store" }),
+        fetch("/api/jobs?status=Open", { cache: "no-store" }),
+        fetch("/api/jobs/candidates", { cache: "no-store" }),
       ]);
 
       if (leadsRes.status === "fulfilled" && leadsRes.value.ok) {
@@ -68,6 +72,20 @@ export default function DashboardOverview({ onNavigateTab }: DashboardOverviewPr
         const data = await teamRes.value.json();
         if (data.success && Array.isArray(data.members)) {
           setTeamCount(data.members.length);
+        }
+      }
+
+      if (jobsRes.status === "fulfilled" && jobsRes.value.ok) {
+        const data = await jobsRes.value.json();
+        if (data.success && Array.isArray(data.jobs)) {
+          setJobsCount(data.jobs.length);
+        }
+      }
+
+      if (candsRes.status === "fulfilled" && candsRes.value.ok) {
+        const data = await candsRes.value.json();
+        if (data.success && data.counts) {
+          setCandidatesCount(data.counts.unattendedCount ?? data.counts.total ?? 0);
         }
       }
     } catch (err) {
@@ -413,14 +431,15 @@ export default function DashboardOverview({ onNavigateTab }: DashboardOverviewPr
             </h3>
             <div className="space-y-2 font-sans">
               {[
-                { label: "Leads Management", tab: "leads", count: `${totalLeads} total` },
-                { label: "Portfolio Projects", tab: "projects", count: `${projectsCount} projects` },
-                { label: "Editorial Blogs", tab: "blogs", count: `${postsCount} articles` },
-                { label: "Team Collective", tab: "team", count: `${teamCount} partners` },
+                { label: "Leads Management", tab: "leads", sub: "all-leads", count: `${totalLeads} total` },
+                { label: "Jobs & Candidates", tab: "jobs", sub: "all-jobs", count: `${jobsCount} open • ${candidatesCount} pending` },
+                { label: "Portfolio Projects", tab: "projects", sub: "all-projects", count: `${projectsCount} projects` },
+                { label: "Editorial Blogs", tab: "blogs", sub: "all-blogs", count: `${postsCount} articles` },
+                { label: "Team Collective", tab: "team", sub: "all-members", count: `${teamCount} partners` },
               ].map((mod, idx) => (
                 <button
                   key={idx}
-                  onClick={() => onNavigateTab(mod.tab)}
+                  onClick={() => onNavigateTab(mod.tab, mod.sub)}
                   className={`w-full p-3 rounded-xl border flex items-center justify-between transition-all group text-left cursor-pointer ${
                     isDark
                       ? "bg-white/[0.03] hover:bg-white/[0.08] border-white/10 text-stone-200 hover:text-white"

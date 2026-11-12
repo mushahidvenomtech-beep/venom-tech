@@ -88,7 +88,7 @@ export default function LoginForm() {
         <div className="text-center mb-6">
           <Link href="/screens/home" className="inline-block group">
             <Image
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt="Venom Tech IT Solution"
               width={200}
               height={48}

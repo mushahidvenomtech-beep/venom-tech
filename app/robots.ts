@@ -1,15 +1,35 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
+import { getSiteUrl, isVercelPreview } from "../lib/seo/siteUrl";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://creat-agency.com";
+  // Prevent indexing of temporary preview / staging deployments on Vercel
+  if (isVercelPreview()) {
+    return {
+      rules: {
+        userAgent: "*",
+        disallow: "/",
+      },
+    };
+  }
+
+  const baseUrl = getSiteUrl();
 
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-      disallow: ["/api/"],
-    },
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: [
+          "/dashboard",
+          "/dashboard/",
+          "/screens/dashboard",
+          "/screens/dashboard/",
+          "/login",
+          "/screens/login",
+          "/api/",
+        ],
+      },
+    ],
     sitemap: `${baseUrl}/sitemap.xml`,
   };
 }
-

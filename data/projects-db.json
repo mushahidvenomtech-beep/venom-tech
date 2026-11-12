@@ -13,7 +13,7 @@
     "liveUrl": "https://solcuranola.com/",
     "caseStudyUrl": "/screens/portfolio",
     "buttonText": "Live Project ↗",
-    "image": "/images/projects/1794006895919-solcura__1_.jpg",
+    "image": "/images/projects/1794006895919-solcura__1_.webp",
     "mockupType": "custom_image",
     "color": "from-stone-900 to-black",
     "tags": [],
@@ -21,7 +21,7 @@
     "isFeatured": true,
     "isActive": true,
     "createdAt": "2026-11-06T23:15:35.375Z",
-    "updatedAt": "2026-11-06T23:15:35.375Z"
+    "updatedAt": "2026-11-12T17:14:08.848Z"
   },
   {
     "id": "proj-1794006995411-hhcxq",
@@ -37,7 +37,7 @@
     "liveUrl": "https://grandrapidcarservice.com/",
     "caseStudyUrl": "/screens/portfolio",
     "buttonText": "Live Project ↗",
-    "image": "/images/projects/1794006968702-grand-rapids.png",
+    "image": "/images/projects/1794006968702-grand-rapids.webp",
     "mockupType": "custom_image",
     "color": "from-stone-900 to-black",
     "tags": [],
@@ -45,7 +45,7 @@
     "isFeatured": true,
     "isActive": true,
     "createdAt": "2026-11-06T23:16:35.411Z",
-    "updatedAt": "2026-11-06T23:16:35.411Z"
+    "updatedAt": "2026-11-12T17:14:19.385Z"
   },
   {
     "id": "proj-1794007049872-vetm0",
@@ -61,7 +61,7 @@
     "liveUrl": "https://lakeoconeelimo.com/",
     "caseStudyUrl": "/screens/portfolio",
     "buttonText": "Live Project ↗",
-    "image": "/images/projects/1794007024642-lake_oconee__1_.png",
+    "image": "/images/projects/1794007024642-lake_oconee__1_.webp",
     "mockupType": "custom_image",
     "color": "from-stone-900 to-black",
     "tags": [],
@@ -69,7 +69,7 @@
     "isFeatured": true,
     "isActive": true,
     "createdAt": "2026-11-06T23:17:29.872Z",
-    "updatedAt": "2026-11-06T23:17:29.872Z"
+    "updatedAt": "2026-11-12T17:14:28.805Z"
   },
   {
     "id": "proj-1794007081597-snboe",
@@ -85,7 +85,7 @@
     "liveUrl": "https://gamedaygrooming.com/",
     "caseStudyUrl": "/screens/portfolio",
     "buttonText": "Live Project ↗",
-    "image": "/images/projects/1794007058551-image__12_.png",
+    "image": "/images/projects/1794007058551-image__12_.webp",
     "mockupType": "custom_image",
     "color": "from-stone-900 to-black",
     "tags": [],
@@ -93,6 +93,6 @@
     "isFeatured": true,
     "isActive": true,
     "createdAt": "2026-11-06T23:18:01.597Z",
-    "updatedAt": "2026-11-06T23:18:01.597Z"
+    "updatedAt": "2026-11-12T17:16:45.943Z"
   }
 ]

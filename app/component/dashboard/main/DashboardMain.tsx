@@ -10,6 +10,7 @@ import DashboardServices from "@/app/component/dashboard/services/DashboardServi
 import DashboardBlogs from "@/app/component/dashboard/blogs/DashboardBlogs";
 import DashboardProjects from "@/app/component/dashboard/projects/DashboardProjects";
 import DashboardTeam from "@/app/component/dashboard/team/DashboardTeam";
+import DashboardJobs from "@/app/component/dashboard/jobs/DashboardJobs";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 import { DashboardThemeProvider, useDashboardTheme } from "@/app/component/dashboard/context/DashboardThemeContext";
 
@@ -175,6 +176,13 @@ function DashboardInner() {
             <DashboardTeam
               subTab={activeSubTab}
               onSelectSubTab={(sub) => handleSelectTab("team", sub)}
+            />
+          )}
+
+          {activeTab === "jobs" && (
+            <DashboardJobs
+              subTab={activeSubTab}
+              onSelectSubTab={(sub) => handleSelectTab("jobs", sub)}
             />
           )}
         </main>

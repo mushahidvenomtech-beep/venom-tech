@@ -1,13 +1,24 @@
 import fs from "fs";
 import path from "path";
-import { eq, desc, and, like } from "drizzle-orm";
+import { eq, desc, and, like, or } from "drizzle-orm";
 import { getDatabaseConnection, schema } from "@/db";
 import { Lead, NewLeadInput, UpdateLeadInput, LeadStatus } from "../types";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 const FALLBACK_LEADS_FILE = path.join(DATA_DIR, "leads-db.json");
 
-let mysqlFailed = false;
+let mysqlCooldownUntil = 0;
+
+function canUseMysql(): boolean {
+  return Date.now() >= mysqlCooldownUntil;
+}
+
+function noteMysqlError(err: any, context: string) {
+  if (err?.code === "ECONNREFUSED" || err?.cause?.code === "ECONNREFUSED") {
+    mysqlCooldownUntil = Date.now() + 15000;
+  }
+  console.warn(`MySQL ${context} failed for leads, using fallback:`, err);
+}
 
 function parseJsonSafe<T>(val: any, fallback: T): T {
   if (val === null || val === undefined) return fallback;
@@ -73,7 +84,7 @@ export class LeadDbService {
   static async getAll(options: { status?: string; search?: string } = {}): Promise<Lead[]> {
     const { db, pool } = getDatabaseConnection();
 
-    if (pool && db && !mysqlFailed) {
+    if (pool && db && canUseMysql()) {
       try {
         let query = db.select().from(schema.leads);
         const conditions: any[] = [];
@@ -82,7 +93,15 @@ export class LeadDbService {
           conditions.push(eq(schema.leads.status, options.status));
         }
         if (options.search) {
-          conditions.push(like(schema.leads.name, `%${options.search}%`));
+          const term = `%${options.search}%`;
+          conditions.push(
+            or(
+              like(schema.leads.name, term),
+              like(schema.leads.email, term),
+              like(schema.leads.company, term),
+              like(schema.leads.phone, term)
+            )
+          );
         }
 
         if (conditions.length > 0) {
@@ -94,10 +113,7 @@ export class LeadDbService {
           return rows.map(rowToLead);
         }
       } catch (err: any) {
-        if (err?.code === "ECONNREFUSED" || err?.cause?.code === "ECONNREFUSED") {
-          mysqlFailed = true;
-        }
-        console.warn("MySQL query failed for leads, using fallback:", err);
+        noteMysqlError(err, "query");
       }
     }
 
@@ -124,17 +140,14 @@ export class LeadDbService {
   static async getById(id: string): Promise<Lead | null> {
     const { db, pool } = getDatabaseConnection();
 
-    if (pool && db && !mysqlFailed) {
+    if (pool && db && canUseMysql()) {
       try {
         const rows = await db.select().from(schema.leads).where(eq(schema.leads.id, id)).limit(1);
         if (rows && rows.length > 0) {
           return rowToLead(rows[0]);
         }
       } catch (err: any) {
-        if (err?.code === "ECONNREFUSED" || err?.cause?.code === "ECONNREFUSED") {
-          mysqlFailed = true;
-        }
-        console.warn("MySQL query failed for lead by id:", err);
+        noteMysqlError(err, "getById");
       }
     }
 
@@ -164,7 +177,7 @@ export class LeadDbService {
     };
 
     const { db, pool } = getDatabaseConnection();
-    if (pool && db && !mysqlFailed) {
+    if (pool && db && canUseMysql()) {
       try {
         await db.insert(schema.leads).values({
           id: newLead.id,
@@ -180,10 +193,7 @@ export class LeadDbService {
           updatedAt: now,
         });
       } catch (err: any) {
-        if (err?.code === "ECONNREFUSED" || err?.cause?.code === "ECONNREFUSED") {
-          mysqlFailed = true;
-        }
-        console.warn("MySQL insert failed for lead:", err);
+        noteMysqlError(err, "insert");
       }
     }
 
@@ -204,12 +214,19 @@ export class LeadDbService {
     const now = new Date();
     const updated: Lead = {
       ...existing,
-      ...input,
+      name: input.name !== undefined ? input.name.trim() : existing.name,
+      email: input.email !== undefined ? input.email.trim().toLowerCase() : existing.email,
+      phone: input.phone !== undefined ? input.phone.trim() : existing.phone,
+      company: input.company !== undefined ? input.company.trim() : existing.company,
+      services: input.services !== undefined ? input.services : existing.services,
+      message: input.message !== undefined ? input.message.trim() : existing.message,
+      status: input.status ?? existing.status,
+      source: input.source !== undefined ? input.source.trim() : existing.source,
       updatedAt: now.toISOString(),
     };
 
     const { db, pool } = getDatabaseConnection();
-    if (pool && db && !mysqlFailed) {
+    if (pool && db && canUseMysql()) {
       try {
         await db
           .update(schema.leads)
@@ -226,10 +243,7 @@ export class LeadDbService {
           })
           .where(eq(schema.leads.id, id));
       } catch (err: any) {
-        if (err?.code === "ECONNREFUSED" || err?.cause?.code === "ECONNREFUSED") {
-          mysqlFailed = true;
-        }
-        console.warn("MySQL update failed for lead:", err);
+        noteMysqlError(err, "update");
       }
     }
 
@@ -244,14 +258,11 @@ export class LeadDbService {
    */
   static async delete(id: string): Promise<boolean> {
     const { db, pool } = getDatabaseConnection();
-    if (pool && db && !mysqlFailed) {
+    if (pool && db && canUseMysql()) {
       try {
         await db.delete(schema.leads).where(eq(schema.leads.id, id));
       } catch (err: any) {
-        if (err?.code === "ECONNREFUSED" || err?.cause?.code === "ECONNREFUSED") {
-          mysqlFailed = true;
-        }
-        console.warn("MySQL delete failed for lead:", err);
+        noteMysqlError(err, "delete");
       }
     }
 

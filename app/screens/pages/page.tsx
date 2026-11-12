@@ -4,6 +4,7 @@ import Navbar from "@/app/component/global/navigation/Navbar";
 import Footer from "@/app/component/global/footer/Footer";
 import PagesHero from "@/app/component/pages/hero/PagesHero";
 import PricingSection from "@/app/component/pages/pricing/PricingSection";
+import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import FaqAccordion from "@/app/component/pages/faq/FaqAccordion";
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ export default function PagesPage() {
       <main id="main-content">
         <PagesHero />
         <PricingSection />
+        <PortfolioSection />
         <FaqAccordion />
       </main>
 

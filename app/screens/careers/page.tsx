@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Navbar from "@/app/component/global/navigation/Navbar";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
+import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import CareersHero from "@/app/component/careers/hero/CareersHero";
 import CareersWhyChoose from "@/app/component/careers/whychoose/CareersWhyChoose";
 import CareersJobPortal from "@/app/component/careers/portal/CareersJobPortal";
@@ -27,7 +28,7 @@ const jsonLdCareers = {
     "@type": "Organization",
     name: "Venom Tech IT Solution",
     url: "https://venomtech.pk",
-    logo: "https://venomtech.pk/images/venom tech logo.png",
+    logo: "https://venomtech.pk/images/venom tech logo.webp",
   },
 };
 
@@ -53,6 +54,9 @@ export default function CareersPage() {
 
         {/* 3. Job Available Portal */}
         <CareersJobPortal />
+
+        {/* 4. Portfolio Showcase */}
+        <PortfolioSection />
       </main>
 
       {/* Unified Global Brand Footer */}

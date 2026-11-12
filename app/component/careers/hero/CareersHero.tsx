@@ -13,6 +13,7 @@ export default function CareersHero() {
           src="/images/careers-hero.webp"
           alt="Careers at Venom Tech - High-Tech Innovation"
           fill
+          sizes="100vw"
           className="object-cover opacity-60"
           priority
         />

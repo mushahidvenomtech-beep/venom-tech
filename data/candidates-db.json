@@ -1,0 +1,270 @@
+[
+  {
+    "id": "cand-1794421135303-zlvc",
+    "jobId": "general",
+    "jobTitle": "General Application (Talent Pool)",
+    "name": "Usman Farooq",
+    "email": "usman.farooq@venomcareer.test",
+    "phone": "+92 301 8894512",
+    "location": "Rawalpindi / Remote",
+    "experienceYears": "5 years",
+    "expectedSalary": "$3,400 / mo",
+    "availability": "Immediate",
+    "portfolioUrl": "https://usmanfarooq.design",
+    "linkedinUrl": "https://linkedin.com/in/usmanfarooq",
+    "resumeUrl": "/uploads/resumes/1794421135127-usman-farooq-portfolio-cv.pdf",
+    "resumeFileName": "usman-farooq-portfolio-cv.pdf",
+    "coverLetter": "General talent pool submission for Senior Product Designer / Frontend Motion Engineer.",
+    "customAnswers": [],
+    "status": "Shortlisted",
+    "isAttended": true,
+    "notes": "Exceptional design-engineering portfolio; shortlisted for product team review.",
+    "attendedAt": "2026-11-11T18:18:55.000Z",
+    "createdAt": "2026-11-11T18:18:55.000Z",
+    "updatedAt": "2026-11-11T18:19:09.098Z"
+  },
+  {
+    "id": "cand-1794421134909-oc9b",
+    "jobId": "job-1794421133659-5o83",
+    "jobTitle": "AI Automation & LLM Systems Engineer",
+    "name": "Zainab Raza",
+    "email": "zainab.raza@venomcareer.test",
+    "phone": "+92 345 6123344",
+    "location": "Lahore, Pakistan",
+    "experienceYears": "4 years",
+    "expectedSalary": "$3,500 / mo",
+    "availability": "2 weeks",
+    "portfolioUrl": "https://zainabraza.ai",
+    "linkedinUrl": "https://linkedin.com/in/zainab-raza-llm",
+    "resumeUrl": "/uploads/resumes/1794421134722-zainab-raza-llm-cv.pdf",
+    "resumeFileName": "zainab-raza-llm-cv.pdf",
+    "coverLetter": "Focused on reliable RAG indexing, eval datasets, and webhook automations connecting CRM & billing backends.",
+    "customAnswers": [
+      {
+        "questionId": "q-ai-agent",
+        "questionLabel": "Which agentic workflow or automation system are you proudest of?",
+        "answer": "Implemented automated invoice/contract parser with hybrid vector + SQL retrieval and 98.6% extraction accuracy."
+      }
+    ],
+    "status": "Interview Scheduled",
+    "isAttended": true,
+    "notes": "System architecture interview booked for Thursday 4:00 PM PKT.",
+    "attendedAt": "2026-11-11T18:18:55.080Z",
+    "createdAt": "2026-11-11T18:18:54.000Z",
+    "updatedAt": "2026-11-11T18:18:55.080Z"
+  },
+  {
+    "id": "cand-1794421134167-gpxu",
+    "jobId": "job-1794421133626-salf",
+    "jobTitle": "Senior Full-Stack Next.js Engineer",
+    "name": "Ayesha Siddiqui",
+    "email": "ayesha.siddiqui@venomcareer.test",
+    "phone": "+92 321 7783401",
+    "location": "Islamabad, Pakistan",
+    "experienceYears": "3.5 years",
+    "expectedSalary": "$3,200 / mo",
+    "availability": "1 month notice",
+    "portfolioUrl": "https://ayesha-builds.dev",
+    "linkedinUrl": "https://linkedin.com/in/ayesha-siddiqui",
+    "resumeUrl": "/uploads/resumes/1794421134007-ayesha-siddiqui-resume.pdf",
+    "resumeFileName": "ayesha-siddiqui-resume.pdf",
+    "coverLetter": "Full-stack React & TypeScript specialist experienced in Drizzle ORM, RBAC portals, and real-time analytics dashboards.",
+    "customAnswers": [
+      {
+        "questionId": "q-next-perf",
+        "questionLabel": "Describe a production Next.js or database bottleneck you solved.",
+        "answer": "Split monolithic client bundle into React Server Components and streamed suspense boundaries, cutting JS payload by 48%."
+      }
+    ],
+    "status": "Unattended",
+    "isAttended": false,
+    "notes": "Initial CV screen passed; awaiting technical phone screen slot.",
+    "attendedAt": null,
+    "createdAt": "2026-11-11T18:18:54.000Z",
+    "updatedAt": "2026-11-11T18:18:54.275Z"
+  },
+  {
+    "id": "cand-1794421133969-dez9",
+    "jobId": "job-1794421133626-salf",
+    "jobTitle": "Senior Full-Stack Next.js Engineer",
+    "name": "Hamza Tariq",
+    "email": "hamza.tariq@venomcareer.test",
+    "phone": "+92 300 4128890",
+    "location": "Lahore, Pakistan",
+    "experienceYears": "4 years",
+    "expectedSalary": "$3,600 / mo",
+    "availability": "Immediate (2 weeks notice)",
+    "portfolioUrl": "https://github.com/hamzatariq-dev",
+    "linkedinUrl": "https://linkedin.com/in/hamzatariq-dev",
+    "resumeUrl": "/uploads/resumes/1794421133893-hamza-tariq-nextjs-cv.pdf",
+    "resumeFileName": "hamza-tariq-nextjs-cv.pdf",
+    "coverLetter": "Built and scaled three multi-tenant SaaS products in Next.js App Router and MySQL with sub-120ms p95 API latency.",
+    "customAnswers": [
+      {
+        "questionId": "q-next-perf",
+        "questionLabel": "Describe a production Next.js or database bottleneck you solved.",
+        "answer": "Eliminated N+1 Drizzle joins and moved heavy dashboard aggregates into indexed MySQL queries, dropping TTFB from 1.4s to 95ms."
+      },
+      {
+        "questionId": "q-relocate",
+        "questionLabel": "Preferred daily overlap window (PKT / EST / GMT)?",
+        "answer": "1 PM - 10 PM PKT (full EST morning overlap)"
+      }
+    ],
+    "status": "New",
+    "isAttended": false,
+    "notes": "",
+    "attendedAt": null,
+    "createdAt": "2026-11-11T18:18:53.969Z",
+    "updatedAt": "2026-11-11T18:18:53.969Z"
+  },
+  {
+    "id": "cand-1794420991932-afu0",
+    "jobId": "general",
+    "jobTitle": "General Application",
+    "name": "Usman Farooq",
+    "email": "usman.farooq@venomcareer.test",
+    "phone": "+92 301 8894512",
+    "location": "Rawalpindi / Remote",
+    "experienceYears": "5 years",
+    "expectedSalary": "$3,400 / mo",
+    "availability": "Immediate",
+    "portfolioUrl": "https://usmanfarooq.design",
+    "linkedinUrl": "https://linkedin.com/in/usmanfarooq",
+    "resumeUrl": "/uploads/resumes/1794420991819-usman-farooq-portfolio-cv.pdf",
+    "resumeFileName": "usman-farooq-portfolio-cv.pdf",
+    "coverLetter": "General talent pool submission for Senior Product Designer / Frontend Motion Engineer.",
+    "customAnswers": [],
+    "status": "Shortlisted",
+    "isAttended": true,
+    "notes": "Exceptional design-engineering portfolio; shortlisted for product team review.",
+    "attendedAt": "2026-11-11T18:16:32.070Z",
+    "createdAt": "2026-11-11T18:16:31.000Z",
+    "updatedAt": "2026-11-11T18:16:32.070Z"
+  },
+  {
+    "id": "cand-1794420991772-717w",
+    "jobId": "job-1794420989160-iwcn",
+    "jobTitle": "AI Automation & LLM Systems Engineer",
+    "name": "Zainab Raza",
+    "email": "zainab.raza@venomcareer.test",
+    "phone": "+92 345 6123344",
+    "location": "Lahore, Pakistan",
+    "experienceYears": "4 years",
+    "expectedSalary": "$3,500 / mo",
+    "availability": "2 weeks",
+    "portfolioUrl": "https://zainabraza.ai",
+    "linkedinUrl": "https://linkedin.com/in/zainab-raza-llm",
+    "resumeUrl": "/uploads/resumes/1794420991726-zainab-raza-llm-cv.pdf",
+    "resumeFileName": "zainab-raza-llm-cv.pdf",
+    "coverLetter": "Focused on reliable RAG indexing, eval datasets, and webhook automations connecting CRM & billing backends.",
+    "customAnswers": [
+      {
+        "questionId": "q-ai-agent",
+        "questionLabel": "Which agentic workflow or automation system are you proudest of?",
+        "answer": "Implemented automated invoice/contract parser with hybrid vector + SQL retrieval and 98.6% extraction accuracy."
+      }
+    ],
+    "status": "Interview Scheduled",
+    "isAttended": true,
+    "notes": "System architecture interview booked for Thursday 4:00 PM PKT.",
+    "attendedAt": "2026-11-11T18:16:31.803Z",
+    "createdAt": "2026-11-11T18:16:31.000Z",
+    "updatedAt": "2026-11-11T18:16:31.803Z"
+  },
+  {
+    "id": "cand-1794420991561-jhjy",
+    "jobId": "job-1794420989160-iwcn",
+    "jobTitle": "AI Automation & LLM Systems Engineer",
+    "name": "Bilal Mahmood",
+    "email": "bilal.mahmood@venomcareer.test",
+    "phone": "+92 333 9012456",
+    "location": "Karachi, Pakistan",
+    "experienceYears": "3 years",
+    "expectedSalary": "$3,000 / mo",
+    "availability": "Immediate",
+    "portfolioUrl": "https://github.com/bilal-ai-systems",
+    "linkedinUrl": "https://linkedin.com/in/bilal-mahmood-ai",
+    "resumeUrl": "/uploads/resumes/1794420991446-bilal-mahmood-ai-cv.pdf",
+    "resumeFileName": "bilal-mahmood-ai-cv.pdf",
+    "coverLetter": "Engineered automated support triage and structured CRM extraction agents running in production with deterministic schema validators.",
+    "customAnswers": [
+      {
+        "questionId": "q-ai-agent",
+        "questionLabel": "Which agentic workflow or automation system are you proudest of?",
+        "answer": "Built a multi-step lead qualification pipeline using tool calling, retries, and Postgres audit trails processing 15k tickets/month."
+      }
+    ],
+    "status": "Attended",
+    "isAttended": true,
+    "notes": "Reviewed portfolio & spoke briefly on call; strong fit for AI workflows.",
+    "attendedAt": "2026-11-11T18:16:31.636Z",
+    "createdAt": "2026-11-11T18:16:31.000Z",
+    "updatedAt": "2026-11-11T18:16:31.636Z"
+  },
+  {
+    "id": "cand-1794420990099-j08i",
+    "jobId": "job-1794420989122-m3zi",
+    "jobTitle": "Senior Full-Stack Next.js Engineer",
+    "name": "Ayesha Siddiqui",
+    "email": "ayesha.siddiqui@venomcareer.test",
+    "phone": "+92 321 7783401",
+    "location": "Islamabad, Pakistan",
+    "experienceYears": "3.5 years",
+    "expectedSalary": "$3,200 / mo",
+    "availability": "1 month notice",
+    "portfolioUrl": "https://ayesha-builds.dev",
+    "linkedinUrl": "https://linkedin.com/in/ayesha-siddiqui",
+    "resumeUrl": "/uploads/resumes/1794420990040-ayesha-siddiqui-resume.pdf",
+    "resumeFileName": "ayesha-siddiqui-resume.pdf",
+    "coverLetter": "Full-stack React & TypeScript specialist experienced in Drizzle ORM, RBAC portals, and real-time analytics dashboards.",
+    "customAnswers": [
+      {
+        "questionId": "q-next-perf",
+        "questionLabel": "Describe a production Next.js or database bottleneck you solved.",
+        "answer": "Split monolithic client bundle into React Server Components and streamed suspense boundaries, cutting JS payload by 48%."
+      }
+    ],
+    "status": "Unattended",
+    "isAttended": false,
+    "notes": "Initial CV screen passed; awaiting technical phone screen slot.",
+    "attendedAt": null,
+    "createdAt": "2026-11-11T18:16:30.000Z",
+    "updatedAt": "2026-11-11T18:16:31.409Z"
+  },
+  {
+    "id": "cand-1794420989867-22yg",
+    "jobId": "job-1794420989122-m3zi",
+    "jobTitle": "Senior Full-Stack Next.js Engineer",
+    "name": "Hamza Tariq",
+    "email": "hamza.tariq@venomcareer.test",
+    "phone": "+92 300 4128890",
+    "location": "Lahore, Pakistan",
+    "experienceYears": "4 years",
+    "expectedSalary": "$3,600 / mo",
+    "availability": "Immediate (2 weeks notice)",
+    "portfolioUrl": "https://github.com/hamzatariq-dev",
+    "linkedinUrl": "https://linkedin.com/in/hamzatariq-dev",
+    "resumeUrl": "/uploads/resumes/1794420989800-hamza-tariq-nextjs-cv.pdf",
+    "resumeFileName": "hamza-tariq-nextjs-cv.pdf",
+    "coverLetter": "Built and scaled three multi-tenant SaaS products in Next.js App Router and MySQL with sub-120ms p95 API latency.",
+    "customAnswers": [
+      {
+        "questionId": "q-next-perf",
+        "questionLabel": "Describe a production Next.js or database bottleneck you solved.",
+        "answer": "Eliminated N+1 Drizzle joins and moved heavy dashboard aggregates into indexed MySQL queries, dropping TTFB from 1.4s to 95ms."
+      },
+      {
+        "questionId": "q-relocate",
+        "questionLabel": "Preferred daily overlap window (PKT / EST / GMT)?",
+        "answer": "1 PM - 10 PM PKT (full EST morning overlap)"
+      }
+    ],
+    "status": "New",
+    "isAttended": false,
+    "notes": "",
+    "attendedAt": null,
+    "createdAt": "2026-11-11T18:16:29.867Z",
+    "updatedAt": "2026-11-11T18:16:29.867Z"
+  }
+]

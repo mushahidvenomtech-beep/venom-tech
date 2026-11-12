@@ -33,6 +33,23 @@ export async function PUT(
     const { id } = await params;
     const body = await request.json();
 
+    if (body.name !== undefined && !String(body.name).trim()) {
+      return NextResponse.json(
+        { success: false, error: "Lead name cannot be empty" },
+        { status: 400 }
+      );
+    }
+
+    if (body.email !== undefined) {
+      const trimmedEmail = String(body.email).trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail)) {
+        return NextResponse.json(
+          { success: false, error: "Please provide a valid email address" },
+          { status: 400 }
+        );
+      }
+    }
+
     const updated = await LeadDbService.update(id, body);
     if (!updated) {
       return NextResponse.json(

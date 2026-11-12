@@ -28,7 +28,7 @@ const INITIAL_HOMEPAGE_POSTS: BlogPost[] = [
     author: {
       name: "Venom Tech Team",
       role: "AI & Cloud Architecture",
-      avatar: "/images/team/alex-rivera.jpg",
+      avatar: "/images/team/alex-rivera.webp",
     },
     categories: ["AI & Automation", "App Development"],
     tags: ["AI Automation", "Next.js 16"],

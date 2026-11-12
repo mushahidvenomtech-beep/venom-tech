@@ -14,6 +14,9 @@ export default function PortfolioCard({ project, index }: PortfolioCardProps) {
   const numberStr = String(index + 1).padStart(2, "0");
   const targetUrl = project.liveUrl || project.caseStudyUrl || "/screens/portfolio";
   const isExternal = targetUrl.startsWith("http");
+  const cleanButtonText = (project.buttonText || "Live Project")
+    .replace(/[\u2197\u2192↗→]+$/g, "")
+    .trim();
 
   return (
     <div className="group bg-white border border-stone-200 hover:border-black transition-all duration-300 flex flex-col justify-between p-6 shadow-sm">
@@ -155,9 +158,12 @@ export default function PortfolioCard({ project, index }: PortfolioCardProps) {
             rel={isExternal ? "noopener noreferrer" : undefined}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-black hover:bg-gradient-to-r hover:from-[#C07DFF] hover:to-[#3BC8F6] text-white font-[family-name:var(--font-oswald)] uppercase text-xs font-bold tracking-wider transition-all duration-300 shadow-sm active:scale-95 group/btn cursor-pointer"
           >
-            <span>{project.buttonText || "Live Project"}</span>
-            <span className="text-[#C07DFF] group-hover/btn:text-white transition-colors text-sm font-normal">
-              &nearr;
+            <span>{cleanButtonText || "Live Project"}</span>
+            <span
+              aria-hidden="true"
+              className="text-[#C07DFF] group-hover/btn:text-white transition-colors text-sm font-normal"
+            >
+              {"\u2197"}
             </span>
           </a>
 

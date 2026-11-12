@@ -9,7 +9,7 @@ export default function NotFound() {
       <header className="border-b border-[#E8E2F2] px-6 py-5 max-w-[1440px] mx-auto w-full flex items-center justify-between">
         <Link href="/screens/home" className="inline-flex items-center group">
           <Image
-            src="/images/logo.png"
+            src="/images/logo.webp"
             alt="Venom Tech IT Solution"
             width={160}
             height={38}
