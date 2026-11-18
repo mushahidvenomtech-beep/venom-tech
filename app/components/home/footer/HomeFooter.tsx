@@ -4,7 +4,25 @@ import Image from "next/image";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 import StarBorder from "@/app/component/global/ui/StarBorder";
 
-export default function HomeFooter() {
+export interface HomeFooterProps {
+  ctaBadge?: string;
+  ctaHeading?: React.ReactNode;
+  ctaLine?: string;
+  ctaButtonText?: string;
+  ctaButtonHref?: string;
+}
+
+export default function HomeFooter({
+  ctaBadge = "Let's Build Together",
+  ctaHeading = (
+    <>
+      Let&apos;s Build Something <span className="text-brand-gradient">Great Together</span>
+    </>
+  ),
+  ctaLine,
+  ctaButtonText = "Start Your Project",
+  ctaButtonHref = "/screens/contactus",
+}: HomeFooterProps = {}) {
   return (
     <footer className="bg-gradient-to-b from-transparent via-[#F5EBFF]/40 to-[#E8F9FF]/60 pt-10 sm:pt-14 pb-8 sm:pb-10 px-4 sm:px-6 lg:px-10 border-t border-[#E8E2F2] relative overflow-hidden">
       {/* Large Decorative Asterisk Watermark in Bottom Right */}
@@ -19,18 +37,22 @@ export default function HomeFooter() {
             <div className="inline-flex items-center gap-2 mb-4 px-3.5 py-1.5 bg-[#E8F9FF] border border-[#3BC8F6]/30 rounded-full">
               <AsteriskIcon className="w-3.5 h-3.5 text-[#0284C7]" color="#0284C7" strokeWidth={3} />
               <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#0284C7] font-semibold">
-                Let&apos;s Build Together
+                {ctaBadge}
               </span>
             </div>
-            <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[44px] sm:text-[44px] lg:text-[44px] text-[#000000] tracking-tight leading-[1.08]">
-              Join hands with us and <br className="hidden sm:inline" />
-              <span className="text-brand-gradient">start your success journey today.</span>
+            <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[34px] sm:text-[44px] lg:text-[44px] text-[#000000] tracking-tight leading-[1.08]">
+              {ctaHeading}
             </h2>
+            {ctaLine && (
+              <p className="font-sans text-stone-600 text-sm sm:text-base mt-2 leading-relaxed max-w-2xl">
+                {ctaLine}
+              </p>
+            )}
           </div>
 
           <StarBorder
             as="link"
-            href="/screens/contactus"
+            href={ctaButtonHref}
             color="#3BC8F6"
             trailColor="#C07DFF"
             stars={2}
@@ -41,7 +63,7 @@ export default function HomeFooter() {
             textColor="#ffffff"
             className="inline-flex items-center justify-center gap-3 px-8 py-4 text-white font-[family-name:var(--font-oswald)] uppercase font-bold text-sm tracking-wider shadow-lg shadow-[#3BC8F6]/20 hover:opacity-95 hover:scale-[1.02] active:scale-[0.98] transition-all flex-shrink-0 self-start lg:self-center cursor-pointer"
           >
-            <span>Start Project</span>
+            <span>{ctaButtonText}</span>
             <span>&rarr;</span>
           </StarBorder>
         </div>

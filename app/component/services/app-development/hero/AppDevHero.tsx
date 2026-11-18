@@ -20,26 +20,25 @@ export default function AppDevHero() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#E8F9FF]/10 backdrop-blur-md border border-[#3BC8F6]/40 rounded-full">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#3BC8F6]" color="#3BC8F6" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#3BC8F6] font-semibold">
-              Venom Tech IT Solution &bull; Mobile Engineering
+              Mobile App Development
             </span>
           </div>
 
           <h1 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight leading-[0.96]">
-            Transform Your Business with{" "}
-            <span className="text-brand-gradient">Custom Mobile App Development</span> Services
+            Custom Mobile App <span className="text-brand-gradient">Development Company</span> in Pakistan
           </h1>
 
           <p className="font-sans text-stone-300 text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl">
-            Empower your business with high-performance iOS, Android, and cross-platform mobile applications engineered for fluid user journeys, rock-solid security, and scalable commercial momentum.
+            Turn your idea into a fast, secure and user-friendly app. Venom Tech designs and builds iOS, Android and cross-platform apps for startups and businesses in Lahore and across Pakistan, handling everything from planning to launch.
           </p>
 
           {/* Key Capabilities List */}
           <ul className="space-y-3 pt-2 font-sans text-stone-300 text-sm sm:text-base">
             {[
-              "High-Performance Native iOS (Swift) & Android (Kotlin) Architecture",
-              "Cross-Platform Codebases with React Native & Flutter for Rapid Time-to-Market",
-              "Scalable Cloud Backends, Real-Time WebSockets & Payment Integrations",
-              "App Store & Google Play Submission, ASO, and 24/7 SLA Maintenance",
+              "Native iOS and Android apps",
+              "Cross-platform apps with Flutter and React Native",
+              "Secure, scalable backends and APIs",
+              "App Store and Google Play submission handled for you",
             ].map((item, idx) => (
               <li key={idx} className="flex items-center gap-3">
                 <span className="w-5 h-5 rounded-full bg-[#3BC8F6]/20 border border-[#3BC8F6] text-[#3BC8F6] flex items-center justify-center flex-shrink-0 text-xs font-bold">
@@ -74,6 +73,8 @@ export default function AppDevHero() {
             source="service_app_development"
             variant="glass-dark"
             compact
+            formTitle="Tell Us About Your App Idea"
+            headingTag="h2"
           />
         </div>
       </div>

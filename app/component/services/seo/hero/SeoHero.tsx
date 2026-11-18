@@ -20,25 +20,25 @@ export default function SeoHero() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#E8F9FF]/10 backdrop-blur-md border border-[#3BC8F6]/40 rounded-full">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#3BC8F6]" color="#3BC8F6" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#3BC8F6] font-semibold">
-              Venom Tech IT Solution &bull; Search Engine Optimization
+              Search Engine Optimization
             </span>
           </div>
 
           <h1 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight leading-[0.96]">
-            Expert <span className="text-brand-gradient">SEO Services</span> in Lahore to Boost Your Online Presence
+            Expert <span className="text-brand-gradient">SEO Services</span> in Lahore to Grow Your Online Presence
           </h1>
 
           <p className="font-sans text-stone-300 text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl">
-            Dominate search rankings, drive high-intent organic traffic, and turn Google clicks into paying customers with data-backed technical SEO, keyword authority, and local search dominance.
+            Get found by customers who are already searching for what you sell. Our SEO team in Lahore helps businesses across Pakistan climb Google rankings and turn organic traffic into steady leads.
           </p>
 
           {/* Key Capabilities List */}
           <ul className="space-y-3 pt-2 font-sans text-stone-300 text-sm sm:text-base">
             {[
-              "Strategic Optimization & Intent-Driven Keyword Mapping",
-              "Off-Page High-Authority Link Building & Digital PR",
-              "Technical SEO Auditing, Crawlability & Core Web Vitals",
-              "Local SEO, Google Business Profile & Geo-Targeted Rankings",
+              "In-depth keyword research and mapping",
+              "White-hat, high-authority link building",
+              "Technical SEO audits and Core Web Vitals fixes",
+              "Local SEO and Google Business Profile optimization",
             ].map((item, idx) => (
               <li key={idx} className="flex items-center gap-3">
                 <span className="w-5 h-5 rounded-full bg-[#3BC8F6]/20 border border-[#3BC8F6] text-[#3BC8F6] flex items-center justify-center flex-shrink-0 text-xs font-bold">
@@ -73,6 +73,8 @@ export default function SeoHero() {
             source="service_seo"
             variant="glass-dark"
             compact
+            formTitle="Get Your Free SEO Audit"
+            headingTag="h2"
           />
         </div>
       </div>

@@ -10,7 +10,7 @@ export default function AppDevProcess() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#E8F9FF] border border-[#3BC8F6]/30 rounded-full">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#0284C7]" color="#0284C7" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#0284C7] font-semibold">
-              Execution Roadmap
+              Process
             </span>
           </div>
 
@@ -19,7 +19,7 @@ export default function AppDevProcess() {
           </h2>
 
           <p className="font-sans text-stone-600 text-sm sm:text-base lg:text-lg leading-relaxed">
-            A battle-tested 5-stage lifecycle engineered to take your mobile concept from discovery and UI/UX design to App Store launch and continuous scaling.
+            A clear, five-step process that keeps your app on time and on budget.
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export default function AppDevProcess() {
                 Discovery &amp; Strategy
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Defining target users, monetization models, product specification, system architecture, and agile sprint milestones.
+                Define goals, users, features and the right tech stack.
               </p>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function AppDevProcess() {
                 UI/UX Design
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Crafting intuitive wireframes, interactive Figma prototypes, and design tokens built for responsive mobile ergonomics.
+                Wireframes, prototypes and polished screen designs.
               </p>
             </div>
 
@@ -73,7 +73,7 @@ export default function AppDevProcess() {
                 Development
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Writing clean, tested code in Swift, Kotlin, Flutter, or React Native connected to scalable cloud APIs and databases.
+                Front-end, back-end and API development in agile sprints.
               </p>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function AppDevProcess() {
                 Testing &amp; QA
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Automated regression suites, device matrix testing across iOS/Android hardware, security audits, and load profiling.
+                Manual and automated testing across devices and OS versions.
               </p>
             </div>
 
@@ -108,7 +108,7 @@ export default function AppDevProcess() {
                 Deployment &amp; Launch
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                App Store &amp; Google Play Store compliance, ASO keyword optimization, release telemetry, and 24/7 post-launch maintenance.
+                App Store and Google Play publishing, plus post-launch support.
               </p>
             </div>
           </div>
@@ -117,4 +117,3 @@ export default function AppDevProcess() {
     </section>
   );
 }
-

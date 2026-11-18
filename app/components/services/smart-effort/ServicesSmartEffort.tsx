@@ -1,10 +1,11 @@
 import React from "react";
+import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 
 const SKILLS = [
-  { name: "Creative Strategy & Brand Architecture", percentage: 95 },
-  { name: "Digital Product & UI/UX Development", percentage: 92 },
-  { name: "Full-Stack Next.js Engineering", percentage: 98 },
+  { name: "Creative Strategy & Branding", percentage: 95 },
+  { name: "UI/UX & Digital Product Design", percentage: 92 },
+  { name: "Web & App Development", percentage: 98 },
 ];
 
 export default function ServicesSmartEffort() {
@@ -15,7 +16,7 @@ export default function ServicesSmartEffort() {
         <div className="lg:col-span-6 relative flex justify-center">
           <div className="relative w-full max-w-[460px] aspect-[4/5]">
             {/* Primary Dark Portrait Card */}
-            <div className="w-[85%] h-[90%] bg-black border-2 border-black overflow-hidden shadow-2xl relative">
+            <div className="w-[85%] h-[90%] bg-black border-2 border-black overflow-hidden shadow-2xl relative rounded-2xl">
               <svg viewBox="0 0 380 460" className="w-full h-full object-cover" fill="none">
                 <rect width="380" height="460" fill="#0C0D0E" />
                 <circle cx="190" cy="180" r="140" fill="#1C1E22" />
@@ -25,12 +26,12 @@ export default function ServicesSmartEffort() {
               </svg>
 
               <div className="absolute top-4 left-4 text-white/50 font-mono text-[11px] uppercase tracking-widest">
-                CREAT / STUDIO
+                VENOM TECH / STUDIO
               </div>
             </div>
 
             {/* Overlapping White Studio Card (Bottom Right) */}
-            <div className="absolute bottom-0 right-0 w-[55%] h-[50%] bg-white border-2 border-black p-4 shadow-2xl flex flex-col justify-between">
+            <div className="absolute bottom-0 right-0 w-[55%] h-[50%] bg-white border-2 border-black p-4 shadow-2xl flex flex-col justify-between rounded-xl">
               <div className="flex items-center justify-between">
                 <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-wider text-stone-500 font-bold">
                   Technical Precision
@@ -38,7 +39,7 @@ export default function ServicesSmartEffort() {
                 <AsteriskIcon className="w-4 h-4 text-[#C07DFF]" color="#C07DFF" strokeWidth={3} />
               </div>
 
-              <div className="h-16 bg-stone-100 border border-stone-200 flex items-center justify-center">
+              <div className="h-16 bg-stone-100 border border-stone-200 flex items-center justify-center rounded-lg">
                 <span className="font-[family-name:var(--font-oswald)] uppercase text-stone-400 font-bold tracking-widest text-xs">
                   Design &bull; Motion &bull; Code
                 </span>
@@ -49,8 +50,8 @@ export default function ServicesSmartEffort() {
               </div>
             </div>
 
-            {/* Orange "+40k" Floating Badge */}
-            <div className="absolute top-1/2 left-0 -translate-y-1/2 bg-gradient-to-r from-[#C07DFF] to-[#3BC8F6] text-white px-5 py-3.5 border-2 border-black shadow-xl flex items-center gap-3">
+            {/* "+40k" Floating Badge */}
+            <div className="absolute top-1/2 left-0 -translate-y-1/2 bg-gradient-to-r from-[#C07DFF] to-[#3BC8F6] text-white px-5 py-3.5 border-2 border-black shadow-xl flex items-center gap-3 rounded-xl z-20">
               <div className="font-[family-name:var(--font-oswald)] font-extrabold text-3xl leading-none">
                 +40k
               </div>
@@ -63,20 +64,20 @@ export default function ServicesSmartEffort() {
 
         {/* Right Side: Copy & Progress Bars */}
         <div className="lg:col-span-6">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <AsteriskIcon className="w-4 h-4 text-[#C07DFF]" color="#C07DFF" strokeWidth={3} />
+          <div className="inline-flex items-center gap-1.5 mb-3 px-3 py-1 bg-[#F4E9FF] border border-[#C07DFF]/30 rounded-full">
+            <AsteriskIcon className="w-3.5 h-3.5 text-[#C07DFF]" color="#C07DFF" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#C07DFF] font-semibold">
               Why Choose Us
             </span>
           </div>
 
-          <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-4xl sm:text-6xl text-[#111111] tracking-tight leading-[0.95] mb-6">
+          <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[34px] sm:text-[44px] lg:text-[48px] text-[#111111] tracking-tight leading-[1.08] mb-6">
             We Work <span className="text-stone-400 font-light">Smart,</span><br />
-            Effort That <span className="text-[#C07DFF]">Counts.</span>
+            With Effort That <span className="text-brand-gradient">Counts</span>
           </h2>
 
           <p className="font-sans text-stone-600 text-base sm:text-lg leading-relaxed mb-8">
-            Success in competitive markets requires both creative audacity and technical discipline. We build high-conviction brands that resonate culturally and perform commercially.
+            Great marketing needs both creativity and technical skill. Our team pairs brand thinking with modern development and data analysis, so every campaign, website and design is built to perform, not just to look good.
           </p>
 
           {/* Progress Bars */}
@@ -87,9 +88,9 @@ export default function ServicesSmartEffort() {
                   <span>{skill.name}</span>
                   <span className="text-[#C07DFF] font-bold">{skill.percentage}%</span>
                 </div>
-                <div className="w-full h-2.5 bg-stone-200 overflow-hidden">
+                <div className="w-full h-2.5 bg-stone-200 overflow-hidden rounded-full">
                   <div
-                    className="h-full bg-black transition-all duration-1000 ease-out"
+                    className="h-full bg-gradient-to-r from-black to-[#C07DFF] transition-all duration-1000 ease-out rounded-full"
                     style={{ width: `${skill.percentage}%` }}
                   />
                 </div>
@@ -97,16 +98,16 @@ export default function ServicesSmartEffort() {
             ))}
           </div>
 
-          <div className="flex items-center gap-6 pt-2">
-            <a
+          <div className="flex flex-wrap items-center gap-6 pt-2">
+            <Link
               href="/screens/contactus"
-              className="inline-flex items-center gap-3 bg-black hover:bg-gradient-to-r from-[#C07DFF] to-[#3BC8F6] text-white px-8 py-4 font-[family-name:var(--font-oswald)] font-semibold text-base uppercase tracking-wider transition-all duration-300 group shadow-md"
+              className="inline-flex items-center gap-3 bg-black hover:bg-gradient-to-r from-[#C07DFF] to-[#3BC8F6] text-white px-8 py-4 font-[family-name:var(--font-oswald)] font-semibold text-base uppercase tracking-wider transition-all duration-300 group shadow-md rounded-xl"
             >
-              <span>Explore Engagement</span>
+              <span>See How We Work</span>
               <span className="text-[#C07DFF] group-hover:text-white transition-colors">&rarr;</span>
-            </a>
-            <span className="font-sans text-xs text-stone-500 uppercase tracking-wider font-semibold">
-              Transparent Milestones
+            </Link>
+            <span className="font-sans text-xs sm:text-sm text-stone-500 uppercase tracking-wider font-semibold">
+              Transparent milestones and reporting
             </span>
           </div>
         </div>

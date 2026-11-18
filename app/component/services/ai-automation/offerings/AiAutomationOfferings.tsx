@@ -1,42 +1,43 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 import BorderGlow from "@/app/component/global/ui/BorderGlow";
 
 const OFFERINGS = [
   {
     title: "Robotic Process Automation (RPA)",
-    desc: "Automate repetitive, high-volume rule-based tasks across desktop, cloud, and legacy enterprise software without modifying existing architectures.",
+    desc: "Software bots that handle repetitive, rule-based tasks like data entry and invoice processing.",
     image: "/images/services/ai-bots.webp",
     tag: "Core Automation",
   },
   {
     title: "Workflow Automation & Integration",
-    desc: "Connect disparate SaaS tools, ERPs, and databases into cohesive, self-healing automated pipelines with real-time webhooks and triggers.",
+    desc: "Connect tools like Google Sheets, CRMs, email and payment systems so data flows automatically.",
     image: "/images/services/ai-automation.webp",
     tag: "System Integration",
   },
   {
     title: "AI Chatbots & Virtual Assistants",
-    desc: "Deploy context-aware conversational AI agents trained on your proprietary knowledge base for 24/7 autonomous customer onboarding and support.",
+    desc: "Smart chatbots for WhatsApp, Messenger and your website that answer queries and capture leads 24/7.",
     image: "/images/services/ar-vr.webp",
     tag: "Conversational AI",
   },
   {
     title: "CRM & Marketing Automation",
-    desc: "Automate high-converting lead capture, behavioral segmentation, dynamic email campaigns, and pipeline handoffs with zero manual friction.",
+    desc: "Automated lead nurturing, follow-ups and email sequences that convert more prospects.",
     image: "/images/services/lead-funnels.webp",
     tag: "Growth Engine",
   },
   {
     title: "Custom AI Workflow Automation",
-    desc: "Bespoke AI solutions leveraging state-of-the-art LLMs, neural networks, and computer vision tailored to your proprietary operational logic.",
+    desc: "Tailored AI solutions built around your unique processes and goals.",
     image: "/images/services/software-development.webp",
     tag: "Bespoke Models",
   },
   {
     title: "Data & Analytics Automation",
-    desc: "Automate real-time data ingestion, transformation, and automated predictive intelligence dashboards that deliver actionable insight instantly.",
+    desc: "Automatic data collection, cleaning and reporting dashboards.",
     image: "/images/services/predictive-analytics.webp",
     tag: "Predictive Intelligence",
   },
@@ -51,7 +52,7 @@ export default function AiAutomationOfferings() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#E8F9FF] border border-[#3BC8F6]/30 rounded-full">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#0284C7]" color="#0284C7" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#0284C7] font-semibold">
-              Capabilities
+              Core Services
             </span>
           </div>
 
@@ -60,7 +61,7 @@ export default function AiAutomationOfferings() {
           </h2>
 
           <p className="font-sans text-stone-600 text-sm sm:text-base lg:text-lg leading-relaxed">
-            Enterprise-grade AI automation workflows engineered to scale operations, eliminate manual bottlenecks, and maximize bottom-line profitability.
+            End-to-end automation, from simple task bots to fully custom AI systems.
           </p>
         </div>
 
@@ -110,13 +111,13 @@ export default function AiAutomationOfferings() {
 
                 {/* Bottom Footer Link */}
                 <div className="p-6 sm:p-7 pt-0 border-t border-stone-100 mt-4 flex items-center justify-between">
-                  <a
+                  <Link
                     href="/screens/contactus"
                     className="inline-flex items-center gap-2 text-xs font-[family-name:var(--font-oswald)] uppercase tracking-wider font-semibold text-[#0284C7] hover:text-[#000000] transition-colors"
                   >
-                    <span>Request Custom Setup</span>
-                    <span>&rarr;</span>
-                  </a>
+                    <span>Request a Custom Setup</span>
+                    <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                  </Link>
                   <span className="w-2 h-2 rounded-full bg-[#3BC8F6] opacity-40 group-hover:opacity-100 transition-opacity" />
                 </div>
               </article>
@@ -127,4 +128,3 @@ export default function AiAutomationOfferings() {
     </section>
   );
 }
-

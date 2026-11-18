@@ -20,26 +20,26 @@ export default function GraphicDesignHero() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#E8F9FF]/10 backdrop-blur-md border border-[#3BC8F6]/40 rounded-full">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#3BC8F6]" color="#3BC8F6" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#3BC8F6] font-semibold">
-              Venom Tech IT Solution &bull; Creative Design Studio
+              Venom Tech &bull; Creative Design Studio
             </span>
           </div>
 
           <h1 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight leading-[0.96]">
             Professional{" "}
-            <span className="text-brand-gradient">Graphic Designing</span> in Lahore
+            <span className="text-brand-gradient">Graphic Design Services</span> in Lahore
           </h1>
 
           <p className="font-sans text-stone-300 text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl">
-            Elevate your brand with award-winning visual identities, bespoke logo systems, high-converting social media creatives, and print packaging engineered to turn impressions into loyal customers.
+            Your brand gets one chance to make a first impression. Venom Tech&apos;s graphic designers in Lahore create logos, brand identities, social media creatives and print designs that make your business look credible, memorable and ready to sell.
           </p>
 
           {/* Key Capabilities List */}
           <ul className="space-y-3 pt-2 font-sans text-stone-300 text-sm sm:text-base">
             {[
-              "Custom Logo Design & Complete Brand Guidelines (Colors, Fonts, Tone)",
-              "High-Conversion Social Media Post Kits, Carousels & Paid Ad Creatives",
-              "Modern Web & Mobile UI/UX Wireframing & Design Token Libraries",
-              "Print-Ready Packaging, Product Labels, Corporate Brochures & Billboards",
+              "Logo design and complete brand guidelines",
+              "Social media post and ad creative kits",
+              "UI/UX and website graphics",
+              "Print and packaging design",
             ].map((item, idx) => (
               <li key={idx} className="flex items-center gap-3">
                 <span className="w-5 h-5 rounded-full bg-[#3BC8F6]/20 border border-[#3BC8F6] text-[#3BC8F6] flex items-center justify-center flex-shrink-0 text-xs font-bold">
@@ -74,6 +74,8 @@ export default function GraphicDesignHero() {
             source="service_graphic_design"
             variant="glass-dark"
             compact
+            formTitle="Tell Us About Your Project & Business"
+            headingTag="h2"
           />
         </div>
       </div>

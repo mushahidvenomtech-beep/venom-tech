@@ -4,11 +4,11 @@ import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 
 const REASONS = [
-  "Certified media buyers with a proven track record managing multi-million-dollar ad campaigns.",
-  "Systematic creative testing frameworks that deploy new hooks and angles to eliminate ad fatigue.",
-  "Full-funnel omnichannel attribution tracking directly tied to bottom-line business revenue.",
-  "100% transparent dashboards and direct Slack/WhatsApp access to your dedicated strategist.",
-  "Continuous landing page and conversion rate optimization (CRO) that maximizes return on every ad click.",
+  "Certified, experienced media buyers",
+  "Continuous creative and A/B testing",
+  "Accurate attribution and conversion tracking",
+  "Transparent, real-time reporting dashboards",
+  "Built-in landing page and CRO support",
 ];
 
 export default function AdvertisingWhyChoose() {
@@ -64,7 +64,7 @@ export default function AdvertisingWhyChoose() {
 
           <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-3xl sm:text-5xl lg:text-6xl text-[#000000] tracking-tight leading-[1.02]">
             Why Choose Venom Tech as Your{" "}
-            <span className="text-brand-gradient">Advertising Agency in Lahore</span>
+            <span className="text-brand-gradient">Advertising Agency?</span>
           </h2>
 
           <p className="font-sans text-stone-600 text-sm sm:text-base leading-relaxed">
@@ -101,4 +101,3 @@ export default function AdvertisingWhyChoose() {
     </section>
   );
 }
-

@@ -1,48 +1,49 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 import BorderGlow from "@/app/component/global/ui/BorderGlow";
 
 const SOLUTIONS = [
   {
     title: "Creative Design Services",
-    desc: "Innovative visual concepts that cut through market noise and establish a powerful emotional connection with your ideal target audience.",
+    desc: "Fresh, original designs tailored to your audience and goals.",
     image: "/images/services/ui-design.webp",
     tag: "Visual Concepts",
   },
   {
     title: "Brand Identity Design",
-    desc: "Complete visual architectures including bespoke logos, color psychology systems, font pairings, and brand manuals that outlast trends.",
+    desc: "Complete visual identities that make your brand instantly recognisable.",
     image: "/images/services/animation.webp",
     tag: "Corporate Identity",
   },
   {
     title: "Digital & Social Media Graphics",
-    desc: "Engaging carousel stories, static posts, and high-CTR social media ad creatives optimized for Instagram, Facebook, TikTok, and LinkedIn.",
+    desc: "Platform-ready creatives sized and optimised for engagement.",
     image: "/images/services/digital-marketing.webp",
     tag: "Social Media",
   },
   {
     title: "Marketing & Ad Creatives",
-    desc: "High-converting paid ad creatives, Google Display banners, sales decks, event flyers, and email templates engineered for maximum ROAS.",
+    desc: "High-converting ad designs for Meta, Google and display campaigns.",
     image: "/images/services/lead-funnels.webp",
     tag: "Ad Creatives",
   },
   {
     title: "UI/UX & Web Graphics",
-    desc: "Pixel-perfect website mockups, mobile application interface assets, and custom vector icons designed for fluid digital usability.",
+    desc: "Clean interface designs and web visuals that improve user experience.",
     image: "/images/services/software-development.webp",
     tag: "Digital Products",
   },
   {
     title: "Print & Packaging Design",
-    desc: "Luxury retail packaging boxes, custom die-cut product labels, corporate brochures, business cards, and outdoor billboards with calibrated CMYK.",
+    desc: "Print-ready files for packaging, brochures, banners and stationery.",
     image: "/images/services/photography.webp",
     tag: "Packaging & Print",
   },
   {
     title: "Motion Graphics & Animation",
-    desc: "Dynamic kinetic typography, animated logo reveals, 2D product explainer loops, and promotional video reels that hold viewer attention.",
+    desc: "Animated logos, reels and explainer videos that bring your brand to life.",
     image: "/images/services/ar-vr.webp",
     tag: "Motion Design",
   },
@@ -62,11 +63,11 @@ export default function GraphicDesignWhyChoose() {
           </div>
 
           <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-3xl sm:text-5xl lg:text-6xl text-[#000000] tracking-tight leading-[1.02]">
-            Why Choose <span className="text-brand-gradient">Venom Tech?</span>
+            Why Choose Venom Tech <span className="text-brand-gradient">for Graphic Design?</span>
           </h2>
 
           <p className="font-sans text-stone-600 text-sm sm:text-base lg:text-lg leading-relaxed">
-            End-to-end creative graphic design solutions engineered to elevate brands, captivate customers, and deliver measurable commercial results.
+            One creative team for every design need, with fast turnaround and unlimited ideas.
           </p>
         </div>
 
@@ -118,13 +119,13 @@ export default function GraphicDesignWhyChoose() {
 
                 {/* Card Footer CTA */}
                 <div className="px-6 pb-6 pt-2">
-                  <a
-                    href="#contact"
+                  <Link
+                    href="/screens/contactus"
                     className="inline-flex items-center gap-2 text-xs font-[family-name:var(--font-oswald)] uppercase font-bold tracking-wider text-[#0284C7] group-hover:text-[#C07DFF] transition-colors"
                   >
-                    <span>Request Custom Design Quote</span>
+                    <span>Request a Custom Design Quote</span>
                     <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-                  </a>
+                  </Link>
                 </div>
               </article>
             </BorderGlow>
@@ -134,4 +135,3 @@ export default function GraphicDesignWhyChoose() {
     </section>
   );
 }
-

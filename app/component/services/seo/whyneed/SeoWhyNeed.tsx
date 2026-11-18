@@ -4,11 +4,11 @@ import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 
 const REASONS = [
-  "Attract high-intent organic visitors actively searching for your specific products & services.",
-  "Outrank fierce competitors and claim top-3 positions on Google search results pages.",
-  "Drastically lower customer acquisition costs compared to perpetually paying for ads.",
-  "Build permanent brand equity, domain authority, and trusted market leadership.",
-  "Protect your business with 100% white-hat techniques that survive Google Core updates.",
+  "More qualified traffic, every month",
+  "Higher rankings for keywords that drive sales",
+  "Lower cost per lead than paid ads over time",
+  "Stronger brand credibility and trust",
+  "Safe, white-hat methods that last",
 ];
 
 export default function SeoWhyNeed() {
@@ -63,12 +63,12 @@ export default function SeoWhyNeed() {
           </div>
 
           <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-3xl sm:text-5xl lg:text-6xl text-[#000000] tracking-tight leading-[1.02]">
-            Why You Need Professional{" "}
-            <span className="text-brand-gradient">SEO Services in Lahore</span>
+            Why Your Business Needs Professional{" "}
+            <span className="text-brand-gradient">SEO Services</span>
           </h2>
 
           <p className="font-sans text-stone-600 text-sm sm:text-base leading-relaxed">
-            Over 93% of online experiences begin with a search engine. If your business is not ranking on the first page of Google, your prospective customers are buying from your competitors every single day.
+            Most buying journeys in Pakistan now begin with a Google search. If your business isn&apos;t on the first page, those customers are going to your competitors.
           </p>
 
           {/* Checklist */}
@@ -101,4 +101,3 @@ export default function SeoWhyNeed() {
     </section>
   );
 }
-

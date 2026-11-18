@@ -16,14 +16,14 @@ import BlogSection from "@/app/components/home/blog/BlogSection";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
 
 export const metadata: Metadata = {
-  title: "Explore the Power of Innovation | Venom Tech",
-  description: "Helping businesses scale up and convert clicks into revenue. We are Venom Tech, delivering digitally engineered solutions that make your brand unshakable.",
+  title: "Digital Marketing That Grows Your Business | Venom Tech",
+  description: "Venom Tech is a full-service digital marketing agency in Lahore, Pakistan. We combine SEO, paid advertising, creative design, app development and AI automation to bring you more traffic, more leads and more sales.",
   alternates: {
     canonical: "/screens/home",
   },
   openGraph: {
-    title: "Explore the Power of Innovation | Venom Tech",
-    description: "Helping businesses scale up and convert clicks into revenue. We are Venom Tech, delivering digitally engineered solutions that make your brand unshakable.",
+    title: "Digital Marketing That Grows Your Business | Venom Tech",
+    description: "Venom Tech is a full-service digital marketing agency in Lahore, Pakistan. We combine SEO, paid advertising, creative design, app development and AI automation to bring you more traffic, more leads and more sales.",
     url: "/screens/home",
     siteName: "Venom Tech",
   },

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 
 export default function CtaBannerSection() {
@@ -15,12 +16,12 @@ export default function CtaBannerSection() {
           <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-[#F4E9FF] border border-[#C07DFF]/30 rounded-full">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#C07DFF]" color="#C07DFF" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#C07DFF] font-semibold">
-              Ready to Create
+              Ready to Grow?
             </span>
           </div>
 
           <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[44px] sm:text-[44px] lg:text-[44px] tracking-tight leading-[1.08] text-[#000000] mb-6">
-            Let&apos;s Work <span className="text-brand-gradient">Together!</span>
+            Let&apos;s Work <span className="text-brand-gradient">Together</span>
           </h2>
 
           <p className="font-sans text-stone-700 text-base sm:text-lg leading-relaxed">
@@ -30,7 +31,7 @@ export default function CtaBannerSection() {
 
         {/* Action Button */}
         <div className="relative z-10">
-          <a
+          <Link
             href="/screens/contactus"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-[#C07DFF] to-[#3BC8F6] hover:opacity-95 text-white px-8 sm:px-10 py-5 font-[family-name:var(--font-oswald)] font-bold text-lg uppercase tracking-wider transition-all duration-300 group shadow-lg shadow-[#C07DFF]/25 rounded-xl"
           >
@@ -40,7 +41,7 @@ export default function CtaBannerSection() {
               color="#FFFFFF"
               strokeWidth={3.4}
             />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

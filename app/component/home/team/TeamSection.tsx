@@ -104,17 +104,17 @@ export default function TeamSection() {
     >
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
-        <div className="inline-flex items-center gap-1.5 mb-2">
+        <div className="inline-flex items-center gap-1.5 mb-3 px-3 py-1 bg-[#F4E9FF] border border-[#C07DFF]/30 rounded-full">
           <AsteriskIcon className="w-3.5 h-3.5 text-[#C07DFF]" color="#C07DFF" strokeWidth={3} />
           <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#C07DFF] font-semibold">
-            Our Senior Collective
+            Team
           </span>
         </div>
-        <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[44px] sm:text-[44px] text-[#111111] tracking-tight leading-[1.08] mb-4">
-          The Minds <span className="text-[#C07DFF]">Behind The Magic.</span>
+        <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[34px] sm:text-[44px] text-[#111111] tracking-tight leading-[1.08] mb-4">
+          The People Behind <span className="text-brand-gradient">Venom Tech</span>
         </h2>
-        <p className="font-sans text-stone-600 text-base sm:text-lg">
-          Direct partner involvement on every engagement. No junior delegates, just senior craft and strategic firepower.
+        <p className="font-sans text-stone-600 text-base sm:text-lg leading-relaxed">
+          Strategists, designers, developers and marketers who treat your growth like their own.
         </p>
       </div>
 

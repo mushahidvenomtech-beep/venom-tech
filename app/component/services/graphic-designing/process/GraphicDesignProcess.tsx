@@ -35,7 +35,7 @@ export default function GraphicDesignProcess() {
                 Discovery &amp; Briefing
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Analyzing your brand mission, target audience demographics, competitor landscapes, and core aesthetic goals.
+                We learn about your brand, audience and goals.
               </p>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function GraphicDesignProcess() {
                 Research &amp; Moodboarding
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Curating visual reference palettes, typography combinations, graphic textures, and initial layout moodboards.
+                We study competitors and build a visual direction.
               </p>
             </div>
 
@@ -73,7 +73,7 @@ export default function GraphicDesignProcess() {
                 Concept Design
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Drafting vector marks, digital illustrations, ad layouts, and high-fidelity mockups using industry-leading creative tools.
+                We create initial concepts for your review.
               </p>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function GraphicDesignProcess() {
                 Feedback &amp; Revisions
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Collaborative review rounds fine-tuning kerning, color calibration, hierarchy, and responsive scaling.
+                We refine the design based on your feedback.
               </p>
             </div>
 
@@ -108,7 +108,7 @@ export default function GraphicDesignProcess() {
                 Final Delivery &amp; Assets
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Exporting print-ready vectors (AI, EPS, PDF), web assets (SVG, WebP), and complete brand usage guidelines.
+                You receive all final files in every format you need.
               </p>
             </div>
           </div>
@@ -117,4 +117,3 @@ export default function GraphicDesignProcess() {
     </section>
   );
 }
-

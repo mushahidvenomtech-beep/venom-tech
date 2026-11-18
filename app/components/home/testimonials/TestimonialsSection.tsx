@@ -36,20 +36,63 @@ const BRANDS = [
   "AWWWARDS",
 ];
 
-export default function TestimonialsSection() {
+export interface ReviewItem {
+  author: string;
+  rating: number;
+  avatar: string;
+  quote: string;
+  role?: string;
+}
+
+export interface TestimonialsSectionProps {
+  eyebrow?: string;
+  heading?: React.ReactNode;
+  intro?: string;
+  reviews?: ReviewItem[];
+}
+
+export default function TestimonialsSection({
+  eyebrow = "Testimonials",
+  heading = (
+    <>
+      What Our <span className="text-brand-gradient">Clients Say</span>
+    </>
+  ),
+  intro = "Feedback from businesses we have helped grow online.",
+  reviews = REVIEWS,
+}: TestimonialsSectionProps = {}) {
   return (
     <section id="testimonials" className="border-b border-[#E8E2F2] overflow-hidden">
       {/* Testimonials Grid */}
       <div className="py-10 sm:py-14 px-4 sm:px-6 lg:px-10 max-w-[1440px] mx-auto">
-        <div className="flex items-center gap-4 mb-8 sm:mb-10">
-          <AsteriskIcon className="w-8 h-8 sm:w-12 sm:h-12 text-[#C07DFF]" color="#C07DFF" strokeWidth={3} />
-          <h2 className="font-[family-name:var(--font-oswald)] font-extrabold uppercase text-[44px] sm:text-[44px] lg:text-[44px] text-[#111111] tracking-tight leading-[1.08]">
-            Echoes of Our <span className="text-brand-gradient">Valued Clients.</span>
-          </h2>
+        {/* Section Header */}
+        <div className="mb-8 sm:mb-10 max-w-2xl">
+          {/* Eyebrow badge */}
+          <div className="inline-flex items-center gap-1.5 mb-3 px-3 py-1 bg-[#F4E9FF] border border-[#C07DFF]/30 rounded-full">
+            <AsteriskIcon className="w-3.5 h-3.5 text-[#C07DFF]" color="#C07DFF" strokeWidth={3} />
+            <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#C07DFF] font-semibold">
+              {eyebrow}
+            </span>
+          </div>
+
+          <div className="flex items-center gap-3 sm:gap-4 mb-3">
+            <AsteriskIcon
+              className="w-8 h-8 sm:w-10 sm:h-10 text-[#C07DFF] flex-shrink-0"
+              color="#C07DFF"
+              strokeWidth={3}
+            />
+            <h2 className="font-[family-name:var(--font-oswald)] font-extrabold uppercase text-[34px] sm:text-[44px] lg:text-[44px] text-[#111111] tracking-tight leading-[1.08]">
+              {heading}
+            </h2>
+          </div>
+
+          <p className="font-sans text-stone-600 text-base sm:text-lg leading-relaxed">
+            {intro}
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-          {REVIEWS.map((rev) => (
+          {reviews.map((rev) => (
             <div
               key={rev.author}
               className="p-7 sm:p-8 bg-white border border-[#E8E2F2] rounded-2xl hover:border-[#C07DFF] hover:shadow-[0_16px_36px_rgba(192,125,255,0.12)] transition-all duration-300 flex flex-col justify-between shadow-sm group"

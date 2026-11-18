@@ -174,9 +174,17 @@ export default function ServiceCard({
           </div>
 
           {/* Service Title */}
-          <h3 className="font-[family-name:var(--font-oswald)] uppercase font-bold text-xl sm:text-2xl text-[#000000] tracking-tight leading-tight mb-3 transition-colors relative z-10">
-            {service.title}
-          </h3>
+          {service.route ? (
+            <Link href={service.route}>
+              <h3 className="font-[family-name:var(--font-oswald)] uppercase font-bold text-xl sm:text-2xl text-[#000000] hover:text-[#0284C7] tracking-tight leading-tight mb-3 transition-colors relative z-10 cursor-pointer">
+                {service.title}
+              </h3>
+            </Link>
+          ) : (
+            <h3 className="font-[family-name:var(--font-oswald)] uppercase font-bold text-xl sm:text-2xl text-[#000000] tracking-tight leading-tight mb-3 transition-colors relative z-10">
+              {service.title}
+            </h3>
+          )}
 
           {/* Service Description (Preserved verbatim) */}
           <p className="font-sans text-stone-600 text-xs sm:text-sm leading-relaxed mb-4 relative z-10">

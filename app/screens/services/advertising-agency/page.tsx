@@ -14,16 +14,16 @@ import AdvertisingProcess from "@/app/component/services/advertising-agency/proc
 import AdvertisingFaq from "@/app/component/services/advertising-agency/faq/AdvertisingFaq";
 
 export const metadata: Metadata = {
-  title: "Leading Advertising Agency in Lahore | Venom Tech IT Solution",
+  title: "Leading Advertising Agency in Lahore | Venom Tech",
   description:
-    "Scale your brand with Venom Tech, a leading advertising agency in Lahore. Multi-channel performance marketing, Meta & Google ads, creative video production, and CRO.",
+    "Stop wasting budget on ads that don't convert. Venom Tech plans, creates and manages data-driven ad campaigns on Google, Meta, TikTok and YouTube that bring real leads and sales to businesses across Pakistan.",
   alternates: {
     canonical: "/screens/services/advertising-agency",
   },
   openGraph: {
-    title: "Leading Advertising Agency in Lahore | Venom Tech IT Solution",
+    title: "Leading Advertising Agency in Lahore | Venom Tech",
     description:
-      "Transform clicks into loyal customers with high-converting digital advertising, precision audience targeting, and real-time ROAS scaling.",
+      "Stop wasting budget on ads that don't convert. Venom Tech plans, creates and manages data-driven ad campaigns on Google, Meta, TikTok and YouTube that bring real leads and sales to businesses across Pakistan.",
     url: "/screens/services/advertising-agency",
     images: [{ url: "/images/services/digital-marketing.webp" }],
   },
@@ -97,7 +97,15 @@ export default function AdvertisingAgencyPage() {
       </main>
 
       {/* Global Brand Footer */}
-      <HomeFooter />
+      <HomeFooter
+        ctaHeading={
+          <>
+            Let&apos;s Launch <span className="text-brand-gradient">Campaigns That Convert</span>
+          </>
+        }
+        ctaButtonText="Start Project"
+        ctaButtonHref="/screens/contactus"
+      />
     </div>
   );
 }

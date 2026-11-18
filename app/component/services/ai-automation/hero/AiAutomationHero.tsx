@@ -20,26 +20,26 @@ export default function AiAutomationHero() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#E8F9FF]/10 backdrop-blur-md border border-[#3BC8F6]/40 rounded-full">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#3BC8F6]" color="#3BC8F6" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#3BC8F6] font-semibold">
-              Venom Tech IT Solution &bull; Intelligent Automation
+              Intelligent Automation
             </span>
           </div>
 
           <h1 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight leading-[0.96]">
             AI Automation Services <br />
-            <span className="text-brand-gradient">by Venom Tech</span>
+            <span className="text-brand-gradient">in Pakistan</span>
           </h1>
 
           <p className="font-sans text-stone-300 text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl">
-            Empower your enterprise with autonomous AI workflows, self-healing robotic processes, and intelligent system integrations engineered to eliminate manual bottlenecks and scale operations effortlessly.
+            Venom Tech helps businesses in Pakistan save time and cut costs by automating repetitive work with AI. From chatbots that answer customers 24/7 to workflows that move data between your tools automatically, we build automation that fits the way you already work.
           </p>
 
           {/* Key Capabilities List */}
           <ul className="space-y-3 pt-2 font-sans text-stone-300 text-sm sm:text-base">
             {[
-              "Custom Intelligent Workflow & Business Process Engineering",
-              "Enterprise-Grade API, Database, and Multi-SaaS Integrations",
-              "Autonomous RPA Bots Delivering Maximum Accuracy and Zero Downtime",
-              "24/7 Context-Aware AI Chatbots and Voice Assistants",
+              "Custom AI chatbots for WhatsApp, websites and social media",
+              "Workflow automation that connects your apps and removes manual data entry",
+              "CRM, sales and marketing automation that never misses a lead",
+              "Automated reports and dashboards updated in real time",
             ].map((item, idx) => (
               <li key={idx} className="flex items-center gap-3">
                 <span className="w-5 h-5 rounded-full bg-[#3BC8F6]/20 border border-[#3BC8F6] text-[#3BC8F6] flex items-center justify-center flex-shrink-0 text-xs font-bold">
@@ -73,6 +73,8 @@ export default function AiAutomationHero() {
             defaultService="AI Automation"
             source="service_ai_automation"
             variant="glass-dark"
+            formTitle="Tell Us What You Want to Automate"
+            headingTag="h2"
             compact
           />
         </div>

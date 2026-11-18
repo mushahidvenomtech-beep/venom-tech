@@ -1,11 +1,12 @@
 import React from "react";
+import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 import BorderGlow from "@/app/component/global/ui/BorderGlow";
 
 const SERVICES = [
   {
     title: "Digital Advertising",
-    desc: "Multi-channel paid campaigns across Meta (Facebook & Instagram), Google Search & Shopping, YouTube, TikTok, and LinkedIn tailored to capture market intent.",
+    desc: "Campaigns across Google, Meta, TikTok, YouTube and LinkedIn.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <path d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" strokeLinecap="round" strokeLinejoin="round" />
@@ -16,7 +17,7 @@ const SERVICES = [
   },
   {
     title: "Precision Targeting",
-    desc: "Deep behavioral audience segmentation, dynamic retargeting funnels, and high-value Lookalike modeling that place your message before ready-to-buy decision makers.",
+    desc: "Reach the right audience by location, interests, behaviour and intent.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <circle cx="12" cy="12" r="10" />
@@ -29,7 +30,7 @@ const SERVICES = [
   },
   {
     title: "Strategy & Creative",
-    desc: "High-impact direct-response video hooks, thumb-stopping carousel cards, and psychological copywriting crafted to outconvert competing ads.",
+    desc: "Campaign strategy, ad copy and visuals designed to stop the scroll.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" strokeLinecap="round" strokeLinejoin="round" />
@@ -40,7 +41,7 @@ const SERVICES = [
   },
   {
     title: "Media Buying & Planning",
-    desc: "Continuous algorithmic bid optimization, budget pacing, dayparting calibration, and automated anomaly guards that prevent ad spend waste.",
+    desc: "Smart budget allocation across channels for maximum return.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" strokeLinecap="round" strokeLinejoin="round" />
@@ -69,7 +70,7 @@ export default function AdvertisingServices() {
           </h2>
 
           <p className="font-sans text-stone-600 text-sm sm:text-base lg:text-lg leading-relaxed">
-            Customized full-funnel advertising solutions designed to maximize brand reach, accelerate customer acquisition, and scale revenue with predictable unit economics.
+            Full-funnel advertising that builds awareness, drives traffic and converts customers.
           </p>
         </div>
 
@@ -110,12 +111,15 @@ export default function AdvertisingServices() {
                   </p>
                 </div>
 
-                {/* Bottom decorative bar */}
-                <div className="pt-6 mt-6 border-t border-[#F5EBFF] flex items-center justify-between text-xs font-semibold text-[#0284C7]">
-                  <span className="font-[family-name:var(--font-oswald)] uppercase tracking-wider">
-                    Learn More
-                  </span>
-                  <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                {/* Bottom CTA Link */}
+                <div className="pt-6 mt-6 border-t border-[#F5EBFF]">
+                  <Link
+                    href="/screens/contactus"
+                    className="inline-flex items-center justify-between w-full text-xs font-[family-name:var(--font-oswald)] uppercase font-bold tracking-wider text-[#0284C7] group-hover:text-[#C07DFF] transition-colors"
+                  >
+                    <span>Learn More</span>
+                    <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                  </Link>
                 </div>
               </div>
             </BorderGlow>
@@ -125,4 +129,3 @@ export default function AdvertisingServices() {
     </section>
   );
 }
-

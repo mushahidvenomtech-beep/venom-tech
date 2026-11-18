@@ -89,13 +89,13 @@ export default function ServicesSection() {
           </div>
 
           {/* Heading */}
-          <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[44px] sm:text-[44px] lg:text-[44px] text-[#000000] tracking-tight leading-[1.08] mb-6">
-            Digitally Engineered <span className="text-brand-gradient">Services &amp; Solutions</span>
+          <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[34px] sm:text-[44px] lg:text-[46px] text-[#000000] tracking-tight leading-[1.08] mb-6">
+            Digital Marketing &amp; <span className="text-brand-gradient">Technology Services</span> Under One Roof
           </h2>
 
           {/* Exact Introductory Text Requested */}
           <p className="font-sans text-stone-700 text-base sm:text-lg lg:text-xl leading-relaxed font-normal">
-            Explore the comprehensive range of digitally engineered solutions we provide. For all your digital business concerns, we&apos;ve got you covered.
+            Everything your business needs to get found, look credible and convert online.
           </p>
         </div>
       </div>

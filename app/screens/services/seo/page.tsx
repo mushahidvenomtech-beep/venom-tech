@@ -13,16 +13,16 @@ import SeoProcess from "@/app/component/services/seo/process/SeoProcess";
 import SeoFaq from "@/app/component/services/seo/faq/SeoFaq";
 
 export const metadata: Metadata = {
-  title: "Expert SEO Services in Lahore | Venom Tech IT Solution",
+  title: "Expert SEO Services in Lahore to Grow Your Online Presence | Venom Tech",
   description:
-    "Dominate Google rankings with expert SEO services in Lahore by Venom Tech. High-intent keyword strategy, technical SEO audits, local GMB optimization, and high-authority link building.",
+    "Get found by customers who are already searching for what you sell. Our SEO team in Lahore helps businesses across Pakistan climb Google rankings and turn organic traffic into steady leads.",
   alternates: {
     canonical: "/screens/services/seo",
   },
   openGraph: {
-    title: "Expert SEO Services in Lahore | Venom Tech IT Solution",
+    title: "Expert SEO Services in Lahore to Grow Your Online Presence | Venom Tech",
     description:
-      "Boost your online presence and turn Google search clicks into paying customers with data-backed SEO strategies by Venom Tech.",
+      "Get found by customers who are already searching for what you sell. Our SEO team in Lahore helps businesses across Pakistan climb Google rankings and turn organic traffic into steady leads.",
     url: "/screens/services/seo",
     images: [{ url: "/images/services/predictive-analytics.webp" }],
   },
@@ -93,7 +93,15 @@ export default function SeoPage() {
       </main>
 
       {/* Global Brand Footer */}
-      <HomeFooter />
+      <HomeFooter
+        ctaHeading={
+          <>
+            Ready to Rank Higher? <span className="text-brand-gradient">Let&apos;s Get Started.</span>
+          </>
+        }
+        ctaButtonText="Start Project"
+        ctaButtonHref="/screens/contactus"
+      />
     </div>
   );
 }

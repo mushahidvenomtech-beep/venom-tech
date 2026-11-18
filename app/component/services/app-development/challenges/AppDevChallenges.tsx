@@ -1,11 +1,12 @@
 import React from "react";
+import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 import BorderGlow from "@/app/component/global/ui/BorderGlow";
 
 const CHALLENGES = [
   {
     title: "Custom iOS & Android Apps",
-    desc: "Engineered specifically for iOS (Swift) and Android (Kotlin) platforms to unlock maximum hardware speed, fluid 120Hz gesture response, and native OS capability integration.",
+    desc: "Native apps built for top performance and a smooth user experience on every device.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <rect x="5" y="2" width="14" height="20" rx="3" />
@@ -17,7 +18,7 @@ const CHALLENGES = [
   },
   {
     title: "Cross-Platform Development",
-    desc: "Cost-efficient, multi-platform codebases built with React Native and Flutter. Ship 2x faster to market while keeping 95%+ shared logic with uncompromising 60FPS fluid UI.",
+    desc: "One codebase for iOS and Android with Flutter or React Native, saving time and cost.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <rect x="2" y="3" width="12" height="15" rx="2" />
@@ -29,7 +30,7 @@ const CHALLENGES = [
   },
   {
     title: "UI/UX Design & Prototyping",
-    desc: "Human-centric mobile experiences designed around proven user behavior patterns. From click-through wireframes in Figma to production design tokens and tactile micro-interactions.",
+    desc: "Interactive prototypes and intuitive interfaces tested before a line of code is written.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" strokeLinecap="round" strokeLinejoin="round" />
@@ -40,7 +41,7 @@ const CHALLENGES = [
   },
   {
     title: "App Maintenance & Support",
-    desc: "Guaranteed SLA uptime, continuous OS compatibility updates for newly released iOS/Android versions, proactive crash telemetry, security patches, and performance optimizations.",
+    desc: "Updates, bug fixes, performance monitoring and new features after launch.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" strokeLinecap="round" strokeLinejoin="round" />
@@ -65,12 +66,12 @@ export default function AppDevChallenges() {
           </div>
 
           <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-3xl sm:text-5xl lg:text-6xl text-[#000000] tracking-tight leading-[1.02]">
-            How Our Mobile App Development Services{" "}
+            How Our App Development Services{" "}
             <span className="text-brand-gradient">Solve Your Business Challenges</span>
           </h2>
 
           <p className="font-sans text-stone-600 text-sm sm:text-base lg:text-lg leading-relaxed">
-            Custom mobile solutions engineered to overcome technical complexity, accelerate time-to-market, and deliver maximum user engagement and monetization.
+            Whether you need to reach more customers, simplify operations or launch a new product, we build apps that deliver measurable business value.
           </p>
         </div>
 
@@ -112,12 +113,15 @@ export default function AppDevChallenges() {
                 </div>
 
                 {/* Bottom decorative bar */}
-                <div className="pt-6 mt-6 border-t border-[#F5EBFF] flex items-center justify-between text-xs font-semibold text-[#0284C7]">
+                <Link
+                  href="/screens/contactus"
+                  className="pt-6 mt-6 border-t border-[#F5EBFF] flex items-center justify-between text-xs font-semibold text-[#0284C7] hover:text-[#000000] transition-colors"
+                >
                   <span className="font-[family-name:var(--font-oswald)] uppercase tracking-wider">
                     Learn More
                   </span>
                   <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-                </div>
+                </Link>
               </div>
             </BorderGlow>
           ))}
@@ -126,4 +130,3 @@ export default function AppDevChallenges() {
     </section>
   );
 }
-

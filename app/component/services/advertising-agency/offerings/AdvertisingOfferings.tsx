@@ -1,35 +1,36 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 
 const OFFERINGS = [
   {
     title: "Marketing Automation",
-    desc: "Automated lead nurture sequences, behavioral SMS/email triggers, and real-time CRM data sync that maximize sales velocity.",
+    desc: "Automated retargeting and follow-ups that nurture leads into customers.",
     image: "/images/services/lead-funnels.webp",
     tag: "Automation Funnels",
   },
   {
     title: "Paid Social Campaigns",
-    desc: "High-ROAS Meta (Instagram & Facebook), TikTok, and LinkedIn performance campaigns engineered for maximum impulse conversion.",
+    desc: "Facebook, Instagram and TikTok ads built for engagement and sales.",
     image: "/images/services/digital-marketing.webp",
     tag: "Paid Social",
   },
   {
     title: "Performance Analytics",
-    desc: "Multi-touch attribution models, customer lifetime value (LTV) forecasting, and live real-time marketing intelligence dashboards.",
+    desc: "Pixel, GA4 and conversion tracking so every rupee is measured.",
     image: "/images/services/predictive-analytics.webp",
     tag: "Attribution & ROAS",
   },
   {
     title: "Search Advertising & PPC",
-    desc: "High-intent Google Search, Performance Max, and Shopping campaigns optimized to capture ready-to-buy consumers immediately.",
+    desc: "Google Ads campaigns that capture buyers at the moment they search.",
     image: "/images/services/ai-bots.webp",
     tag: "Google Ads & PPC",
   },
   {
     title: "Conversion Rate Optimization",
-    desc: "Custom high-velocity landing pages, multivariate split testing, and post-click user journeys that double your return on every ad dollar.",
+    desc: "Landing page and funnel improvements that turn more clicks into customers.",
     image: "/images/services/ui-design.webp",
     tag: "Landing Page CRO",
   },
@@ -49,7 +50,7 @@ export default function AdvertisingOfferings() {
           </div>
 
           <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-3xl sm:text-5xl lg:text-6xl text-[#000000] tracking-tight leading-[1.02]">
-            Our Advertising <span className="text-brand-gradient">Capabilities</span>
+            Advertising Capabilities <span className="text-brand-gradient">That Drive Growth</span>
           </h2>
 
           <p className="font-sans text-stone-600 text-sm sm:text-base lg:text-lg leading-relaxed">
@@ -99,13 +100,13 @@ export default function AdvertisingOfferings() {
 
               {/* Card Footer CTA */}
               <div className="px-6 pb-6 pt-2">
-                <a
-                  href="#contact"
+                <Link
+                  href="/screens/contactus"
                   className="inline-flex items-center gap-2 text-xs font-[family-name:var(--font-oswald)] uppercase font-bold tracking-wider text-[#0284C7] group-hover:text-[#C07DFF] transition-colors"
                 >
-                  <span>Request Media Audit</span>
+                  <span>Request a Free Ad Audit</span>
                   <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-                </a>
+                </Link>
               </div>
             </article>
           ))}
@@ -114,4 +115,3 @@ export default function AdvertisingOfferings() {
     </section>
   );
 }
-

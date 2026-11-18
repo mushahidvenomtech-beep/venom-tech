@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 
 export default function ServicesCtaBanner() {
@@ -15,32 +16,32 @@ export default function ServicesCtaBanner() {
           <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-[#F4E9FF] border border-[#C07DFF]/30 rounded-full">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#C07DFF]" color="#C07DFF" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#C07DFF] font-semibold">
-              Ready to Innovate
+              Ready to Grow?
             </span>
           </div>
 
           <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight leading-[0.95] text-[#000000] mb-6">
-            Let&apos;s Work <span className="text-brand-gradient">Together!</span>
+            Let&apos;s Work <span className="text-brand-gradient">Together</span>
           </h2>
 
           <p className="font-sans text-stone-700 text-base sm:text-lg leading-relaxed">
-            Ready to explore custom branding, digital flagship development, or design system sprints? Let&apos;s connect.
+            Book a free 30-minute discovery call and get a clear plan for growing your brand online.
           </p>
         </div>
 
         {/* Action Button */}
         <div className="relative z-10">
-          <a
+          <Link
             href="/screens/contactus"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-[#C07DFF] to-[#3BC8F6] hover:opacity-95 text-white px-8 sm:px-10 py-5 font-[family-name:var(--font-oswald)] font-bold text-lg uppercase tracking-wider transition-all duration-300 group shadow-lg shadow-[#C07DFF]/25 rounded-xl"
           >
-            <span>Book A Discovery Call</span>
+            <span>Book a Discovery Call</span>
             <AsteriskIcon
               className="w-5 h-5 text-white group-hover:rotate-45 transition-all duration-300"
               color="#FFFFFF"
               strokeWidth={3.4}
             />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

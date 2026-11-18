@@ -21,17 +21,17 @@ export default function ContactSection() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#F5EBFF] border border-[#C07DFF]/40 rounded-full">
             <AsteriskIcon className="w-4 h-4 text-[#C07DFF]" color="#C07DFF" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#7C3AED] font-semibold">
-              Get In Touch
+              Project Inquiry Form
             </span>
           </div>
 
-          <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[44px] sm:text-[44px] text-[#111111] tracking-tight leading-[1.08]">
-            Let&apos;s Talk, <br />
-            <span className="text-[#C07DFF]">Let&apos;s Collaborate.</span>
+          <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[34px] sm:text-[44px] text-[#111111] tracking-tight leading-[1.08]">
+            Tell Us About <br />
+            <span className="text-brand-gradient">Your Project</span>
           </h2>
 
           <p className="font-sans text-stone-600 text-base sm:text-lg leading-relaxed">
-            Have an upcoming project, rebrand, or web application you want to launch? Our senior partners review design and engineering inquiries daily with guaranteed milestone quality.
+            Share a few details and our team will send a tailored proposal within 24 hours.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-stone-200">

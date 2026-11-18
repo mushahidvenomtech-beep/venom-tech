@@ -5,44 +5,44 @@ import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 
 const SERVICE_FAQS = [
   {
-    q: "What services does Venom Tech provide?",
-    a: "Venom Tech specializes in digital innovation, including SEO, SEM, PPC, Social Media Marketing, Web Design and Development, Mobile App Development, Branding, Reputation Management, Email Marketing, and Google Products services for businesses of all sizes.",
+    q: "What digital marketing services do you offer?",
+    a: "Branding, web design and development, content creation, video marketing, graphic design, SEO, paid ads, social media management and creative strategy.",
   },
   {
-    q: "Does Venom Tech offer support after project completion?",
-    a: "Absolutely. We provide ongoing maintenance, performance monitoring, redesigns, security updates, and optimization to ensure your digital products remain efficient, secure, and up to date.",
+    q: "Do you provide support after a project ends?",
+    a: "Yes. We offer maintenance, monthly marketing retainers and on-call support so your site and campaigns keep performing.",
   },
   {
-    q: "What industries does Venom Tech work with?",
-    a: "We work with startups, small businesses, enterprises, and organizations across industries such as eCommerce, healthcare, real estate, education, fintech, logistics, and more.",
+    q: "Which industries do you serve?",
+    a: "Retail, e-commerce, real estate, healthcare, education, hospitality, tech and professional services across Pakistan and internationally.",
   },
   {
-    q: "How does Venom Tech ensure project quality?",
-    a: "Our projects follow a structured workflow that includes research, planning, development, quality assurance, and performance testing to ensure high-quality results and long-term success.",
+    q: "How do you ensure quality?",
+    a: "Clear briefs, milestone approvals, internal QA and performance tracking on every project.",
   },
   {
-    q: "Can Venom Tech help improve my website’s SEO ranking?",
-    a: "Yes. Our SEO strategies are data-driven and tailored to your business goals, focusing on keyword optimization, technical SEO, content strategy, and link building to improve visibility and rankings.",
+    q: "Can you improve my Google rankings?",
+    a: "Yes, through our dedicated SEO services: technical audits, keyword research, content and link building.",
   },
   {
-    q: "Do you provide custom web and mobile app development?",
-    a: "Yes. We build fully customized websites and mobile applications tailored to your business requirements, ensuring scalability, performance, and user-friendly experiences.",
+    q: "Do you build custom websites and apps?",
+    a: "Yes. See our App Development service for mobile apps.",
   },
   {
     q: "How long does a typical project take?",
-    a: "Project timelines vary depending on complexity and scope. Simple websites may take a few weeks, while larger platforms and applications may require several months.",
+    a: "Branding 2–4 weeks, websites 3–6 weeks, apps 8–16 weeks. Marketing retainers run monthly.",
   },
   {
-    q: "Is my data secure with Venom Tech?",
-    a: "Yes. We follow industry-standard security practices, including secure coding, data protection protocols, and regular updates to safeguard your data and digital assets.",
+    q: "Is my business data secure?",
+    a: "Yes. We follow strict access controls and sign NDAs on request.",
   },
   {
-    q: "Does Venom Tech work with startups and small businesses?",
-    a: "Definitely. We offer flexible solutions and scalable packages designed specifically to help startups and small businesses grow efficiently and competitively.",
+    q: "Do you work with startups?",
+    a: "Yes. We offer starter packages built for small budgets and fast growth.",
   },
   {
-    q: "How does Venom Tech help increase conversions?",
-    a: "We focus on user experience, performance optimization, targeted marketing strategies, and analytics-driven improvements to convert visitors into customers and maximize ROI.",
+    q: "How do you increase conversions?",
+    a: "Through better UX, landing page testing, sharper ad targeting and clear calls to action.",
   },
 ];
 
@@ -59,15 +59,15 @@ export default function ServicesFaqSection() {
       className="py-10 sm:py-14 px-4 sm:px-6 lg:px-10 max-w-[1440px] mx-auto border-b border-[#E8E2F2]"
     >
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-14 sm:mb-16">
+        <div className="text-center mb-10 sm:mb-12">
           <div className="inline-flex items-center gap-1.5 mb-3 px-3.5 py-1.5 bg-[#F4E9FF] border border-[#C07DFF]/30 rounded-full">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#C07DFF]" color="#C07DFF" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#C07DFF] font-semibold">
-              Frequently Asked Questions
+              FAQ
             </span>
           </div>
-          <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-4xl sm:text-6xl text-[#111111] tracking-tight leading-[0.95]">
-            Everything You Need to Know About <span className="text-brand-gradient">Our Capabilities.</span>
+          <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[34px] sm:text-[44px] lg:text-[48px] text-[#111111] tracking-tight leading-[1.08]">
+            Questions About Our <span className="text-brand-gradient">Digital Marketing Services</span>
           </h2>
         </div>
 
@@ -89,9 +89,9 @@ export default function ServicesFaqSection() {
                   className="w-full flex items-center justify-between text-left p-5 sm:p-6 gap-4 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C07DFF]"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-sans font-semibold text-base sm:text-lg text-[#111111] leading-snug">
+                  <h3 className="font-sans font-semibold text-base sm:text-lg text-[#111111] leading-snug">
                     {item.q}
-                  </span>
+                  </h3>
 
                   <span className="flex-shrink-0 w-7 h-7 flex items-center justify-center text-[#C07DFF] transition-all">
                     {isOpen ? (

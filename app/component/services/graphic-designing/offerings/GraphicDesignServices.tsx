@@ -1,11 +1,12 @@
 import React from "react";
+import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 import BorderGlow from "@/app/component/global/ui/BorderGlow";
 
 const SERVICES = [
   {
     title: "Logo Design & Branding",
-    desc: "Distinctive logos, cohesive color systems, typography scales, and full brand guideline manuals that give your business an authoritative, unforgettable market identity.",
+    desc: "Unique logos, colour palettes, typography and brand guidelines.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" strokeLinecap="round" strokeLinejoin="round" />
@@ -16,7 +17,7 @@ const SERVICES = [
   },
   {
     title: "Social Media Design",
-    desc: "Scroll-stopping Instagram carousels, Facebook ad banners, LinkedIn infographics, and YouTube thumbnails designed to boost audience engagement and campaign ROI.",
+    desc: "Scroll-stopping posts, stories, carousels and ad creatives for Facebook, Instagram, TikTok and LinkedIn.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <rect x="5" y="2" width="14" height="20" rx="3" />
@@ -28,7 +29,7 @@ const SERVICES = [
   },
   {
     title: "Website & App Design",
-    desc: "Ergonomic UI/UX wireframes, interactive Figma prototypes, and clean visual design tokens crafted for intuitive navigation and high digital conversion rates.",
+    desc: "Modern UI designs, banners and graphics for your website and app.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <rect x="2" y="3" width="20" height="14" rx="2" />
@@ -41,7 +42,7 @@ const SERVICES = [
   },
   {
     title: "Packaging & Print Design",
-    desc: "Print-ready packaging boxes, custom die-cut labels, corporate brochures, business cards, flyers, and large-scale billboards with precise CMYK color calibration.",
+    desc: "Product packaging, labels, brochures, flyers, business cards and billboards.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
@@ -72,7 +73,7 @@ export default function GraphicDesignServices() {
           </h2>
 
           <p className="font-sans text-stone-600 text-sm sm:text-base lg:text-lg leading-relaxed">
-            We craft visually stunning, brand-focused designs that speak directly to your target audience and outlast fleeting design fads.
+            From startups needing their first logo to established brands ready for a refresh, we design visuals that communicate clearly and convert.
           </p>
         </div>
 
@@ -114,12 +115,15 @@ export default function GraphicDesignServices() {
                 </div>
 
                 {/* Bottom decorative bar */}
-                <div className="pt-6 mt-6 border-t border-[#F5EBFF] flex items-center justify-between text-xs font-semibold text-[#0284C7]">
+                <Link
+                  href="/screens/contactus"
+                  className="pt-6 mt-6 border-t border-[#F5EBFF] flex items-center justify-between text-xs font-semibold text-[#0284C7] hover:text-[#000000] transition-colors"
+                >
                   <span className="font-[family-name:var(--font-oswald)] uppercase tracking-wider">
                     Learn More
                   </span>
                   <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-                </div>
+                </Link>
               </div>
             </BorderGlow>
           ))}
@@ -128,4 +132,3 @@ export default function GraphicDesignServices() {
     </section>
   );
 }
-

@@ -87,6 +87,8 @@ export interface ContactMultiStepFormProps {
   variant?: "glass" | "glass-dark";
   compact?: boolean;
   className?: string;
+  formTitle?: string;
+  headingTag?: "h2" | "h3";
   onSuccess?: (lead: Lead) => void;
 }
 
@@ -96,6 +98,8 @@ export default function ContactMultiStepForm({
   variant = "glass",
   compact = false,
   className = "",
+  formTitle,
+  headingTag = "h3",
   onSuccess,
 }: ContactMultiStepFormProps) {
   const isDark = variant === "glass-dark";
@@ -507,13 +511,23 @@ export default function ContactMultiStepForm({
                       STEP 01 / 03 &bull; IDENTIFICATION
                     </span>
                   </div>
-                  <h3
-                    className={`font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[32px] sm:text-[44px] tracking-tight leading-tight ${
-                      isDark ? "text-white" : "text-[#111111]"
-                    }`}
-                  >
-                    Tell Us About Your Project &amp; Business
-                  </h3>
+                  {headingTag === "h2" ? (
+                    <h2
+                      className={`font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[32px] sm:text-[44px] tracking-tight leading-tight ${
+                        isDark ? "text-white" : "text-[#111111]"
+                      }`}
+                    >
+                      {formTitle || "Tell Us About Your Project & Business"}
+                    </h2>
+                  ) : (
+                    <h3
+                      className={`font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[32px] sm:text-[44px] tracking-tight leading-tight ${
+                        isDark ? "text-white" : "text-[#111111]"
+                      }`}
+                    >
+                      {formTitle || "Tell Us About Your Project & Business"}
+                    </h3>
+                  )}
                   <p
                     className={`font-sans text-xs mt-1 ${
                       isDark ? "text-stone-300" : "text-stone-600"

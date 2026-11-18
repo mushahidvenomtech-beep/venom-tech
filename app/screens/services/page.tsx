@@ -11,14 +11,14 @@ import ServicesFaqSection from "@/app/components/services/faq/ServicesFaqSection
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
 
 export const metadata: Metadata = {
-  title: "Our Services & Capabilities | CREAT* - Digital Studio",
-  description: "Explore our creative capabilities: AI Automation, App Development, Graphic Designing, SEO, Brand Identity, and Digital Strategy.",
+  title: "Digital Marketing Services in Pakistan | Venom Tech",
+  description: "Explore our digital marketing and technology services in Pakistan: SEO, Paid Advertising, Web & App Development, Brand Identity, and AI Automation.",
   alternates: {
     canonical: "/screens/services",
   },
   openGraph: {
-    title: "Services & Capabilities | CREAT* Creative Agency",
-    description: "From concept to completion. Comprehensive creative and technical services tailored for scaling brands.",
+    title: "Digital Marketing Services in Pakistan | Venom Tech",
+    description: "From concept to completion. Comprehensive creative, digital marketing, and technical services tailored for scaling brands across Pakistan and beyond.",
     url: "/screens/services",
     type: "website",
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const jsonLdServices = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "CREAT* Agency Capabilities",
+  name: "Venom Tech Digital Marketing Services",
   itemListElement: [
     { "@type": "Service", name: "AI Automation", serviceType: "AI & Workflow Automation" },
     { "@type": "Service", name: "App Development", serviceType: "Full-Stack Web & Mobile Engineering" },

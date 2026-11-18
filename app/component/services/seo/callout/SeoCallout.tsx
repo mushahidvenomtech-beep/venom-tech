@@ -9,11 +9,11 @@ export default function SeoCallout() {
 
       <div className="max-w-4xl mx-auto text-center relative z-10 space-y-6">
         <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-          We Are Your Trusted <span className="text-brand-gradient">SEO Company</span> in Lahore
+          Your Trusted <span className="text-brand-gradient">SEO Company in Lahore</span>
         </h2>
 
-        <p className="font-sans text-stone-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-          Partner with certified search architects. We analyze your website structure, identify quick keyword wins, and deliver an aggressive 90-day organic growth plan.
+        <p className="font-sans text-stone-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+          Our SEO specialists build a clear 90-day growth plan for your website, with monthly reports that show exactly where your rankings, traffic and leads are moving.
         </p>
 
         <div className="pt-2">
@@ -21,7 +21,7 @@ export default function SeoCallout() {
             href="tel:+923214774200"
             className="inline-flex items-center gap-3 px-8 sm:px-10 py-4 sm:py-5 rounded-full bg-gradient-to-r from-[#C07DFF] via-[#7F8BFF] to-[#3BC8F6] text-white font-[family-name:var(--font-oswald)] uppercase font-bold text-sm sm:text-base tracking-wider shadow-xl shadow-[#3BC8F6]/30 hover:opacity-95 hover:scale-105 active:scale-95 transition-all duration-300"
           >
-            <span>Talk to our Search Expert</span>
+            <span>Talk to Our SEO Expert</span>
             <span className="opacity-70">&bull;</span>
             <span className="font-mono text-white underline underline-offset-4">+92 321 4774200</span>
           </a>
@@ -30,4 +30,3 @@ export default function SeoCallout() {
     </section>
   );
 }
-

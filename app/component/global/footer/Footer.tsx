@@ -22,9 +22,8 @@ export default function Footer() {
                 Let&apos;s Build Together
               </span>
             </div>
-            <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[44px] sm:text-[44px] lg:text-[44px] text-[#000000] tracking-tight leading-[1.08]">
-              Join hands with us and <br className="hidden sm:inline" />
-              <span className="text-brand-gradient">start your success journey today.</span>
+            <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[34px] sm:text-[44px] lg:text-[44px] text-[#000000] tracking-tight leading-[1.08]">
+              Let&apos;s Build Something <span className="text-brand-gradient">Great Together</span>
             </h2>
           </div>
 
@@ -41,7 +40,7 @@ export default function Footer() {
             textColor="#ffffff"
             className="inline-flex items-center justify-center gap-3 px-8 py-4 text-white font-[family-name:var(--font-oswald)] uppercase font-bold text-sm tracking-wider shadow-lg shadow-[#3BC8F6]/20 hover:opacity-95 hover:scale-[1.02] active:scale-[0.98] transition-all flex-shrink-0 self-start lg:self-center cursor-pointer"
           >
-            <span>Start Project</span>
+            <span>Start Your Project</span>
             <span>&rarr;</span>
           </StarBorder>
         </div>

@@ -25,17 +25,17 @@ export default function AdvertisingProcess() {
 
         {/* Tree Flowchart Diagram */}
         <div className="max-w-4xl mx-auto relative">
-          {/* Level 1: Root Node (Market & Audience Research) */}
+          {/* Level 1: Root Node (Research) */}
           <div className="flex justify-center mb-10 relative z-10">
             <div className="w-full max-w-md p-6 sm:p-7 rounded-2xl bg-white border-2 border-[#C07DFF] shadow-lg shadow-[#C07DFF]/15 text-center transition-transform hover:scale-[1.02]">
               <span className="px-3 py-1 rounded-full bg-[#F5EBFF] text-[#C07DFF] font-[family-name:var(--font-oswald)] uppercase text-xs font-bold tracking-wider mb-2 inline-block">
                 Stage 01 &bull; Research
               </span>
               <h3 className="font-[family-name:var(--font-oswald)] uppercase font-bold text-xl sm:text-2xl text-[#111111] mb-2">
-                Market &amp; Audience Research
+                Research
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Auditing current ad performance, mapping buyer personas, and reverse-engineering competitor media strategies.
+                Understand your market, competitors and audience.
               </p>
             </div>
           </div>
@@ -49,31 +49,31 @@ export default function AdvertisingProcess() {
             <div className="absolute right-0 top-0 w-0.5 h-6 bg-[#3BC8F6]/60" />
           </div>
 
-          {/* Level 2: Formulation & Creative Production */}
+          {/* Level 2: Strategy & Creative Production */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12 mb-10 relative z-10">
-            {/* Left: Strategic Formulation */}
+            {/* Left: Strategy */}
             <div className="p-6 sm:p-7 rounded-2xl bg-white border-2 border-[#3BC8F6]/60 shadow-md hover:border-[#3BC8F6] transition-all text-center group">
               <span className="px-3 py-1 rounded-full bg-[#E8F9FF] text-[#0284C7] font-[family-name:var(--font-oswald)] uppercase text-xs font-bold tracking-wider mb-2 inline-block">
                 Stage 02 &bull; Strategy
               </span>
               <h3 className="font-[family-name:var(--font-oswald)] uppercase font-bold text-lg sm:text-xl text-[#111111] mb-2 group-hover:text-[#0284C7] transition-colors">
-                Strategic Campaign Formulation
+                Strategy
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Structuring full-funnel architectures (prospecting, retargeting, loyalty), budgets, and ROAS milestone targets.
+                Set goals, channels, budgets and KPIs.
               </p>
             </div>
 
-            {/* Right: Media Planning & Creative Production */}
+            {/* Right: Creative */}
             <div className="p-6 sm:p-7 rounded-2xl bg-white border-2 border-[#3BC8F6]/60 shadow-md hover:border-[#3BC8F6] transition-all text-center group">
               <span className="px-3 py-1 rounded-full bg-[#E8F9FF] text-[#0284C7] font-[family-name:var(--font-oswald)] uppercase text-xs font-bold tracking-wider mb-2 inline-block">
                 Stage 03 &bull; Creative
               </span>
               <h3 className="font-[family-name:var(--font-oswald)] uppercase font-bold text-lg sm:text-xl text-[#111111] mb-2 group-hover:text-[#0284C7] transition-colors">
-                Media Planning &amp; Creative Production
+                Creative
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Producing scroll-stopping video hooks, motion graphics, carousel cards, and direct-response sales copy.
+                Produce ad copy, images and videos.
               </p>
             </div>
           </div>
@@ -84,31 +84,31 @@ export default function AdvertisingProcess() {
             <div className="w-0.5 h-6 bg-[#C07DFF]/60 mx-auto" />
           </div>
 
-          {/* Level 3: Execution & Optimization */}
+          {/* Level 3: Launch & Scale */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12 relative z-10">
-            {/* Left: Execution & Launch */}
+            {/* Left: Launch */}
             <div className="p-6 sm:p-7 rounded-2xl bg-white border-2 border-[#C07DFF]/60 shadow-md hover:border-[#C07DFF] transition-all text-center group">
               <span className="px-3 py-1 rounded-full bg-[#F5EBFF] text-[#C07DFF] font-[family-name:var(--font-oswald)] uppercase text-xs font-bold tracking-wider mb-2 inline-block">
                 Stage 04 &bull; Launch
               </span>
               <h3 className="font-[family-name:var(--font-oswald)] uppercase font-bold text-lg sm:text-xl text-[#111111] mb-2 group-hover:text-[#C07DFF] transition-colors">
-                Execution &amp; Multi-Channel Launch
+                Launch
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Deploying ad sets across Meta, Google, and TikTok with pixel verification and Conversions API (CAPI) setups.
+                Set up tracking and go live.
               </p>
             </div>
 
-            {/* Right: Analytical Reporting & Optimization */}
+            {/* Right: Scale */}
             <div className="p-6 sm:p-7 rounded-2xl bg-white border-2 border-[#C07DFF]/60 shadow-md hover:border-[#C07DFF] transition-all text-center group">
               <span className="px-3 py-1 rounded-full bg-[#F5EBFF] text-[#C07DFF] font-[family-name:var(--font-oswald)] uppercase text-xs font-bold tracking-wider mb-2 inline-block">
                 Stage 05 &bull; Scale
               </span>
               <h3 className="font-[family-name:var(--font-oswald)] uppercase font-bold text-lg sm:text-xl text-[#111111] mb-2 group-hover:text-[#C07DFF] transition-colors">
-                Analytical Reporting &amp; Scaling
+                Scale
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Real-time ROAS telemetry, algorithmic budget scaling to winning ad creatives, and bi-weekly growth reviews.
+                Optimize winners and scale what works.
               </p>
             </div>
           </div>
@@ -117,4 +117,3 @@ export default function AdvertisingProcess() {
     </section>
   );
 }
-

@@ -4,11 +4,11 @@ import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 
 const REASONS = [
-  "Custom AI solutions tailored to your business architecture and existing tech stack.",
-  "High-precision, self-healing automated workflows with enterprise security and zero downtime.",
-  "Scalable cloud infrastructure engineered to handle millions of event triggers effortlessly.",
-  "Proven track record significantly reducing operational overhead and manual human error.",
-  "Dedicated 24/7 technical monitoring, ongoing model fine-tuning, and post-launch support.",
+  "Custom solutions designed around your workflows",
+  "Reliable systems with monitoring and error handling",
+  "Scalable automation that grows with your business",
+  "Proven experience across multiple industries",
+  "Ongoing support, training and optimization",
 ];
 
 export default function AiAutomationWhyChoose() {
@@ -20,7 +20,7 @@ export default function AiAutomationWhyChoose() {
       </div>
 
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
-        {/* Left Column: Overlapping Dual Visual Cards (Matching Screenshot) */}
+        {/* Left Column: Overlapping Dual Visual Cards */}
         <div className="lg:col-span-6 order-2 lg:order-1">
           <div className="relative w-full max-w-lg lg:max-w-none mx-auto h-[340px] sm:h-[440px] lg:h-[480px]">
             {/* Ambient Background Glows */}
@@ -58,16 +58,16 @@ export default function AiAutomationWhyChoose() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#E8F9FF] border border-[#3BC8F6]/30 rounded-full">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#0284C7]" color="#0284C7" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#0284C7] font-semibold">
-              The Venom Tech Advantage
+              Why Choose Us
             </span>
           </div>
 
           <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-3xl sm:text-5xl lg:text-6xl text-[#000000] tracking-tight leading-[1.02]">
-            Why Choose Venom Tech as Your <span className="text-brand-gradient">AI Automation Agency?</span>
+            Why Choose Venom Tech <span className="text-brand-gradient">for AI Automation?</span>
           </h2>
 
-          <p className="font-sans text-stone-600 text-sm sm:text-base leading-relaxed">
-            We don&apos;t just install off-the-shelf bots. We engineer resilient, custom enterprise automation ecosystems that streamline operations, empower your human talent, and generate clear, measurable ROI.
+          <p className="font-sans text-stone-600 text-sm sm:text-base lg:text-lg leading-relaxed">
+            We build automation that works in the real world, not just in demos.
           </p>
 
           {/* Checklist */}
@@ -92,7 +92,7 @@ export default function AiAutomationWhyChoose() {
               className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-[#C07DFF] via-[#7F8BFF] to-[#3BC8F6] text-white font-[family-name:var(--font-oswald)] uppercase font-bold text-sm tracking-wider shadow-lg shadow-[#3BC8F6]/20 hover:opacity-95 hover:scale-105 active:scale-95 transition-all"
             >
               <span>Get Started</span>
-              <span>&rarr;</span>
+              <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
             </Link>
           </div>
         </div>
@@ -100,4 +100,3 @@ export default function AiAutomationWhyChoose() {
     </section>
   );
 }
-

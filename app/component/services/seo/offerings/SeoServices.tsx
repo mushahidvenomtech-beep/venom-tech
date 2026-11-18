@@ -1,11 +1,12 @@
 import React from "react";
+import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 import BorderGlow from "@/app/component/global/ui/BorderGlow";
 
 const SERVICES = [
   {
-    title: "Local Visibility",
-    desc: "Dominate Google Maps and the coveted Local 3-Pack. We optimize your Google Business Profile, build localized citations, and target high-converting geo-specific search queries in Lahore.",
+    title: "Local SEO",
+    desc: "Rank in Google Maps and \"near me\" searches with Google Business Profile optimization, local citations and reviews.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" strokeLinecap="round" strokeLinejoin="round" />
@@ -17,7 +18,7 @@ const SERVICES = [
   },
   {
     title: "Technical SEO",
-    desc: "Ensure seamless search engine crawling and indexing. We eliminate 404 errors, resolve redirect chains, optimize Core Web Vitals, and implement rich Schema.org structured data.",
+    desc: "Fix crawling, indexing, site speed, Core Web Vitals, schema and mobile issues.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" strokeLinecap="round" strokeLinejoin="round" />
@@ -27,8 +28,8 @@ const SERVICES = [
     tag: "Core Web Vitals",
   },
   {
-    title: "Organic Traffic",
-    desc: "Capture high-commercial-intent search queries. We conduct semantic keyword clustering, optimize header hierarchies, refine on-page copy, and craft content engineered to rank position #1.",
+    title: "On-Page SEO & Content",
+    desc: "Optimized titles, headings and content built around keyword clusters that drive organic traffic.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" strokeLinecap="round" strokeLinejoin="round" />
@@ -38,8 +39,8 @@ const SERVICES = [
     tag: "On-Page Optimization",
   },
   {
-    title: "Authority",
-    desc: "Build unstoppable domain authority through 100% white-hat link acquisition. We secure editorial placements on niche-relevant, high-DR media publications, podcasts, and digital PR outlets.",
+    title: "Link Building & Authority",
+    desc: "White-hat backlinks from relevant, high-authority websites.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" strokeLinecap="round" strokeLinejoin="round" />
@@ -68,7 +69,7 @@ export default function SeoServices() {
           </h2>
 
           <p className="font-sans text-stone-600 text-sm sm:text-base lg:text-lg leading-relaxed">
-            We offer custom search engine optimization strategies designed to drive sustainable organic traffic, elevate search rankings, and boost conversions for your business.
+            A complete SEO service that covers every factor Google uses to rank your website.
           </p>
         </div>
 
@@ -109,12 +110,15 @@ export default function SeoServices() {
                   </p>
                 </div>
 
-                {/* Bottom decorative bar */}
-                <div className="pt-6 mt-6 border-t border-[#F5EBFF] flex items-center justify-between text-xs font-semibold text-[#0284C7]">
-                  <span className="font-[family-name:var(--font-oswald)] uppercase tracking-wider">
-                    Learn More
-                  </span>
-                  <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                {/* Bottom CTA Link */}
+                <div className="pt-6 mt-6 border-t border-[#F5EBFF]">
+                  <Link
+                    href="/screens/contactus"
+                    className="inline-flex items-center justify-between w-full text-xs font-[family-name:var(--font-oswald)] uppercase font-bold tracking-wider text-[#0284C7] group-hover:text-[#C07DFF] transition-colors"
+                  >
+                    <span>Learn More</span>
+                    <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                  </Link>
                 </div>
               </div>
             </BorderGlow>
@@ -124,4 +128,3 @@ export default function SeoServices() {
     </section>
   );
 }
-

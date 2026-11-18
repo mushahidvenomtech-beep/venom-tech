@@ -16,37 +16,36 @@ export default function HeroSection() {
           <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-[#C07DFF]/30 bg-[#F4E9FF] rounded-full mb-6">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#C07DFF]" color="#C07DFF" strokeWidth={3.4} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs font-semibold tracking-wider text-[#C07DFF]">
-              Digital Creative Agency
+              Digital Marketing Agency in Pakistan
             </span>
           </div>
 
           {/* Headline */}
-          <h1 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[44px] sm:text-[44px] lg:text-[44px] tracking-[-0.03em] leading-[1.08] text-[#000000] mb-6">
-            Explore The <span className="text-brand-gradient">Power</span><br />
-            Of <span className="text-brand-gradient">Innovation</span>
+          <h1 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[34px] sm:text-[44px] lg:text-[46px] tracking-[-0.03em] leading-[1.08] text-[#000000] mb-6">
+            Digital Marketing That <span className="text-brand-gradient">Grows Your Business</span>
           </h1>
 
           {/* Subtext */}
           <p className="font-sans text-stone-600 text-base sm:text-lg max-w-xl leading-relaxed mb-8">
-            Helping businesses scale up and convert clicks into revenue. We are Venom Tech, delivering digitally engineered solutions that make your brand unshakable.
+            Venom Tech is a full-service digital marketing agency in Lahore, Pakistan. We combine SEO, paid advertising, creative design, app development and AI automation to bring you more traffic, more leads and more sales.
           </p>
 
           {/* Action Row */}
           <div className="flex flex-wrap items-center gap-4 sm:gap-5">
             <Link
               href="/screens/portfolio"
-              className="inline-flex items-center gap-3 bg-gradient-to-r from-[#C07DFF] to-[#3BC8F6] text-white px-8 py-4 font-[family-name:var(--font-oswald)] font-semibold text-base uppercase tracking-wider transition-all duration-300 group shadow-lg shadow-[#C07DFF]/25 hover:opacity-95 rounded-xl"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-[#C07DFF] to-[#3BC8F6] text-white px-7 sm:px-8 py-3.5 sm:py-4 font-[family-name:var(--font-oswald)] font-semibold text-sm sm:text-base uppercase tracking-wider transition-all duration-300 group shadow-lg shadow-[#C07DFF]/25 hover:opacity-95 rounded-xl"
             >
-              <span>Explore Work</span>
+              <span>Explore Our Work</span>
               <span className="text-white group-hover:translate-x-1 transition-transform">&rarr;</span>
             </Link>
 
             {/* Call to Action Button redirecting to contactus page */}
             <Link
               href="/screens/contactus"
-              className="inline-flex items-center gap-3 bg-white hover:bg-[#000000] text-[#000000] hover:text-white border-2 border-[#E8E2F2] hover:border-[#000000] px-8 py-4 font-[family-name:var(--font-oswald)] font-semibold text-base uppercase tracking-wider transition-all duration-300 group rounded-xl shadow-sm hover:shadow-md cursor-pointer"
+              className="inline-flex items-center gap-3 bg-white hover:bg-[#000000] text-[#000000] hover:text-white border-2 border-[#E8E2F2] hover:border-[#000000] px-7 sm:px-8 py-3.5 sm:py-4 font-[family-name:var(--font-oswald)] font-semibold text-sm sm:text-base uppercase tracking-wider transition-all duration-300 group rounded-xl shadow-sm hover:shadow-md cursor-pointer"
             >
-              <span>Contact Us</span>
+              <span>Get a Free Consultation</span>
               <span className="text-[#C07DFF] group-hover:text-white group-hover:translate-x-1 transition-transform">&rarr;</span>
             </Link>
           </div>

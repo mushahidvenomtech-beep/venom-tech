@@ -6,23 +6,23 @@ import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 const FAQS = [
   {
     q: "What graphic design services does Venom Tech provide?",
-    a: "We provide comprehensive creative design solutions including bespoke logo design, complete brand identity guidelines (colors, typography, iconography), social media graphics & paid ad creatives, corporate stationery, product packaging, brochures, website UI/UX mockups, and motion graphics.",
+    a: "Logo and brand identity design, social media graphics, ad creatives, website and app UI, packaging, print design and motion graphics.",
   },
   {
-    q: "Do you offer custom graphic design packages for startups and businesses?",
-    a: "Yes. We offer flexible engagement models tailored to startups, scaling companies, and established enterprises. Whether you need a focused identity sprint, individual marketing collateral, or a dedicated monthly design retainer pod, we structure our deliverables around your exact commercial goals.",
+    q: "Do you offer graphic design packages for startups?",
+    a: "Yes. We offer affordable startup branding packages and monthly social media design plans.",
   },
   {
-    q: "How long does it take to complete a graphic design project?",
-    a: "Timelines depend on project complexity. Standard logo concepts and initial moodboards are typically delivered within 3 to 5 business days. Comprehensive brand systems, packaging suites, or multi-page corporate collateral usually require 1 to 2 weeks with continuous feedback checkpoints.",
+    q: "How long does a graphic design project take?",
+    a: "A logo takes 5–7 working days, a full brand identity 2–4 weeks, and social media posts are delivered on a weekly schedule.",
   },
   {
-    q: "Why should I choose Venom Tech for graphic design services?",
-    a: "Unlike generic template agencies, Venom Tech pairs senior aesthetic craft with conversion psychology. Our designs are custom-crafted from blank canvases to reflect your unique value proposition, build lasting consumer trust, and outperform competitor campaigns.",
+    q: "Why choose Venom Tech for graphic design?",
+    a: "Experienced designers in Lahore, quick turnaround, revisions included and designs built with marketing performance in mind.",
   },
   {
-    q: "Can you handle both digital marketing and graphic design together?",
-    a: "Yes! In fact, that is one of our greatest competitive advantages. Our creative directors work directly alongside our digital advertising and SEO specialists, ensuring your graphics are not only visually captivating but also engineered to maximize click-through rates and paid campaign ROAS.",
+    q: "Can you handle digital marketing and design together?",
+    a: "Yes. Our design and advertising teams work together so your creatives and campaigns stay aligned.",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function GraphicDesignFaq() {
           </div>
 
           <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-3xl sm:text-5xl text-[#000000] tracking-tight leading-[1.02]">
-            Got Questions? <span className="text-brand-gradient">We Have Answers</span>
+            Graphic Design <span className="text-brand-gradient">FAQs</span>
           </h2>
 
           <p className="font-sans text-stone-600 text-sm sm:text-base leading-relaxed">
@@ -66,10 +66,12 @@ export default function GraphicDesignFaq() {
                 <button
                   type="button"
                   onClick={() => toggle(idx)}
-                  className="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 font-[family-name:var(--font-oswald)] font-bold text-lg sm:text-xl text-[#111111] hover:text-[#0284C7] transition-colors"
+                  className="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 group transition-colors"
                   aria-expanded={isOpen}
                 >
-                  <span>{faq.q}</span>
+                  <h3 className="font-[family-name:var(--font-oswald)] font-bold text-lg sm:text-xl text-[#111111] group-hover:text-[#0284C7] transition-colors">
+                    {faq.q}
+                  </h3>
                   <span
                     className={`w-8 h-8 rounded-full border border-[#E8E2F2] flex items-center justify-center flex-shrink-0 transition-transform duration-300 ${
                       isOpen ? "rotate-180 bg-[#E8F9FF] border-[#3BC8F6]/40 text-[#0284C7]" : "text-stone-400"
@@ -92,4 +94,3 @@ export default function GraphicDesignFaq() {
     </section>
   );
 }
-

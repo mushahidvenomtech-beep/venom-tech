@@ -83,19 +83,22 @@ const INITIAL_FEATURED_PROJECTS: Project[] = [
 
 const INITIAL_CATEGORIES = ["All", "Web Design", "Branding", "Development", "AI Automation"];
 
-interface PortfolioSectionProps {
+export interface PortfolioSectionProps {
   /** Show interactive category filter tabs above the project cards (used on /portfolio). */
   showCategoryFilters?: boolean;
   /** Show the top-right "View All Projects" CTA button. */
   showViewAllButton?: boolean;
   /** Maximum number of projects displayed when unfiltered; pass null to show all. */
   maxItems?: number | null;
+  /** Optional custom intro paragraph */
+  intro?: string;
 }
 
 export default function PortfolioSection({
   showCategoryFilters = false,
   showViewAllButton = true,
   maxItems = 6,
+  intro = "A look at recent websites, brands and digital products we have built for growing businesses.",
 }: PortfolioSectionProps = {}) {
   const [projects, setProjects] = useState<Project[]>(INITIAL_FEATURED_PROJECTS);
   const [categories, setCategories] = useState<string[]>(INITIAL_CATEGORIES);
@@ -173,8 +176,16 @@ export default function PortfolioSection({
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-10 relative z-10">
         <div>
+          {/* Eyebrow */}
+          <div className="inline-flex items-center gap-1.5 mb-3 px-3 py-1 bg-[#F4E9FF] border border-[#C07DFF]/30 rounded-full">
+            <AsteriskIcon className="w-3.5 h-3.5 text-[#C07DFF]" color="#C07DFF" strokeWidth={3} />
+            <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#C07DFF] font-semibold">
+              Portfolio
+            </span>
+          </div>
+
           <div className="flex items-center gap-2 mb-2">
-            <h2 className="font-[family-name:var(--font-oswald)] font-extrabold uppercase text-[44px] sm:text-[44px] text-[#111111] tracking-tight leading-[1.08]">
+            <h2 className="font-[family-name:var(--font-oswald)] font-extrabold uppercase text-[34px] sm:text-[44px] text-[#111111] tracking-tight leading-[1.08]">
               PORTFOLIO
             </h2>
             <AsteriskIcon
@@ -183,8 +194,8 @@ export default function PortfolioSection({
               strokeWidth={3.4}
             />
           </div>
-          <p className="font-sans text-stone-600 text-base max-w-lg">
-            A curated glimpse into our latest brand launches, e-commerce flagships, and spatial digital platforms.
+          <p className="font-sans text-stone-600 text-base max-w-lg leading-relaxed">
+            {intro}
           </p>
         </div>
 

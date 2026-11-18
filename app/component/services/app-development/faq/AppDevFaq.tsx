@@ -5,24 +5,24 @@ import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 
 const FAQS = [
   {
-    q: "What types of mobile app services does your company offer?",
-    a: "We provide full-lifecycle mobile engineering services including Native iOS (Swift & SwiftUI), Native Android (Kotlin & Jetpack Compose), Cross-Platform development (React Native & Flutter), custom backend cloud architecture (Node.js, Python, AWS, Firebase), mobile UI/UX design, App Store Optimization (ASO), and continuous post-launch maintenance & security updates.",
+    q: "What app development services do you offer?",
+    a: "Native iOS and Android apps, cross-platform apps, UI/UX design, backend and API development, and ongoing maintenance.",
   },
   {
-    q: "Do you develop custom apps and strategies for different industries and businesses?",
-    a: "Yes. We engineer bespoke mobile solutions for startups, scale-ups, and global enterprises across FinTech, Healthcare, E-Commerce, Real Estate, Logistics & Supply Chain, and On-Demand services. Every application is customized to meet strict industry standards such as HIPAA, GDPR, and PCI-DSS compliance.",
+    q: "Do you build apps for specific industries?",
+    a: "Yes: e-commerce, food delivery, real estate, healthcare, education, fintech, logistics and more.",
   },
   {
-    q: "Does your team only work with in-house development experts or support external teams?",
-    a: "We offer flexible engagement models. Venom Tech can serve as your complete end-to-end dedicated mobile development partner from day zero, or embed senior mobile architects, Flutter/React Native specialists, and QA testers directly into your existing in-house agile engineering pods.",
+    q: "How much does it cost to build an app in Pakistan?",
+    a: "It depends on features and platforms. A simple app may start from a modest budget, while complex apps cost more. We give a fixed quote after a free discovery call.",
   },
   {
-    q: "Do you provide custom digital advertising services and SEO, or do you specialize in just one?",
-    a: "We provide comprehensive 360-degree digital solutions. Alongside custom mobile app engineering, our in-house growth team provides App Store Optimization (ASO), Apple Search Ads, Google App Campaigns, paid social acquisition funnels, and enterprise technical SEO to maximize your user acquisition velocity.",
+    q: "How long does it take to build an app?",
+    a: "Most apps take 8–16 weeks from design to launch.",
   },
   {
-    q: "What types of reporting will you provide and how often?",
-    a: "Transparency is core to our delivery. You will receive bi-weekly sprint velocity reports, direct access to Jira/GitHub boards, interactive TestFlight & Google Play Internal Test builds, and weekly video strategy check-ins. Post-launch, we provide real-time telemetry dashboards tracking crash-free sessions, retention curves, and server latencies.",
+    q: "Do you publish the app on the App Store and Google Play?",
+    a: "Yes, we handle the full submission and approval process.",
   },
 ];
 
@@ -41,7 +41,7 @@ export default function AppDevFaq() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#E8F9FF] border border-[#3BC8F6]/30 rounded-full">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#0284C7]" color="#0284C7" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#0284C7] font-semibold">
-              Frequently Asked Questions
+              FAQ
             </span>
           </div>
 
@@ -50,7 +50,7 @@ export default function AppDevFaq() {
           </h2>
 
           <p className="font-sans text-stone-600 text-sm sm:text-base leading-relaxed">
-            Everything you need to know about our custom mobile app development process, timelines, and technology stacks.
+            Answers to common questions about building an app with Venom Tech.
           </p>
         </div>
 
@@ -66,10 +66,12 @@ export default function AppDevFaq() {
                 <button
                   type="button"
                   onClick={() => toggle(idx)}
-                  className="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 font-[family-name:var(--font-oswald)] font-bold text-lg sm:text-xl text-[#111111] hover:text-[#0284C7] transition-colors"
+                  className="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 group cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3BC8F6]"
                   aria-expanded={isOpen}
                 >
-                  <span>{faq.q}</span>
+                  <h3 className="font-[family-name:var(--font-oswald)] font-bold text-lg sm:text-xl text-[#111111] group-hover:text-[#0284C7] transition-colors leading-snug">
+                    {faq.q}
+                  </h3>
                   <span
                     className={`w-8 h-8 rounded-full border border-[#E8E2F2] flex items-center justify-center flex-shrink-0 transition-transform duration-300 ${
                       isOpen ? "rotate-180 bg-[#E8F9FF] border-[#3BC8F6]/40 text-[#0284C7]" : "text-stone-400"
@@ -92,4 +94,3 @@ export default function AppDevFaq() {
     </section>
   );
 }
-

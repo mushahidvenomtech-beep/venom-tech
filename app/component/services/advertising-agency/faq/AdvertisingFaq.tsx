@@ -5,24 +5,24 @@ import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 
 const FAQS = [
   {
-    q: "What types of advertising services does your company offer?",
-    a: "We offer full-service digital advertising across Meta (Facebook & Instagram), Google Ads (Search, Shopping, Performance Max, YouTube), TikTok Ads, and LinkedIn Advertising. Our solutions encompass audience targeting, video creative production, direct-response copywriting, and landing page conversion optimization.",
+    q: "What advertising services do you offer?",
+    a: "Google Ads, Meta (Facebook and Instagram) ads, TikTok ads, YouTube ads, LinkedIn ads, media buying, ad creative and CRO.",
   },
   {
-    q: "Do you develop custom advertising strategies for different industries and businesses?",
-    a: "Yes. Every brand requires a unique acquisition funnel. We design bespoke media strategies engineered around your industry unit economics—whether scaling multi-SKU e-commerce stores, driving high-ticket B2B sales pipelines, or capturing localized service leads.",
+    q: "Do you create industry-specific ad strategies?",
+    a: "Yes. Strategies are built around your industry, audience and sales cycle, whether e-commerce, real estate, education or services.",
   },
   {
-    q: "Does your company only work with in-house advertising experts?",
-    a: "Yes. All our media buyers, creative strategists, video editors, and tracking engineers are dedicated in-house specialists. You receive direct communication, rapid iteration cycles, and full accountability without intermediary outsourcing delays.",
+    q: "Do you have an in-house team?",
+    a: "Yes. Strategists, media buyers, designers and copywriters all work in-house in Lahore.",
   },
   {
-    q: "Do you provide digital advertising services and SEO, or do you specialize in just one?",
-    a: "We provide comprehensive 360-degree growth marketing. Our performance advertising team drives rapid, measurable customer acquisition, while our SEO department builds lasting organic search dominance—ensuring both short-term revenue spikes and long-term organic equity.",
+    q: "Do you offer both ads and SEO?",
+    a: "Yes. Combining paid ads with our SEO services gives you quick wins and long-term growth.",
   },
   {
-    q: "What type of reporting will you provide and how often?",
-    a: "Transparency is our foundation. You receive 24/7 access to real-time attribution dashboards displaying verified ROAS, CPA, click-through rates, and conversion volumes. Additionally, we provide weekly executive performance recaps and bi-weekly strategic roadmap calls.",
+    q: "How often will I get reports?",
+    a: "Weekly performance updates and a detailed monthly report, plus access to a live dashboard.",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function AdvertisingFaq() {
           </div>
 
           <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-3xl sm:text-5xl text-[#000000] tracking-tight leading-[1.02]">
-            Got Questions? <span className="text-brand-gradient">We Have Answers</span>
+            Advertising <span className="text-brand-gradient">FAQs</span>
           </h2>
 
           <p className="font-sans text-stone-600 text-sm sm:text-base leading-relaxed">
@@ -66,10 +66,12 @@ export default function AdvertisingFaq() {
                 <button
                   type="button"
                   onClick={() => toggle(idx)}
-                  className="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 font-[family-name:var(--font-oswald)] font-bold text-lg sm:text-xl text-[#111111] hover:text-[#0284C7] transition-colors"
+                  className="w-full text-left p-6 sm:p-7 flex items-center justify-between gap-4 group transition-colors"
                   aria-expanded={isOpen}
                 >
-                  <span>{faq.q}</span>
+                  <h3 className="font-[family-name:var(--font-oswald)] font-bold text-lg sm:text-xl text-[#111111] group-hover:text-[#0284C7] transition-colors">
+                    {faq.q}
+                  </h3>
                   <span
                     className={`w-8 h-8 rounded-full border border-[#E8E2F2] flex items-center justify-center flex-shrink-0 transition-transform duration-300 ${
                       isOpen ? "rotate-180 bg-[#E8F9FF] border-[#3BC8F6]/40 text-[#0284C7]" : "text-stone-400"
@@ -92,4 +94,3 @@ export default function AdvertisingFaq() {
     </section>
   );
 }
-

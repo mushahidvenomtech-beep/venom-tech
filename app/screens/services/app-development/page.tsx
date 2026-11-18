@@ -12,16 +12,16 @@ import AppDevProcess from "@/app/component/services/app-development/process/AppD
 import AppDevFaq from "@/app/component/services/app-development/faq/AppDevFaq";
 
 export const metadata: Metadata = {
-  title: "Mobile App Development Services | Venom Tech IT Solution",
+  title: "Custom Mobile App Development Company in Pakistan | Venom Tech",
   description:
-    "Custom mobile app development by Venom Tech. High-performance native iOS, Android, and cross-platform Flutter/React Native solutions engineered to solve complex business challenges.",
+    "Turn your idea into a fast, secure and user-friendly app. Venom Tech designs and builds iOS, Android and cross-platform apps for startups and businesses in Lahore and across Pakistan, handling everything from planning to launch.",
   alternates: {
     canonical: "/screens/services/app-development",
   },
   openGraph: {
-    title: "Mobile App Development Services | Venom Tech IT Solution",
+    title: "Custom Mobile App Development Company in Pakistan | Venom Tech",
     description:
-      "Transform your business with custom iOS, Android, and cross-platform mobile apps engineered for fluid experiences, high conversion, and enterprise scale.",
+      "Turn your idea into a fast, secure and user-friendly app. Venom Tech designs and builds iOS, Android and cross-platform apps for startups and businesses in Lahore and across Pakistan, handling everything from planning to launch.",
     url: "/screens/services/app-development",
     images: [{ url: "/images/services/app-development.webp" }],
   },
@@ -80,7 +80,7 @@ export default function AppDevelopmentPage() {
         <AppDevProcess />
 
         {/* 6. Portfolio Showcase */}
-        <PortfolioSection />
+        <PortfolioSection intro="Apps and digital products we've designed and built for our clients." />
 
         {/* 7. What Our Clients Say (Verified Client Reviews) */}
         <TestimonialsSection />
@@ -89,8 +89,16 @@ export default function AppDevelopmentPage() {
         <AppDevFaq />
       </main>
 
-      {/* Global Brand Footer */}
-      <HomeFooter />
+      {/* Global Brand Footer with App Development CTA */}
+      <HomeFooter
+        ctaHeading={
+          <>
+            Let&apos;s Build Your <span className="text-brand-gradient">App Together</span>
+          </>
+        }
+        ctaLine="Share your idea and get a free consultation and estimate."
+        ctaButtonText="Start Project"
+      />
     </div>
   );
 }

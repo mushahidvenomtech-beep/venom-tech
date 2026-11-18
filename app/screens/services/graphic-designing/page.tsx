@@ -14,16 +14,16 @@ import GraphicDesignProcess from "@/app/component/services/graphic-designing/pro
 import GraphicDesignFaq from "@/app/component/services/graphic-designing/faq/GraphicDesignFaq";
 
 export const metadata: Metadata = {
-  title: "Professional Graphic Designing Services in Lahore | Venom Tech IT Solution",
+  title: "Professional Graphic Design Services in Lahore | Venom Tech",
   description:
-    "Award-winning graphic design services by Venom Tech in Lahore. Brand identity, custom logo design, high-converting social media creatives, packaging, and UI/UX graphics.",
+    "Your brand gets one chance to make a first impression. Venom Tech's graphic designers in Lahore create logos, brand identities, social media creatives and print designs that make your business look credible, memorable and ready to sell.",
   alternates: {
     canonical: "/screens/services/graphic-designing",
   },
   openGraph: {
-    title: "Professional Graphic Designing in Lahore | Venom Tech IT Solution",
+    title: "Professional Graphic Design Services in Lahore | Venom Tech",
     description:
-      "Turn your business vision into visual reality with bespoke brand identity, logo design, packaging, and digital marketing graphics by Venom Tech.",
+      "Your brand gets one chance to make a first impression. Venom Tech's graphic designers in Lahore create logos, brand identities, social media creatives and print designs that make your business look credible, memorable and ready to sell.",
     url: "/screens/services/graphic-designing",
     images: [{ url: "/images/services/ui-design.webp" }],
   },
@@ -98,7 +98,15 @@ export default function GraphicDesigningPage() {
       </main>
 
       {/* Global Brand Footer */}
-      <HomeFooter />
+      <HomeFooter
+        ctaHeading={
+          <>
+            Let&apos;s Design Your <span className="text-brand-gradient">Brand Together</span>
+          </>
+        }
+        ctaButtonText="Start Project"
+        ctaButtonHref="/screens/contactus"
+      />
     </div>
   );
 }

@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import Navbar from "@/app/component/global/navigation/Navbar";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
 import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
-import TestimonialsSection from "@/app/components/home/testimonials/TestimonialsSection";
-import FaqSection from "@/app/components/home/faq/FaqSection";
+import AiAutomationTestimonials from "@/app/component/services/ai-automation/testimonials/AiAutomationTestimonials";
+import AiAutomationFaq from "@/app/component/services/ai-automation/faq/AiAutomationFaq";
 import AiAutomationHero from "@/app/component/services/ai-automation/hero/AiAutomationHero";
 import AiAutomationOverview from "@/app/component/services/ai-automation/overview/AiAutomationOverview";
 import AiAutomationIndustries from "@/app/component/services/ai-automation/industries/AiAutomationIndustries";
@@ -14,16 +14,16 @@ import AiAutomationWhyChoose from "@/app/component/services/ai-automation/whycho
 import AiAutomationProcess from "@/app/component/services/ai-automation/process/AiAutomationProcess";
 
 export const metadata: Metadata = {
-  title: "AI Automation Services | Venom Tech IT Solution",
+  title: "AI Automation Services in Pakistan | Venom Tech",
   description:
-    "Enterprise AI automation services by Venom Tech. Intelligent robotic process automation (RPA), custom workflow engineering, AI chatbots, and predictive intelligence.",
+    "Venom Tech helps businesses in Pakistan save time and cut costs by automating repetitive work with AI. Custom chatbots, workflow automation, and real-time reporting.",
   alternates: {
     canonical: "/screens/services/ai-automation",
   },
   openGraph: {
-    title: "AI Automation Services | Venom Tech IT Solution",
+    title: "AI Automation Services in Pakistan | Venom Tech",
     description:
-      "Empower your business with smart AI automation solutions tailored to streamline operations, reduce costs, and accelerate digital transformation.",
+      "Venom Tech helps businesses in Pakistan save time and cut costs by automating repetitive work with AI. Custom chatbots, workflow automation, and real-time reporting.",
     url: "/screens/services/ai-automation",
     images: [{ url: "/images/services/ai-automation.webp" }],
   },
@@ -90,15 +90,22 @@ export default function AiAutomationPage() {
         {/* 8. Portfolio Showcase */}
         <PortfolioSection />
 
-        {/* 9. What Our Clients Say (Real Reviews) */}
-        <TestimonialsSection />
+        {/* 9. What Our Automation Clients Say (Real Reviews) */}
+        <AiAutomationTestimonials />
 
-        {/* 9. Frequently Asked Questions */}
-        <FaqSection />
+        {/* 10. Frequently Asked Questions */}
+        <AiAutomationFaq />
       </main>
 
-      {/* Global Brand Footer */}
-      <HomeFooter />
+      {/* Global Brand Footer with AI Automation CTA */}
+      <HomeFooter
+        ctaHeading={
+          <>
+            Ready to Automate Your Business? <span className="text-brand-gradient">Let&apos;s Start Today.</span>
+          </>
+        }
+        ctaButtonText="Start Project"
+      />
     </div>
   );
 }

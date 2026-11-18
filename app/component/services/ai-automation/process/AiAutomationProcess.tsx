@@ -10,7 +10,7 @@ export default function AiAutomationProcess() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#E8F9FF] border border-[#3BC8F6]/30 rounded-full">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#0284C7]" color="#0284C7" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#0284C7] font-semibold">
-              Implementation Roadmap
+              Process
             </span>
           </div>
 
@@ -32,10 +32,10 @@ export default function AiAutomationProcess() {
                 Stage 01
               </span>
               <h3 className="font-[family-name:var(--font-oswald)] uppercase font-bold text-xl text-[#111111] mb-1">
-                Discovery &amp; Requirements Analysis
+                Discovery &amp; Requirements
               </h3>
               <p className="font-sans text-xs text-stone-600 leading-relaxed">
-                Mapping repetitive tasks, evaluating data readiness, and defining quantifiable ROI milestones.
+                We study your workflows and find the tasks with the highest automation value.
               </p>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function AiAutomationProcess() {
                 AI Architecture &amp; Strategy
               </h3>
               <p className="font-sans text-xs text-stone-600 leading-relaxed">
-                Designing end-to-end event blueprints, data schemas, security gates, and failover protocols.
+                We design the automation plan, tools and integrations.
               </p>
             </div>
 
@@ -73,7 +73,7 @@ export default function AiAutomationProcess() {
                 Model &amp; Stack Selection
               </h3>
               <p className="font-sans text-xs text-stone-600 leading-relaxed">
-                Benchmarking state-of-the-art LLMs, RPA engines, and webhook APIs optimal for your budget.
+                We choose the right AI models and platforms for cost, speed and accuracy.
               </p>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function AiAutomationProcess() {
                 Development &amp; Integration
               </h3>
               <p className="font-sans text-xs text-stone-600 leading-relaxed">
-                Writing custom bridging code, training models on private data, and linking your live SaaS tools.
+                We build, connect and configure the automation with your existing systems.
               </p>
             </div>
 
@@ -108,7 +108,7 @@ export default function AiAutomationProcess() {
                 Testing, Deployment &amp; Scaling
               </h3>
               <p className="font-sans text-xs text-stone-600 leading-relaxed">
-                Staging stress tests, staff training, live launch, and real-time automated health telemetry.
+                We test, launch, train your team and scale as you grow.
               </p>
             </div>
           </div>
@@ -117,4 +117,3 @@ export default function AiAutomationProcess() {
     </section>
   );
 }
-

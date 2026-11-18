@@ -20,7 +20,7 @@ export default function AdvertisingHero() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#E8F9FF]/10 backdrop-blur-md border border-[#3BC8F6]/40 rounded-full">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#3BC8F6]" color="#3BC8F6" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#3BC8F6] font-semibold">
-              Venom Tech IT Solution &bull; Performance Advertising
+              Performance Advertising
             </span>
           </div>
 
@@ -29,16 +29,16 @@ export default function AdvertisingHero() {
           </h1>
 
           <p className="font-sans text-stone-300 text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl">
-            Scale customer acquisition, maximize return on ad spend (ROAS), and dominate paid media with high-converting creative hooks, precision audience targeting, and omnichannel attribution.
+            Stop wasting budget on ads that don&apos;t convert. Venom Tech plans, creates and manages data-driven ad campaigns on Google, Meta, TikTok and YouTube that bring real leads and sales to businesses across Pakistan.
           </p>
 
           {/* Key Capabilities List */}
           <ul className="space-y-3 pt-2 font-sans text-stone-300 text-sm sm:text-base">
             {[
-              "Multi-Channel Media Buying (Meta Ads, Google Search, TikTok, LinkedIn)",
-              "High-Converting Video Hooks, Static Ad Creatives & Direct-Response Copy",
-              "Algorithmic Bid Management & Conversion Rate Optimization (CRO)",
-              "Full-Funnel Omnichannel Attribution & Real-Time ROAS Telemetry Dashboards",
+              "Google Search, Display and YouTube ads",
+              "Facebook, Instagram and TikTok advertising",
+              "High-converting ad creatives and copy",
+              "Transparent ROAS tracking and reporting",
             ].map((item, idx) => (
               <li key={idx} className="flex items-center gap-3">
                 <span className="w-5 h-5 rounded-full bg-[#3BC8F6]/20 border border-[#3BC8F6] text-[#3BC8F6] flex items-center justify-center flex-shrink-0 text-xs font-bold">
@@ -73,6 +73,8 @@ export default function AdvertisingHero() {
             source="service_advertising_agency"
             variant="glass-dark"
             compact
+            formTitle="Tell Us About Your Advertising Goals"
+            headingTag="h2"
           />
         </div>
       </div>

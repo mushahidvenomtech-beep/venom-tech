@@ -124,14 +124,14 @@ export default function BlogSection() {
     >
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-10">
         <div>
-          <div className="inline-flex items-center gap-1.5 mb-2">
+          <div className="inline-flex items-center gap-1.5 mb-3 px-3 py-1 bg-[#F4E9FF] border border-[#C07DFF]/30 rounded-full">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#C07DFF]" color="#C07DFF" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#C07DFF] font-semibold">
               Latest News
             </span>
           </div>
-          <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[44px] sm:text-[44px] text-[#111111] tracking-tight leading-[1.08]">
-            Latest News, <span className="text-[#C07DFF]">Let&apos;s Collaborate.</span>
+          <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[34px] sm:text-[44px] text-[#111111] tracking-tight leading-[1.08]">
+            Latest Insights from <span className="text-brand-gradient">Our Blog</span>
           </h2>
         </div>
 

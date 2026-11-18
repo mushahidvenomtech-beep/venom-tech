@@ -4,10 +4,10 @@ import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 
 const STATS = [
-  { value: "110+", label: "Customers" },
-  { value: "150+", label: "Projects" },
-  { value: "85%", label: "Conversion Rate" },
-  { value: "90+", label: "Awards Winning" },
+  { value: "110+", label: "Happy Clients" },
+  { value: "150+", label: "Projects Delivered" },
+  { value: "85%", label: "Client Retention" },
+  { value: "90+", label: "Campaigns Launched" },
 ];
 
 export default function WhyChooseSection() {
@@ -59,12 +59,12 @@ export default function WhyChooseSection() {
             </span>
           </div>
 
-          <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[44px] sm:text-[44px] lg:text-[44px] text-[#000000] tracking-tight leading-[1.08] mb-6">
-            Why Choose <span className="text-brand-gradient">VENOMTECH</span> IT SOLUTIONS
+          <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[34px] sm:text-[44px] lg:text-[44px] text-[#000000] tracking-tight leading-[1.08] mb-6">
+            Why Businesses Choose <span className="text-brand-gradient">Venom Tech</span>
           </h2>
 
           <p className="font-sans text-stone-600 text-base sm:text-lg leading-relaxed mb-8">
-            This highlights our skills, experience, and quality of work, demonstrating our commitment to excellence.
+            We are not a one-service shop. Strategy, design, development and marketing sit under one roof, so your website, ads and content work together and every rupee you spend is tracked against real results.
           </p>
 
           {/* Stats Grid */}

@@ -4,11 +4,11 @@ import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 
 const REASONS = [
-  "Builds immediate trust and brand credibility across all customer touchpoints.",
-  "Differentiates your business from competitors with bold, bespoke visual identity.",
-  "Amplifies social media click-through rates, ad conversions, and brand recall.",
-  "Provides pixel-perfect assets optimized for high-resolution print and retina screens.",
-  "Delivers comprehensive brand style guides ensuring permanent visual consistency.",
+  "Builds instant trust and credibility",
+  "Sets you apart from competitors",
+  "Improves ad and social media performance",
+  "Gives you print-ready, high-quality assets",
+  "Keeps your brand consistent with a clear style guide",
 ];
 
 export default function GraphicDesignWhyNeed() {
@@ -63,12 +63,12 @@ export default function GraphicDesignWhyNeed() {
           </div>
 
           <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-3xl sm:text-5xl lg:text-6xl text-[#000000] tracking-tight leading-[1.02]">
-            Why You Need Professional{" "}
-            <span className="text-brand-gradient">Graphic Designing in Lahore</span>
+            Why Your Business Needs{" "}
+            <span className="text-brand-gradient">Professional Graphic Design</span>
           </h2>
 
-          <p className="font-sans text-stone-600 text-sm sm:text-base leading-relaxed">
-            In today&apos;s fast-moving digital economy, customers make split-second judgments based on your visual presentation. We design unforgettable brands that win trust immediately and convert attention into sustained revenue.
+          <p className="font-sans text-stone-600 text-sm sm:text-base lg:text-lg leading-relaxed">
+            Customers judge your business by how it looks. Professional design builds trust before you say a word.
           </p>
 
           {/* Checklist */}
@@ -93,7 +93,7 @@ export default function GraphicDesignWhyNeed() {
               className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-[#C07DFF] via-[#7F8BFF] to-[#3BC8F6] text-white font-[family-name:var(--font-oswald)] uppercase font-bold text-sm tracking-wider shadow-lg shadow-[#3BC8F6]/20 hover:opacity-95 hover:scale-105 active:scale-95 transition-all"
             >
               <span>Get Started</span>
-              <span>&rarr;</span>
+              <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
             </Link>
           </div>
         </div>
@@ -101,4 +101,3 @@ export default function GraphicDesignWhyNeed() {
     </section>
   );
 }
-

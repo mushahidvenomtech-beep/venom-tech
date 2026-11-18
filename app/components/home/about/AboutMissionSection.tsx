@@ -19,12 +19,12 @@ export default function AboutMissionSection() {
             </span>
           </div>
 
-          <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-4xl sm:text-6xl lg:text-7xl text-[#000000] tracking-tight leading-[0.95] mb-6">
-            Your Vision, <span className="text-brand-gradient">Our Expertise</span> Every Step of the Way
+          <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-[34px] sm:text-[44px] lg:text-[48px] text-[#000000] tracking-tight leading-[1.08] mb-6">
+            Your Vision, <span className="text-brand-gradient">Our Expertise</span>, Every Step of the Way
           </h2>
 
           <p className="font-sans text-stone-600 text-base sm:text-lg leading-relaxed mb-8">
-            At Venom Tech, we are driven forward with the mission of helping businesses, large or small, dominate the digital landscape. Since 2022, we have been delivering top-tier digital marketing services in Lahore, helping our clients across the spectrum to achieve success and making their online presence unshakable. With a strong zeal for turning your business visions into a digital reality, we keep things simplified, smooth, effective, and in alignment with your requirements. We&apos;ve set the bar high, breaking new records with each success. With a focus on SEO, SEM, PPC, Social Media Marketing, Web Design and Development, Mobile App Development, Reputation Management, Branding, Email Marketing, and Google Products services, we provide innovative digital solutions designed to accelerate your business growth and enhance your online visibility. Partner with us and watch the magic happen!
+            Since 2022, Venom Tech has helped startups, SMEs and established brands across Pakistan grow online. From our office in Lahore, our team of marketers, designers and developers builds websites that convert, campaigns that pay back and brands people remember. We start by understanding your goals, then build a plan that fits your market and budget, and we report on progress in plain language.
           </p>
 
           <Link

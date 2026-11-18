@@ -13,11 +13,11 @@ export default function AiAutomationOverview() {
         </div>
 
         <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-3xl sm:text-5xl lg:text-6xl text-[#000000] tracking-tight leading-[1.02]">
-          What is <span className="text-brand-gradient">AI Automation?</span>
+          What Is <span className="text-brand-gradient">AI Automation?</span>
         </h2>
 
         <p className="font-sans text-stone-700 text-base sm:text-lg lg:text-xl leading-relaxed max-w-3xl mx-auto">
-          AI automation is the integration of artificial intelligence, machine learning, and robotic process automation into business workflows to execute tasks, analyze multi-source data, and optimize complex decisions with unprecedented speed and accuracy &mdash; empowering your team to focus on high-value creative and strategic growth.
+          AI automation uses artificial intelligence, machine learning and robotic process automation (RPA) to handle tasks that people usually do by hand, such as answering common questions, entering data, qualifying leads or generating reports. The result is faster work, fewer errors and a team freed up to focus on growth instead of repetitive admin.
         </p>
 
         <div className="pt-4 flex items-center justify-center gap-6 text-xs font-[family-name:var(--font-oswald)] uppercase tracking-wider text-stone-500 font-semibold">

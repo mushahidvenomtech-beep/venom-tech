@@ -25,17 +25,17 @@ export default function SeoProcess() {
 
         {/* Tree Flowchart Diagram */}
         <div className="max-w-4xl mx-auto relative">
-          {/* Level 1: Root Node (SEO Audit & Benchmark) */}
+          {/* Level 1: Root Node (SEO Audit) */}
           <div className="flex justify-center mb-10 relative z-10">
             <div className="w-full max-w-md p-6 sm:p-7 rounded-2xl bg-white border-2 border-[#C07DFF] shadow-lg shadow-[#C07DFF]/15 text-center transition-transform hover:scale-[1.02]">
               <span className="px-3 py-1 rounded-full bg-[#F5EBFF] text-[#C07DFF] font-[family-name:var(--font-oswald)] uppercase text-xs font-bold tracking-wider mb-2 inline-block">
                 Stage 01 &bull; Audit
               </span>
               <h3 className="font-[family-name:var(--font-oswald)] uppercase font-bold text-xl sm:text-2xl text-[#111111] mb-2">
-                SEO Audit &amp; Benchmark
+                SEO Audit
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                In-depth technical crawl, indexing analysis, backlink profile assessment, and historical keyword position audit.
+                A full review of your site&apos;s technical health, content and backlinks.
               </p>
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function SeoProcess() {
 
           {/* Level 2: Research & Technical Optimization */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12 mb-10 relative z-10">
-            {/* Left: Keyword Research */}
+            {/* Left: Keyword Research & Competitor Gap */}
             <div className="p-6 sm:p-7 rounded-2xl bg-white border-2 border-[#3BC8F6]/60 shadow-md hover:border-[#3BC8F6] transition-all text-center group">
               <span className="px-3 py-1 rounded-full bg-[#E8F9FF] text-[#0284C7] font-[family-name:var(--font-oswald)] uppercase text-xs font-bold tracking-wider mb-2 inline-block">
                 Stage 02 &bull; Research
@@ -60,11 +60,11 @@ export default function SeoProcess() {
                 Keyword Research &amp; Competitor Gap
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Uncovering high-intent commercial keywords and analyzing competitors to capitalize on untapped organic search traffic.
+                Find the keywords your customers use and where competitors outrank you.
               </p>
             </div>
 
-            {/* Right: Technical & On-Page SEO */}
+            {/* Right: On-Page & Technical SEO */}
             <div className="p-6 sm:p-7 rounded-2xl bg-white border-2 border-[#3BC8F6]/60 shadow-md hover:border-[#3BC8F6] transition-all text-center group">
               <span className="px-3 py-1 rounded-full bg-[#E8F9FF] text-[#0284C7] font-[family-name:var(--font-oswald)] uppercase text-xs font-bold tracking-wider mb-2 inline-block">
                 Stage 03 &bull; Optimization
@@ -73,7 +73,7 @@ export default function SeoProcess() {
                 On-Page &amp; Technical SEO
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Refining metadata, content depth, internal linking structure, mobile responsiveness, and Core Web Vitals speed scores.
+                Fix technical issues and optimize every key page.
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@ export default function SeoProcess() {
 
           {/* Level 3: Link Building & Tracking */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-12 relative z-10">
-            {/* Left: Link Building */}
+            {/* Left: High-Authority Link Building */}
             <div className="p-6 sm:p-7 rounded-2xl bg-white border-2 border-[#C07DFF]/60 shadow-md hover:border-[#C07DFF] transition-all text-center group">
               <span className="px-3 py-1 rounded-full bg-[#F5EBFF] text-[#C07DFF] font-[family-name:var(--font-oswald)] uppercase text-xs font-bold tracking-wider mb-2 inline-block">
                 Stage 04 &bull; Authority
@@ -95,11 +95,11 @@ export default function SeoProcess() {
                 High-Authority Link Building
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Securing contextual, high-DR editorial backlinks and digital PR citations to cement your site’s domain trust.
+                Earn quality backlinks that grow your domain authority.
               </p>
             </div>
 
-            {/* Right: Monitoring & Reporting */}
+            {/* Right: Monitoring & Growth Tracking */}
             <div className="p-6 sm:p-7 rounded-2xl bg-white border-2 border-[#C07DFF]/60 shadow-md hover:border-[#C07DFF] transition-all text-center group">
               <span className="px-3 py-1 rounded-full bg-[#F5EBFF] text-[#C07DFF] font-[family-name:var(--font-oswald)] uppercase text-xs font-bold tracking-wider mb-2 inline-block">
                 Stage 05 &bull; Telemetry
@@ -108,7 +108,7 @@ export default function SeoProcess() {
                 Monitoring &amp; Growth Tracking
               </h3>
               <p className="font-sans text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Live Google Search Console position tracking, organic revenue attribution, and monthly strategic review presentations.
+                Monthly reports on rankings, traffic and conversions.
               </p>
             </div>
           </div>
@@ -117,4 +117,3 @@ export default function SeoProcess() {
     </section>
   );
 }
-

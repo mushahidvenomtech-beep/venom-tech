@@ -1,48 +1,49 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import AsteriskIcon from "@/app/component/global/navigation/AsteriskIcon";
 import BorderGlow from "@/app/component/global/ui/BorderGlow";
 
 const SOLUTIONS = [
   {
-    title: "Business Automation Solutions",
-    desc: "Streamline field operations, enterprise workflow approvals, inventory scans, and internal messaging with secure enterprise mobile applications.",
+    title: "Business Automation Apps",
+    desc: "Internal apps that streamline orders, inventory, HR and field operations.",
     image: "/images/services/ai-bots.webp",
     tag: "Enterprise Automation",
   },
   {
-    title: "Custom AI Workflow Automation",
-    desc: "Embed on-device machine learning, voice transcription, computer vision, and context-aware predictive recommendations directly into mobile workflows.",
+    title: "AI-Powered App Features",
+    desc: "Smart recommendations, chatbots and automation built into your app.",
     image: "/images/services/ai-automation.webp",
     tag: "Mobile AI Models",
   },
   {
     title: "Custom Mobile App Development",
-    desc: "Full-lifecycle bespoke mobile engineering from architectural blueprint through App Store submission, engineered for ultra-fast load times and fluid 60FPS UI.",
+    desc: "Fully bespoke apps for e-commerce, delivery, booking, fintech and more.",
     image: "/images/services/app-development.webp",
     tag: "Bespoke Mobile",
   },
   {
     title: "Seamless System Integration",
-    desc: "Effortlessly bridge your mobile app with legacy enterprise databases, custom REST/GraphQL APIs, Salesforce/HubSpot CRMs, and payment gateways.",
+    desc: "Connect your app to payment gateways (JazzCash, Easypaisa, Stripe), CRMs and ERPs.",
     image: "/images/services/software-development.webp",
     tag: "APIs & Webhooks",
   },
   {
     title: "Scalable Cloud Backends",
-    desc: "High-concurrency serverless and microservices architectures built on AWS, GCP, and Firebase delivering sub-50ms latency at million-user scale.",
+    desc: "Secure cloud infrastructure that handles growth from 100 to 100,000+ users.",
     image: "/images/services/predictive-analytics.webp",
     tag: "Cloud Infrastructure",
   },
   {
     title: "Agile Development Process",
-    desc: "Bi-weekly sprint iterations, transparent GitHub/Jira roadmaps, continuous CI/CD pipelines, and early prototype validation with your team.",
+    desc: "Two-week sprints with regular demos, so you see progress and give feedback early.",
     image: "/images/services/lead-funnels.webp",
     tag: "Agile Sprints",
   },
   {
     title: "Performance & Security Optimization",
-    desc: "End-to-end AES-256 data encryption, biometric authentication (FaceID/Fingerprint), OWASP Mobile compliance, and battery-efficient network caching.",
+    desc: "Fast load times, data encryption and secure authentication.",
     image: "/images/services/digital-marketing.webp",
     tag: "Hardened Security",
   },
@@ -57,16 +58,16 @@ export default function AppDevSolutions() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#E8F9FF] border border-[#3BC8F6]/30 rounded-full">
             <AsteriskIcon className="w-3.5 h-3.5 text-[#0284C7]" color="#0284C7" strokeWidth={3} />
             <span className="font-[family-name:var(--font-oswald)] uppercase text-xs tracking-widest text-[#0284C7] font-semibold">
-              Comprehensive Capabilities
+              Innovative App Solutions
             </span>
           </div>
 
           <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-3xl sm:text-5xl lg:text-6xl text-[#000000] tracking-tight leading-[1.02]">
-            Innovative <span className="text-brand-gradient">App Solutions</span>
+            App Solutions <span className="text-brand-gradient">Built for Growth</span>
           </h2>
 
           <p className="font-sans text-stone-600 text-sm sm:text-base lg:text-lg leading-relaxed">
-            Cutting-edge mobile applications tailored for your industry and user base, built to scale effortlessly from MVP to millions of active users.
+            We go beyond the app itself to build the systems that power it.
           </p>
         </div>
 
@@ -118,13 +119,13 @@ export default function AppDevSolutions() {
 
                 {/* Card Footer CTA */}
                 <div className="px-6 pb-6 pt-2">
-                  <a
-                    href="#contact"
+                  <Link
+                    href="/screens/contactus"
                     className="inline-flex items-center gap-2 text-xs font-[family-name:var(--font-oswald)] uppercase font-bold tracking-wider text-[#0284C7] group-hover:text-[#C07DFF] transition-colors"
                   >
-                    <span>Consult Mobile Architect</span>
+                    <span>Talk to an App Expert</span>
                     <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
-                  </a>
+                  </Link>
                 </div>
               </article>
             </BorderGlow>
@@ -134,4 +135,3 @@ export default function AppDevSolutions() {
     </section>
   );
 }
-
