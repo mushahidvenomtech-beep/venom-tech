@@ -5,22 +5,22 @@ import BorderGlow from "@/app/component/global/ui/BorderGlow";
 const FOUNDATIONS = [
   {
     title: "Focus",
-    desc: "Your business priorities come first in everything we do. We work closely with you to understand objectives and deliver solutions that support continuous progress.",
+    desc: "We align every task with your KPIs and customer goals.",
     cardBg: "bg-[#EFF8FF] border-[#BAE6FD]/80 text-[#0369A1]",
   },
   {
     title: "Integrity",
-    desc: "We believe strong partnerships are built on honesty and responsibility. Our teams operate with clarity and follow through on every commitment with care and precision.",
+    desc: "Honest reporting and strict data confidentiality.",
     cardBg: "bg-[#F0FDF4] border-[#BBF7D0]/80 text-[#15803D]",
   },
   {
     title: "Agility",
-    desc: "We adjust quickly to new challenges and evolving requirements. Our teams remain responsive and prepared to support changing business demands without disruption.",
+    desc: "Teams that scale up or down quickly as your needs change.",
     cardBg: "bg-[#FAF5FF] border-[#E9D5FF]/80 text-[#7E22CE]",
   },
   {
     title: "Quality",
-    desc: "We maintain high standards across service delivery and performance. Continuous improvement ensures dependable results and long-lasting value for our clients.",
+    desc: "Ongoing training, call monitoring and QA scoring.",
     cardBg: "bg-[#F5F3FF] border-[#DDD6FE]/80 text-[#4338CA]",
   },
 ];
@@ -39,7 +39,7 @@ export default function BpoFoundations() {
           </div>
 
           <h2 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-3xl sm:text-5xl lg:text-6xl text-[#000000] tracking-tight leading-[1.02]">
-            Foundations That Shape <span className="text-brand-gradient">How We Work</span>
+            The Values Behind Our <span className="text-brand-gradient">BPO Services</span>
           </h2>
 
           <p className="font-sans text-stone-600 text-sm sm:text-base lg:text-lg leading-relaxed">
@@ -85,4 +85,3 @@ export default function BpoFoundations() {
     </section>
   );
 }
-

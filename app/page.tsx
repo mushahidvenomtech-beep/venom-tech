@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import HomePage from "./screens/home/page";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing That Grows Your Business | Venom Tech",
-  description: "Venom Tech is a full-service digital marketing agency in Lahore, Pakistan. We combine SEO, paid advertising, creative design, app development and AI automation to bring you more traffic, more leads and more sales.",
+  title: "Venom Tech | Digital Marketing Agency in Pakistan",
+  description: "Venom Tech is a Lahore-based digital marketing agency offering SEO, paid ads, app development, design and AI automation for businesses across Pakistan.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Digital Marketing That Grows Your Business | Venom Tech",
-    description: "Venom Tech is a full-service digital marketing agency in Lahore, Pakistan. We combine SEO, paid advertising, creative design, app development and AI automation to bring you more traffic, more leads and more sales.",
+    title: "Venom Tech | Digital Marketing Agency in Pakistan",
+    description: "Venom Tech is a Lahore-based digital marketing agency offering SEO, paid ads, app development, design and AI automation for businesses across Pakistan.",
     url: "/",
     siteName: "Venom Tech",
     locale: "en_US",
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Marketing That Grows Your Business | Venom Tech",
-    description: "Venom Tech is a full-service digital marketing agency in Lahore, Pakistan. We combine SEO, paid advertising, creative design, app development and AI automation to bring you more traffic, more leads and more sales.",
+    title: "Venom Tech | Digital Marketing Agency in Pakistan",
+    description: "Venom Tech is a Lahore-based digital marketing agency offering SEO, paid ads, app development, design and AI automation for businesses across Pakistan.",
   },
 };
 

@@ -34,7 +34,7 @@ export default function BpoHero() {
             <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 px-4 py-2 rounded-xl bg-white/95 backdrop-blur-md border border-[#E8E2F2] shadow-lg flex items-center gap-3">
               <span className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse" />
               <span className="font-[family-name:var(--font-oswald)] uppercase text-xs font-bold tracking-wider text-slate-900">
-                24/7 Dedicated Support Pods
+                24/7 Dedicated Support Teams
               </span>
             </div>
           </div>
@@ -50,12 +50,12 @@ export default function BpoHero() {
           </div>
 
           <h1 className="font-[family-name:var(--font-oswald)] uppercase font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.02] text-[#111111]">
-            Smart BPO Solutions Built for{" "}
+            BPO Services in Pakistan Built for{" "}
             <span className="text-brand-gradient">Modern Businesses</span>
           </h1>
 
           <p className="font-sans text-stone-600 text-base sm:text-lg leading-relaxed">
-            We help companies streamline daily operations by taking care of essential business processes with accuracy and consistency. From customer support to administrative tasks, our skilled professionals work as an extension of your team to deliver dependable results around the clock. With a focus on efficiency, quality, and scalability, our BPO services are designed to support long-term success while allowing you to focus on strategic growth.
+            Scale your operations without the cost of hiring in-house. Venom Tech provides trained, dedicated BPO teams in Lahore for call center, customer support, lead generation and back-office work, delivering accuracy, consistency and round-the-clock coverage for clients in Pakistan, the US, UK and beyond.
           </p>
 
           <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -78,4 +78,3 @@ export default function BpoHero() {
     </section>
   );
 }
-

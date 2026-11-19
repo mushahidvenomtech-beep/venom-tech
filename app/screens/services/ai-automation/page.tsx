@@ -16,14 +16,14 @@ import AiAutomationProcess from "@/app/component/services/ai-automation/process/
 export const metadata: Metadata = {
   title: "AI Automation Services in Pakistan | Venom Tech",
   description:
-    "Venom Tech helps businesses in Pakistan save time and cut costs by automating repetitive work with AI. Custom chatbots, workflow automation, and real-time reporting.",
+    "Cut manual work with AI automation services from Venom Tech, Lahore. RPA, AI chatbots, CRM automation and custom AI workflows for Pakistani businesses.",
   alternates: {
     canonical: "/screens/services/ai-automation",
   },
   openGraph: {
     title: "AI Automation Services in Pakistan | Venom Tech",
     description:
-      "Venom Tech helps businesses in Pakistan save time and cut costs by automating repetitive work with AI. Custom chatbots, workflow automation, and real-time reporting.",
+      "Cut manual work with AI automation services from Venom Tech, Lahore. RPA, AI chatbots, CRM automation and custom AI workflows for Pakistani businesses.",
     url: "/screens/services/ai-automation",
     images: [{ url: "/images/services/ai-automation.webp" }],
   },

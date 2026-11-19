@@ -13,16 +13,16 @@ import SeoProcess from "@/app/component/services/seo/process/SeoProcess";
 import SeoFaq from "@/app/component/services/seo/faq/SeoFaq";
 
 export const metadata: Metadata = {
-  title: "Expert SEO Services in Lahore to Grow Your Online Presence | Venom Tech",
+  title: "SEO Services in Lahore | SEO Company Pakistan | Venom Tech",
   description:
-    "Get found by customers who are already searching for what you sell. Our SEO team in Lahore helps businesses across Pakistan climb Google rankings and turn organic traffic into steady leads.",
+    "Rank higher on Google with Venom Tech's SEO services in Lahore. Technical SEO, local SEO, keyword research and white-hat link building. Free SEO audit.",
   alternates: {
     canonical: "/screens/services/seo",
   },
   openGraph: {
-    title: "Expert SEO Services in Lahore to Grow Your Online Presence | Venom Tech",
+    title: "SEO Services in Lahore | SEO Company Pakistan | Venom Tech",
     description:
-      "Get found by customers who are already searching for what you sell. Our SEO team in Lahore helps businesses across Pakistan climb Google rankings and turn organic traffic into steady leads.",
+      "Rank higher on Google with Venom Tech's SEO services in Lahore. Technical SEO, local SEO, keyword research and white-hat link building. Free SEO audit.",
     url: "/screens/services/seo",
     images: [{ url: "/images/services/predictive-analytics.webp" }],
   },

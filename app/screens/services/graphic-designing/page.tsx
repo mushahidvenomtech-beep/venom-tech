@@ -14,16 +14,16 @@ import GraphicDesignProcess from "@/app/component/services/graphic-designing/pro
 import GraphicDesignFaq from "@/app/component/services/graphic-designing/faq/GraphicDesignFaq";
 
 export const metadata: Metadata = {
-  title: "Professional Graphic Design Services in Lahore | Venom Tech",
+  title: "Graphic Design Services in Lahore | Venom Tech",
   description:
-    "Your brand gets one chance to make a first impression. Venom Tech's graphic designers in Lahore create logos, brand identities, social media creatives and print designs that make your business look credible, memorable and ready to sell.",
+    "Professional graphic design services in Lahore: logos, branding, social media posts, packaging and print. Creative designs that grow your brand. Get a free quote.",
   alternates: {
     canonical: "/screens/services/graphic-designing",
   },
   openGraph: {
-    title: "Professional Graphic Design Services in Lahore | Venom Tech",
+    title: "Graphic Design Services in Lahore | Venom Tech",
     description:
-      "Your brand gets one chance to make a first impression. Venom Tech's graphic designers in Lahore create logos, brand identities, social media creatives and print designs that make your business look credible, memorable and ready to sell.",
+      "Professional graphic design services in Lahore: logos, branding, social media posts, packaging and print. Creative designs that grow your brand. Get a free quote.",
     url: "/screens/services/graphic-designing",
     images: [{ url: "/images/services/ui-design.webp" }],
   },

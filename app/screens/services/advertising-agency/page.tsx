@@ -14,16 +14,16 @@ import AdvertisingProcess from "@/app/component/services/advertising-agency/proc
 import AdvertisingFaq from "@/app/component/services/advertising-agency/faq/AdvertisingFaq";
 
 export const metadata: Metadata = {
-  title: "Leading Advertising Agency in Lahore | Venom Tech",
+  title: "Advertising Agency in Lahore | Digital Ads Pakistan | Venom Tech",
   description:
-    "Stop wasting budget on ads that don't convert. Venom Tech plans, creates and manages data-driven ad campaigns on Google, Meta, TikTok and YouTube that bring real leads and sales to businesses across Pakistan.",
+    "Venom Tech is a performance-driven advertising agency in Lahore. Google Ads, Meta Ads, TikTok ads, media buying and creative that deliver higher ROAS.",
   alternates: {
     canonical: "/screens/services/advertising-agency",
   },
   openGraph: {
-    title: "Leading Advertising Agency in Lahore | Venom Tech",
+    title: "Advertising Agency in Lahore | Digital Ads Pakistan | Venom Tech",
     description:
-      "Stop wasting budget on ads that don't convert. Venom Tech plans, creates and manages data-driven ad campaigns on Google, Meta, TikTok and YouTube that bring real leads and sales to businesses across Pakistan.",
+      "Venom Tech is a performance-driven advertising agency in Lahore. Google Ads, Meta Ads, TikTok ads, media buying and creative that deliver higher ROAS.",
     url: "/screens/services/advertising-agency",
     images: [{ url: "/images/services/digital-marketing.webp" }],
   },

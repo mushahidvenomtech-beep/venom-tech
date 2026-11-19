@@ -12,13 +12,15 @@ import HomeFooter from "@/app/components/home/footer/HomeFooter";
 
 export const metadata: Metadata = {
   title: "Digital Marketing Services in Pakistan | Venom Tech",
-  description: "Explore our digital marketing and technology services in Pakistan: SEO, Paid Advertising, Web & App Development, Brand Identity, and AI Automation.",
+  description:
+    "Explore Venom Tech's digital marketing services in Pakistan: branding, web design, content, video, social media, SEO and creative strategy. Get a free consultation.",
   alternates: {
     canonical: "/screens/services",
   },
   openGraph: {
     title: "Digital Marketing Services in Pakistan | Venom Tech",
-    description: "From concept to completion. Comprehensive creative, digital marketing, and technical services tailored for scaling brands across Pakistan and beyond.",
+    description:
+      "Explore Venom Tech's digital marketing services in Pakistan: branding, web design, content, video, social media, SEO and creative strategy. Get a free consultation.",
     url: "/screens/services",
     type: "website",
   },

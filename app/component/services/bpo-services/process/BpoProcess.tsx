@@ -5,22 +5,22 @@ const STEPS = [
   {
     step: "01",
     title: "Discovery Call",
-    desc: "We begin by understanding your business goals, challenges, and operational needs. This step helps us align expectations and define the right direction from day one.",
+    desc: "We learn your processes, volumes and goals.",
   },
   {
     step: "02",
     title: "Custom Proposal",
-    desc: "Based on your requirements, we create a tailored service plan that fits your objectives, timeline, and budget. Every detail is mapped out for smooth execution.",
+    desc: "You get a tailored plan, team structure and pricing.",
   },
   {
     step: "03",
     title: "Team Setup",
-    desc: "We assemble and prepare a dedicated team aligned with your standards and workflows. Training and onboarding ensure readiness before operations begin.",
+    desc: "We hire, train and onboard a dedicated team for your account.",
   },
   {
     step: "04",
     title: "Execution",
-    desc: "Services go live with continuous monitoring, communication, and performance tracking. We focus on quality, improvement, and scalable growth over time.",
+    desc: "Your team goes live, with daily monitoring and regular reports.",
   },
 ];
 
@@ -84,4 +84,3 @@ export default function BpoProcess() {
     </section>
   );
 }
-

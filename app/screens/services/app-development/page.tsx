@@ -12,16 +12,16 @@ import AppDevProcess from "@/app/component/services/app-development/process/AppD
 import AppDevFaq from "@/app/component/services/app-development/faq/AppDevFaq";
 
 export const metadata: Metadata = {
-  title: "Custom Mobile App Development Company in Pakistan | Venom Tech",
+  title: "Mobile App Development Company in Pakistan | Venom Tech",
   description:
-    "Turn your idea into a fast, secure and user-friendly app. Venom Tech designs and builds iOS, Android and cross-platform apps for startups and businesses in Lahore and across Pakistan, handling everything from planning to launch.",
+    "Venom Tech builds custom iOS, Android and cross-platform mobile apps in Lahore, Pakistan. From UI/UX to App Store launch. Get a free app consultation.",
   alternates: {
     canonical: "/screens/services/app-development",
   },
   openGraph: {
-    title: "Custom Mobile App Development Company in Pakistan | Venom Tech",
+    title: "Mobile App Development Company in Pakistan | Venom Tech",
     description:
-      "Turn your idea into a fast, secure and user-friendly app. Venom Tech designs and builds iOS, Android and cross-platform apps for startups and businesses in Lahore and across Pakistan, handling everything from planning to launch.",
+      "Venom Tech builds custom iOS, Android and cross-platform mobile apps in Lahore, Pakistan. From UI/UX to App Store launch. Get a free app consultation.",
     url: "/screens/services/app-development",
     images: [{ url: "/images/services/app-development.webp" }],
   },

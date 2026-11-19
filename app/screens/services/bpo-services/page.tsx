@@ -9,16 +9,16 @@ import BpoFoundations from "@/app/component/services/bpo-services/foundations/Bp
 import BpoProcess from "@/app/component/services/bpo-services/process/BpoProcess";
 
 export const metadata: Metadata = {
-  title: "Smart BPO Solutions & Outsourcing Services | Venom Tech IT Solution",
+  title: "BPO Services in Pakistan | Call Center Outsourcing | Venom Tech",
   description:
-    "Scale operations seamlessly with smart BPO solutions by Venom Tech. Inbound/outbound call centers, telemarketing, 24/7 customer support, lead generation, and back-office support.",
+    "Outsource to Venom Tech, a BPO company in Lahore, Pakistan. Inbound and outbound call center, customer support, lead generation and back-office services, 24/7.",
   alternates: {
     canonical: "/screens/services/bpo-services",
   },
   openGraph: {
-    title: "Smart BPO Solutions Built for Modern Businesses | Venom Tech",
+    title: "BPO Services in Pakistan | Call Center Outsourcing | Venom Tech",
     description:
-      "Dependable outsourcing support that helps businesses improve efficiency, maintain accuracy, and scale confidently around the clock.",
+      "Outsource to Venom Tech, a BPO company in Lahore, Pakistan. Inbound and outbound call center, customer support, lead generation and back-office services, 24/7.",
     url: "/screens/services/bpo-services",
     images: [{ url: "/images/services/bpo-hero.webp" }],
   },
