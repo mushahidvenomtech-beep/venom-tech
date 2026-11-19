@@ -2,7 +2,6 @@ import React from "react";
 import type { Metadata } from "next";
 import Navbar from "@/app/component/global/navigation/Navbar";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
-import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import TestimonialsSection from "@/app/components/home/testimonials/TestimonialsSection";
 import AdvertisingHero from "@/app/component/services/advertising-agency/hero/AdvertisingHero";
 import AdvertisingStats from "@/app/component/services/advertising-agency/stats/AdvertisingStats";
@@ -86,10 +85,7 @@ export default function AdvertisingAgencyPage() {
         {/* 7. How Our Advertising Agency Works (5-Stage Tree Flowchart) */}
         <AdvertisingProcess />
 
-        {/* 8. Portfolio Showcase */}
-        <PortfolioSection />
-
-        {/* 9. What Our Clients Say (Verified Client Reviews) */}
+        {/* 8. What Our Clients Say (Verified Client Reviews) */}
         <TestimonialsSection />
 
         {/* 9. Frequently Asked Questions Accordion */}

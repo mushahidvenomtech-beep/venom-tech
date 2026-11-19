@@ -2,7 +2,6 @@ import React from "react";
 import type { Metadata } from "next";
 import Navbar from "@/app/component/global/navigation/Navbar";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
-import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import TestimonialsSection from "@/app/components/home/testimonials/TestimonialsSection";
 import SeoHero from "@/app/component/services/seo/hero/SeoHero";
 import SeoStats from "@/app/component/services/seo/stats/SeoStats";
@@ -82,10 +81,7 @@ export default function SeoPage() {
         {/* 6. One-Stop Solution Process Flowchart */}
         <SeoProcess />
 
-        {/* 7. Portfolio Showcase */}
-        <PortfolioSection />
-
-        {/* 8. What Our Clients Say (Verified Client Reviews) */}
+        {/* 7. What Our Clients Say (Verified Client Reviews) */}
         <TestimonialsSection />
 
         {/* 8. Frequently Asked Questions Accordion */}

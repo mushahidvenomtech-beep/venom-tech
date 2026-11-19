@@ -2,7 +2,6 @@ import React from "react";
 import type { Metadata } from "next";
 import Navbar from "@/app/component/global/navigation/Navbar";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
-import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import AiAutomationTestimonials from "@/app/component/services/ai-automation/testimonials/AiAutomationTestimonials";
 import AiAutomationFaq from "@/app/component/services/ai-automation/faq/AiAutomationFaq";
 import AiAutomationHero from "@/app/component/services/ai-automation/hero/AiAutomationHero";
@@ -87,10 +86,7 @@ export default function AiAutomationPage() {
         {/* 7. Our AI Automation Process Flowchart */}
         <AiAutomationProcess />
 
-        {/* 8. Portfolio Showcase */}
-        <PortfolioSection />
-
-        {/* 9. What Our Automation Clients Say (Real Reviews) */}
+        {/* 8. What Our Automation Clients Say (Real Reviews) */}
         <AiAutomationTestimonials />
 
         {/* 10. Frequently Asked Questions */}

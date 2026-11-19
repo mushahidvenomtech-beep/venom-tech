@@ -2,7 +2,6 @@ import React from "react";
 import type { Metadata } from "next";
 import Navbar from "@/app/component/global/navigation/Navbar";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
-import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import TestimonialsSection from "@/app/components/home/testimonials/TestimonialsSection";
 import AppDevHero from "@/app/component/services/app-development/hero/AppDevHero";
 import AppDevStats from "@/app/component/services/app-development/stats/AppDevStats";
@@ -79,10 +78,7 @@ export default function AppDevelopmentPage() {
         {/* 5. Our App Development Process (Tree Flowchart) */}
         <AppDevProcess />
 
-        {/* 6. Portfolio Showcase */}
-        <PortfolioSection intro="Apps and digital products we've designed and built for our clients." />
-
-        {/* 7. What Our Clients Say (Verified Client Reviews) */}
+        {/* 6. What Our Clients Say (Verified Client Reviews) */}
         <TestimonialsSection />
 
         {/* 7. Frequently Asked Questions Accordion */}

@@ -2,7 +2,6 @@ import React from "react";
 import type { Metadata } from "next";
 import Navbar from "@/app/component/global/navigation/Navbar";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
-import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import TestimonialsSection from "@/app/components/home/testimonials/TestimonialsSection";
 import GraphicDesignHero from "@/app/component/services/graphic-designing/hero/GraphicDesignHero";
 import GraphicDesignStats from "@/app/component/services/graphic-designing/stats/GraphicDesignStats";
@@ -87,10 +86,7 @@ export default function GraphicDesigningPage() {
         {/* 7. Our Graphic Design Process (5-Stage Tree Flowchart) */}
         <GraphicDesignProcess />
 
-        {/* 8. Portfolio Showcase */}
-        <PortfolioSection />
-
-        {/* 9. What Our Clients Say (Verified Client Reviews) */}
+        {/* 8. What Our Clients Say (Verified Client Reviews) */}
         <TestimonialsSection />
 
         {/* 9. Frequently Asked Questions Accordion */}
