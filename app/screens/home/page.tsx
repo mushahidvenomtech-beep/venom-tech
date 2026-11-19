@@ -6,7 +6,6 @@ import ServicesSection from "@/app/component/home/services/ServicesSection";
 import AboutMissionSection from "@/app/components/home/about/AboutMissionSection";
 import StatsBarSection from "@/app/components/home/stats/StatsBarSection";
 import WhyChooseSection from "@/app/components/home/why-choose/WhyChooseSection";
-import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import TestimonialsSection from "@/app/components/home/testimonials/TestimonialsSection";
 import TeamSection from "@/app/components/home/team/TeamSection";
 import ContactSection from "@/app/components/home/contact/ContactSection";
@@ -52,10 +51,7 @@ export default function HomePage() {
         {/* Section 5: Our Impact in Numbers and Results */}
         <StatsBarSection />
 
-        {/* Section 6: Portfolio Showcase */}
-        <PortfolioSection />
-
-        {/* Section 7: Echoes of Our Valued Clients & Brand Bar */}
+        {/* Section 6: Echoes of Our Valued Clients & Brand Bar */}
         <TestimonialsSection />
 
         {/* Section 8: The Minds Behind The Magic */}

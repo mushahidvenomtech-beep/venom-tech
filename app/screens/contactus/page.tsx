@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import Navbar from "@/app/component/global/navigation/Navbar";
 import ContactHeaderBanner from "@/app/components/contactus/header/ContactHeaderBanner";
 import ContactFormSection from "@/app/components/contactus/form/ContactFormSection";
-import PortfolioSection from "@/app/components/home/portfolio/PortfolioSection";
 import ContactCtaBanner from "@/app/components/contactus/cta/ContactCtaBanner";
 import ContactMapSection from "@/app/components/contactus/map/ContactMapSection";
 import HomeFooter from "@/app/components/home/footer/HomeFooter";
@@ -52,9 +51,6 @@ export default function ContactUsScreen() {
 
         {/* Form and Office Details Split */}
         <ContactFormSection />
-
-        {/* Portfolio Showcase */}
-        <PortfolioSection />
 
         {/* Full-Width Black CTA Banner */}
         <ContactCtaBanner />
