@@ -7,7 +7,6 @@ import AboutMissionSection from "@/app/components/home/about/AboutMissionSection
 import StatsBarSection from "@/app/components/home/stats/StatsBarSection";
 import WhyChooseSection from "@/app/components/home/why-choose/WhyChooseSection";
 import TestimonialsSection from "@/app/components/home/testimonials/TestimonialsSection";
-import TeamSection from "@/app/components/home/team/TeamSection";
 import ContactSection from "@/app/components/home/contact/ContactSection";
 import FaqSection from "@/app/components/home/faq/FaqSection";
 import CtaBannerSection from "@/app/components/home/cta-banner/CtaBannerSection";
@@ -54,10 +53,7 @@ export default function HomePage() {
         {/* Section 6: Echoes of Our Valued Clients & Brand Bar */}
         <TestimonialsSection />
 
-        {/* Section 8: The Minds Behind The Magic */}
-        <TeamSection />
-
-        {/* Section 9: Quick Form & Let's Collaborate */}
+        {/* Section 7: Quick Form & Let's Collaborate */}
         <ContactSection />
 
         {/* Section 10: FAQ Accordion */}
